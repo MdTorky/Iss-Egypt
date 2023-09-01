@@ -4,6 +4,7 @@
 }
 
 .navbar {
+    /* background: red; */
     position: sticky;
     width: 4%;
     margin: 130px 0 0 30px;

@@ -1,6 +1,8 @@
+import Footer from './Components/Footer/Footer';
 import NavBar from './Components/NavBar/NavBar';
 import img1 from './images/logo.png';
-import { useState } from 'react'; // Import useState from React
+import { useState } from 'react'; // Import the LTR stylesheet // Import useState from React
+import languageData from './language.json';
 
 function App() {
   const [language, setLanguage] = useState("en"); // Initialize the language state in App.js
@@ -11,6 +13,8 @@ function App() {
     console.log(language);
   };
 
+  document.body.className = language === 'ar' ? 'arabic' : '';
+
 
 
   return (
@@ -19,7 +23,12 @@ function App() {
         <img src={img1} alt="" />
       </div>
       <NavBar language={language} toggleLanguage={toggleLanguage} /> {/* Pass language and toggleLanguage as props */}
-      <div style={{ height: '900px', position: 'relative', marginTop: "1000px" }}>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus laudantium saepe nam quasi quo aliquid modi dolorem officiis ad in!</div>
+
+
+
+      <Footer language={language} languageData={languageData} />
+
+
     </div>
   );
 }

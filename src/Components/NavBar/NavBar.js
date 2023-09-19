@@ -1,8 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faCircleInfo, faImage } from '@fortawesome/free-solid-svg-icons';
 import './NavBar.css';
+import { useLanguage } from '../../language';
 
-const NavBar = ({ language, toggleLanguage }) => { // Accept language and toggleLanguage as props
+
+const NavBar = ({ language, toggleLanguage }) => {
+
     return (
         <div className={`navbar ${language === "ar" ? "arabic" : ""}`}>
             <ul>

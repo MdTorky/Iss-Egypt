@@ -1,7 +1,24 @@
 {
   "en": {
-    "name": "English",
-    "title": "English"
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "youtube": "Youtube",
+    "linkedin": "LinkedIn",
+    "linktree": "LinkTree",
+    "home": "Home",
+    "about": "About",
+    "gallery": "Gallery",
+    "rights": "&copy;2023 ISS-Egypt | All Rights Reserved"
   },
-  "ar": {}
+  "ar": {
+    "facebook": "فيسبوك",
+    "instagram": "إنستجرام",
+    "youtube": "يوتيوب",
+    "linkedin": "لينكدإن",
+    "linktree": "لينك تري",
+    "home": "الصفحة الرئيسية",
+    "about": "معلومات عنا",
+    "gallery": "المعرض",
+    "rights": "&copy;2023 ISS-Egypt | جميع الحقوق محفوظة"
+  }
 }

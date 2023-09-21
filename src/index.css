@@ -11,6 +11,16 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+.appContainer {
+  display: flex;
+}
+
+.appContainer .routes {
+  margin: auto 650px;
+}
+
+
+
 .logo {
   align-items: center;
   display: flex;
@@ -33,4 +43,12 @@ body {
 
 body.arabic {
   direction: rtl;
+}
+
+
+@media screen and (max-width:900px) {
+  .appContainer .routes {
+    margin: 190px auto 0 auto;
+  }
+
 }

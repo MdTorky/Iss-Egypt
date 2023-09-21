@@ -3,6 +3,9 @@ import NavBar from './Components/NavBar/NavBar';
 import img1 from './images/logo.png';
 import { useState } from 'react'; // Import the LTR stylesheet // Import useState from React
 import languageData from './language.json';
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'; // Import BrowserRouter and Route
+import Home from './Components/Home/Home';
+
 
 function App() {
   const [language, setLanguage] = useState("en"); // Initialize the language state in App.js
@@ -18,18 +21,24 @@ function App() {
 
 
   return (
-    <div className={`App ${language === "ar" ? "arabic" : ""}`}>
-      <div className="logo">
-        <img src={img1} alt="" />
+    <Router>
+      <div className={`App ${language === "ar" ? "arabic" : ""}`}>
+        <div className="logo">
+          <img src={img1} alt="" />
+        </div>
+        <div className="appContainer">
+          <NavBar language={language} toggleLanguage={toggleLanguage} />
+          <div className="routes">
+            <Routes>
+              <Route path="/" element={<Home language={language} languageData={languageData} />} />
+            </Routes>
+          </div>
+        </div>
+        <Footer language={language} languageData={languageData} />
+
+
       </div>
-      <NavBar language={language} toggleLanguage={toggleLanguage} /> {/* Pass language and toggleLanguage as props */}
-
-
-
-      <Footer language={language} languageData={languageData} />
-
-
-    </div>
+    </Router>
   );
 }
 

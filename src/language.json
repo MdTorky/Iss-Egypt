@@ -6,9 +6,14 @@
     "linkedin": "LinkedIn",
     "linktree": "LinkTree",
     "home": "Home",
-    "about": "About",
+    "about": "Services",
     "gallery": "Gallery",
-    "rights": "&copy;2023 ISS-Egypt | All Rights Reserved"
+    "rights": "\u00A9 2023 ISS-Egypt | All Rights Reserved",
+    "together": "Together we ",
+    "rise": "rise",
+    "succeed": "succeed",
+    "rejoice": "rejoice",
+    "advance": "advance"
   },
   "ar": {
     "facebook": "فيسبوك",
@@ -17,8 +22,13 @@
     "linkedin": "لينكدإن",
     "linktree": "لينك تري",
     "home": "الصفحة الرئيسية",
-    "about": "معلومات عنا",
+    "about": "خدماتنا",
     "gallery": "المعرض",
-    "rights": "&copy;2023 ISS-Egypt | جميع الحقوق محفوظة"
+    "rights": "\u00A9  ISS-Egypt 2023 | جميع الحقوق محفوظة",
+    "together": "معا  ",
+    "rise": "نرتقي",
+    "succeed": "ننجح",
+    "rejoice": "نسعد",
+    "advance": "نتقدم"
   }
 }

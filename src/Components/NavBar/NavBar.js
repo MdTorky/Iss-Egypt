@@ -9,7 +9,7 @@ const NavBar = ({ language, toggleLanguage }) => {
     return (
         <div className={`navbar ${language === "ar" ? "arabic" : ""}`}>
             <ul>
-                <li><a href=""><icon><FontAwesomeIcon icon={faHouse} /></icon></a></li>
+                <li><a href="/"><icon><FontAwesomeIcon icon={faHouse} /></icon></a></li>
                 <li><a href=""><icon><FontAwesomeIcon icon={faCircleInfo} /></icon></a></li>
                 <li><a href=""><icon><FontAwesomeIcon icon={faImage} /></icon></a></li>
                 <li>

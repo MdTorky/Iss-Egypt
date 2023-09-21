@@ -11,6 +11,7 @@
     padding: 10px;
     top: 100px;
     z-index: 1;
+    display: inline-block;
 }
 
 .navbar.arabic {
@@ -79,7 +80,7 @@
 }
 
 .navbar ul li:hover:nth-child(2) icon::after {
-    content: "About";
+    content: "Services";
 }
 
 .navbar ul li:hover:nth-child(3) icon::after {
@@ -97,7 +98,7 @@
 }
 
 .navbar.arabic ul li:hover:nth-child(2) icon::after {
-    content: "معلومات عنا";
+    content: "خدماتنا";
     width: max-content;
 }
 
@@ -183,7 +184,7 @@
     }
 
     .navbar ul li:nth-child(2) icon::after {
-        content: "About";
+        content: "Services";
     }
 
     .navbar ul li:nth-child(3) icon::after {
@@ -201,7 +202,7 @@
     }
 
     .navbar.arabic ul li:nth-child(2) icon::after {
-        content: "معلومات عنا";
+        content: "خدماتنا";
         width: max-content;
     }
 

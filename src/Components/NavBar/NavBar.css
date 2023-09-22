@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
 :root {
     --theme: #F05454;
     --hover: #30475E;
+    --bg: #E8F9FD;
+    --test: #122D4B
 }
 
 .navbar {
     /* background: red; */
-    position: sticky;
-    width: 4.5%;
-    margin: 130px 0 0 30px;
+    position: fixed;
+    width: 5%;
+    margin: 50px 0 0 30px;
     padding: 10px;
     top: 100px;
     z-index: 1;
@@ -15,7 +20,7 @@
 }
 
 .navbar.arabic {
-    margin: 130px 30px 0 0;
+    margin: 50px 30px 0 0;
 
 }
 

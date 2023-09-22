@@ -5,6 +5,7 @@ import { useState } from 'react'; // Import the LTR stylesheet // Import useStat
 import languageData from './language.json';
 import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'; // Import BrowserRouter and Route
 import Home from './Components/Home/Home';
+import Menu from './Components/Menu/Menu';
 
 
 function App() {
@@ -28,11 +29,12 @@ function App() {
         </div>
         <div className="appContainer">
           <NavBar language={language} toggleLanguage={toggleLanguage} />
-          <div className="routes">
+          <div className={`routes ${language === "ar" ? "arabic" : ""}`}>
             <Routes>
               <Route path="/" element={<Home language={language} languageData={languageData} />} />
             </Routes>
           </div>
+          <Menu language={language} languageData={languageData} />
         </div>
         <Footer language={language} languageData={languageData} />
 

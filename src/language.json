@@ -1,5 +1,42 @@
 {
   "en": {
+    "IssPres": "ISS Committee Presidents",
+    "IssPres2": "Committee Presidents",
+    "Egypt": "ISS Egypt",
+
+    "President": "ISS Egypt President",
+    "PresidentName": "Ahmed Khalaf",
+
+    "VicePresident": "Vice President",
+    "VicePresidentName": "Abdallah",
+
+    "Academic": "Academic President",
+    "AcademicName": "Mazen Mohamed",
+
+    "Social": "Social President",
+    "SocialName": "Mohamed Omar",
+
+    "Culture": "Culture President",
+    "CultureName": "Khaled Attia",
+
+    "Media": "Media President",
+    "MediaName": "Mohamed Moawad",
+
+    "Sport": "Sports President",
+    "SportName": "Yousef Mohamed",
+
+    "HR": "Human Resources",
+    "HRName": "Adham Ahmed",
+
+    "Logistics": "Logistics President",
+    "LogisticsName": "Hussein Elsayed",
+
+    "Women": "Women Affairs",
+    "WomenName": "Sondos Moustafa",
+
+    "PublicReleation": "Public Relations",
+    "PublicReleationName": "Yousef Shahin",
+
     "facebook": "Facebook",
     "instagram": "Instagram",
     "youtube": "Youtube",
@@ -13,9 +50,60 @@
     "rise": "rise",
     "succeed": "succeed",
     "rejoice": "rejoice",
-    "advance": "advance"
+    "advance": "advance",
+
+    "achievements": "The Committees' Achievements",
+    "blogSubtitle": "ISS Egypt Welcome Party",
+    "blogTitle1": "The",
+    "blogTitle2": "International Student Society (ISS)",
+    "blogTitle3": "Egypt Achievements",
+    "blogDescription": "The International Student Society (ISS) Egypt has truly made remarkable strides in fostering a vibrant and inclusive community, leaving an indelible mark on the academic and social landscape. Through a rich tapestry of events and initiatives, ISS Egypt has demonstrated unwavering dedication to its members and the broader community. From meticulously organized academic symposiums that ignite intellectual curiosity to culturally enriching gatherings that celebrate diversity, ISS Egypt has showcased an impressive range of accomplishments. Their commitment to newcomers is especially noteworthy, as they extend a warm embrace to new students, easing their transition into the academic world. Moreover, during the sacred month of Ramadan, ISS Egypt's events have created a sense of togetherness and spirituality, embodying the essence of unity. Additionally, their Islamic events have served as platforms for deepening faith and understanding. In sum, ISS Egypt's achievements in organizing social, academic, cultural events, as well as their dedicated support for newcomers and the observance of important traditions, exemplify their outstanding commitment to fostering a vibrant and harmonious community.",
+
+    "upcomingEventSubtitle1": "Upcoming Event Name 1",
+    "upcomingEventDescription1": "Upcoming Event Description 1",
+
+    "upcomingEventSubtitle2": "Upcoming Event Name 2",
+    "upcomingEventDescription2": "Upcoming Event Description 2"
   },
   "ar": {
+    "IssPres": "رؤساء لجان الاتحاد",
+
+    "IssPres2": "رؤساء اللجان",
+    "Egypt": "الاتحاد المصري",
+
+    "President": "رئيس الاتحاد",
+    "PresidentName": "أحمد خلف",
+
+    "VicePresident": "نائب الرئيس",
+    "VicePresidentName": "عبدالله",
+
+    "Academic": "رئيس الأكاديمية",
+    "AcademicName": "مازن محمد",
+
+    "Social": "رئيس الاجتماعية",
+    "SocialName": "محمد عمر",
+
+    "Culture": "رئيس الثقافية",
+    "CultureName": "خالد عطية",
+
+    "Media": "رئيس الاعلامية",
+    "MediaName": "محمد معوض",
+
+    "Sport": "رئيس الرياضية",
+    "SportName": "يوسف محمد",
+
+    "HR": "HR",
+    "HRName": "أدهم أحمد",
+
+    "Logistics": "رئيس الخدمات اللوجستية",
+    "LogisticsName": "حسين السيد",
+
+    "Women": "رئيسة شؤون الطالبات",
+    "WomenName": "سندس مصطفى",
+
+    "PublicReleation": "رئيس العلاقات العامة",
+    "PublicReleationName": "يوسف شاهين",
+
     "facebook": "فيسبوك",
     "instagram": "إنستجرام",
     "youtube": "يوتيوب",
@@ -29,6 +117,20 @@
     "rise": "نرتقي",
     "succeed": "ننجح",
     "rejoice": "نسعد",
-    "advance": "نتقدم"
+    "advance": "نتقدم",
+
+    "achievements": "إنجازات الاتحاد",
+
+    "blogSubtitle": " حفل الترحيب للاتحاد المصري",
+    "blogTitle1": "إنجازات",
+    "blogTitle2": "اتحاد الطلبة المصريين",
+    "blogTitle3": "",
+    "blogDescription": "لقد أطهر الاتحاد المصري خطوات ملحوظة في تعزيز مجتمع نابض بالحياة وشامل، مما ترك علامة لا تمحى على المشهد الأكاديمي والاجتماعي. ومن خلال نسيج غني من الأحداث والمبادرات، أظهر الاتحاد تفانيًا لا يتزعزع تجاه أعضائها والمجتمع الأوسع. بدءًا من الندوات الأكاديمية المنظمة بدقة والتي تثير الفضول الفكري وحتى التجمعات الغنية ثقافيًا والتي تحتفي بالتنوع، عرض الاتحاد مجموعة رائعة من الإنجازات و التزامهم تجاه الطلاب الجدد جدير بالملاحظة بشكل خاص، حيث يقدمون احتضانًا دافئًا للطلاب الجدد، مما يسهل انتقالهم إلى العالم الأكاديمي. علاوة على ذلك، خلال شهر رمضان المبارك، أحدث الاتحاد شعورًا بالروحانيات الدينية، مما يجسد جوهر الوحدة. بالإضافة إلى ذلك، كانت مناسباتهم الإسلامية بمثابة منصات لتعميق الإيمان والتفاهم. باختصار، إن إنجازات الاتحاد في تنظيم الفعاليات الاجتماعية والأكاديمية والثقافية، فضلاً عن دعمهم المتفاني للوافدين الجدد ومراعاة التقاليد المهمة، تجسد التزامهم المتميز بتعزيز مجتمع نابض بالحياة ومتناغم.",
+
+    "upcomingEventSubtitle1": "اسم الحدث القادم 1",
+    "upcomingEventDescription1": "وصف الحدث القادم 1",
+
+    "upcomingEventSubtitle2": "اسم الحدث القادم 2",
+    "upcomingEventDescription2": "وصف الحدث القادم 2"
   }
 }

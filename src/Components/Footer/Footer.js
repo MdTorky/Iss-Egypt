@@ -32,33 +32,33 @@ const Footer = ({ language, languageData }) => {
                 <li className="social-icon__item">
                     <a className="social-icon__link" href="https://www.facebook.com/Eg.UTM">
                         <FontAwesomeIcon icon={faFacebook} />
-                        <span>{languageText.facebook}</span>
+                        {/* <span>{languageText.facebook}</span> */}
                     </a>
                 </li>
                 <li className="social-icon__item">
                     <a className="social-icon__link" href="https://www.instagram.com/issegypt/">
                         <FontAwesomeIcon icon={faInstagram} />
-                        <span>{languageText.instagram}</span>
+                        {/* <span>{languageText.instagram}</span> */}
                     </a>
                 </li>
                 <li className="social-icon__item">
                     <a className="social-icon__link" href="https://www.youtube.com/@issegypt7345">
                         <FontAwesomeIcon icon={faYoutube} />
-                        <span>{languageText.youtube}</span>
+                        {/* <span>{languageText.youtube}</span> */}
 
                     </a>
                 </li>
                 <li className="social-icon__item">
                     <a className="social-icon__link" href="https://www.linkedin.com/in/iss-egypt-utm-821447267/">
                         <FontAwesomeIcon icon={faLinkedin} />
-                        <span>{languageText.linkedin}</span>
+                        {/* <span>{languageText.linkedin}</span> */}
 
                     </a>
                 </li>
                 <li className="social-icon__item">
                     <a className="social-icon__link" href="https://linktr.ee/issegypt?utm_source=linktree_profile_share&ltsid=fd5e7ee8-41ba-4efa-bbc0-ac5f555b3edb">
                         <FontAwesomeIcon icon={faTree} />
-                        <span>{languageText.linktree}</span>
+                        {/* <span>{languageText.linktree}</span> */}
 
                     </a>
                 </li>

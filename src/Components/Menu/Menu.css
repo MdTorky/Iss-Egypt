@@ -1,0 +1,103 @@
+.sideMenu {
+    background: var(--bg);
+    margin-top: 130px;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 30px;
+}
+
+
+.sideMenu .title {
+    /* margin: 0; */
+    font-size: 12px;
+    color: var(--bg);
+    background: var(--hover);
+    width: 100%;
+    padding: 10px 0 0 10px;
+    border-top-left-radius: 30px;
+    align-items: flex-start;
+    line-height: 10px;
+
+
+}
+
+.sideMenu.arabic .title {
+    padding: 10px 10px 0 0;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 0;
+}
+
+
+.sideMenu .title h3 {
+    color: rgba(255, 255, 255, 0.543);
+    font-size: 0.9em;
+}
+
+
+.sideMenu .people {
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.254);
+}
+
+.sideMenu .people:last-child {
+    border-bottom: none;
+}
+
+.peopleCard {
+    display: flex;
+}
+
+.peopleImg {
+    border-top: 3px solid red;
+    border-left: 5px solid white;
+    border-bottom: 3px solid black;
+    border-radius: 50px;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.peopleImg img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+
+
+
+.peopleText {
+    /* background: red; */
+    /* margin-left: 20px; */
+    line-height: 3px;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    padding: 0 20px;
+}
+
+.peopleText .name {
+    font-size: 25px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.arabic .peopleText .name {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 900;
+}
+
+.peopleText .role {
+    font-size: 15px;
+    font-weight: 100;
+    color: gray;
+}
+
+
+@media screen and (max-width: 768px) {
+    .sideMenu {
+        display: none;
+    }
+}

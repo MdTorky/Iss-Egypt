@@ -63,7 +63,42 @@
     "upcomingEventDescription1": "Upcoming Event Description 1",
 
     "upcomingEventSubtitle2": "Upcoming Event Name 2",
-    "upcomingEventDescription2": "Upcoming Event Description 2"
+    "upcomingEventDescription2": "Upcoming Event Description 2",
+
+    "AcademicEvents": "Academic Committee Events",
+    "AcademicEventTitle1": "PCB Workshop 2023",
+    "AcademicEventCreator1": "Anas Amer",
+    "AcademicEventDescription1": "Participants dove into the world of PCB design, honing their skills with KiCad software and mastering the art of crafting incredible circuit boards.",
+
+    "AcademicEventTitle2": "RoadMap To a Scholarship",
+    "AcademicEventCreator2": "Khaled Khalil",
+    "AcademicEventDescription2": "What exactly is a scholarship? How do I obtain it? The goal of obtaining a scholarship to fund their studies exists here.",
+
+    "AcademicEventTitle3": "How To Secure a Job after Graduation",
+    "AcademicEventCreator3": "Mohamed Tarek",
+    "AcademicEventDescription3": "It provided vital guidance on post-graduation career opportunities, academic best practices, finding summer internships, using LinkedIn, and creating an outstanding CV.",
+
+    "SocialEvents": "Social Committee Events",
+    "SocialEventTitle1": "KUNTAN PAHANG Trip",
+    "SocialEventDescription1": "Embarked on an exciting 2-day trip to Kuantan, Pahang, known for its captivating beaches.",
+
+    "SocialEventTitle2": "Gathering at UTM Hill",
+    "SocialEventDescription2": "We celebrated the diversity, passion, and shared dreams that make our community thrive, and we must continue to create magical experiences and forge lifelong connections.",
+
+    "SocialEventTitle3": "First-Aid Workshop",
+    "SocialEventDescription3": "We delved into the world of emergency response, equipping participants with life-saving skills and knowledge. From basic CPR techniques to handling critical situations.",
+
+    "CultureEvents": "Cultural Committee Events",
+    "CultureEventTitle1": "Al-Azhar Al-Shareef Lecture",
+    "CultureEventCreator1": "Hossam Elmihy",
+    "CultureEventDescription1": "Al-Azhar Alshareef was invited to Malaysia to discuss Ramadan and how to make the most of it.",
+
+    "CultureEventTitle2": "The Prophet Muhammad's Biography Lecture",
+    "CultureEventCreator2": "Ahmed Ali",
+    "CultureEventDescription2": "Sheikh Ahmed Ali listed some images from the Messenger Muhammad's biography, may God bless him and grant him peace.",
+
+    "CultureEventTitle3": "Ramadan Competition",
+    "CultureEventDescription3": "Three Ramadan contests were held: Quran Recitation, Cultural Competition (Seerah), and Nasheed (Islamic Song) with prizes for the winners."
   },
   "ar": {
     "IssPres": "رؤساء لجان الاتحاد",
@@ -77,19 +112,19 @@
     "VicePresident": "نائب الرئيس",
     "VicePresidentName": "عبدالله",
 
-    "Academic": "رئيس الأكاديمية",
+    "Academic": "رئيس اللجنة الأكاديمية",
     "AcademicName": "مازن محمد",
 
-    "Social": "رئيس الاجتماعية",
+    "Social": "رئيس اللجنة الاجتماعية",
     "SocialName": "محمد عمر",
 
-    "Culture": "رئيس الثقافية",
+    "Culture": "رئيس اللجنة الثقافية",
     "CultureName": "خالد عطية",
 
-    "Media": "رئيس الاعلامية",
+    "Media": "رئيس اللجنة الاعلامية",
     "MediaName": "محمد معوض",
 
-    "Sport": "رئيس الرياضية",
+    "Sport": "رئيس اللجنة الرياضية",
     "SportName": "يوسف محمد",
 
     "HR": "HR",
@@ -123,14 +158,49 @@
 
     "blogSubtitle": " حفل الترحيب للاتحاد المصري",
     "blogTitle1": "إنجازات",
-    "blogTitle2": "اتحاد الطلبة المصريين",
-    "blogTitle3": "",
-    "blogDescription": "لقد أطهر الاتحاد المصري خطوات ملحوظة في تعزيز مجتمع نابض بالحياة وشامل، مما ترك علامة لا تمحى على المشهد الأكاديمي والاجتماعي. ومن خلال نسيج غني من الأحداث والمبادرات، أظهر الاتحاد تفانيًا لا يتزعزع تجاه أعضائها والمجتمع الأوسع. بدءًا من الندوات الأكاديمية المنظمة بدقة والتي تثير الفضول الفكري وحتى التجمعات الغنية ثقافيًا والتي تحتفي بالتنوع، عرض الاتحاد مجموعة رائعة من الإنجازات و التزامهم تجاه الطلاب الجدد جدير بالملاحظة بشكل خاص، حيث يقدمون احتضانًا دافئًا للطلاب الجدد، مما يسهل انتقالهم إلى العالم الأكاديمي. علاوة على ذلك، خلال شهر رمضان المبارك، أحدث الاتحاد شعورًا بالروحانيات الدينية، مما يجسد جوهر الوحدة. بالإضافة إلى ذلك، كانت مناسباتهم الإسلامية بمثابة منصات لتعميق الإيمان والتفاهم. باختصار، إن إنجازات الاتحاد في تنظيم الفعاليات الاجتماعية والأكاديمية والثقافية، فضلاً عن دعمهم المتفاني للوافدين الجدد ومراعاة التقاليد المهمة، تجسد التزامهم المتميز بتعزيز مجتمع نابض بالحياة ومتناغم.",
+    "blogTitle2": "اتحاد الطلبة ",
+    "blogTitle3": "المصريين",
+    "blogDescription": "لقد أظهر الاتحاد المصري خطوات ملحوظة في تعزيز مجتمع نابض بالحياة وشامل، مما ترك علامة لا تمحى على المشهد الأكاديمي والاجتماعي. ومن خلال نسيج غني من الأحداث والمبادرات، أظهر الاتحاد تفانيًا لا يتزعزع تجاه أعضائها والمجتمع الأوسع. بدءًا من الندوات الأكاديمية المنظمة بدقة والتي تثير الفضول الفكري وحتى التجمعات الغنية ثقافيًا والتي تحتفي بالتنوع، عرض الاتحاد مجموعة رائعة من الإنجازات و التزامهم تجاه الطلاب الجدد جدير بالملاحظة بشكل خاص، حيث يقدمون احتضانًا دافئًا للطلاب الجدد، مما يسهل انتقالهم إلى العالم الأكاديمي. علاوة على ذلك، خلال شهر رمضان المبارك، أحدث الاتحاد شعورًا بالروحانيات الدينية، مما يجسد جوهر الوحدة. بالإضافة إلى ذلك، كانت مناسباتهم الإسلامية بمثابة منصات لتعميق الإيمان والتفاهم. باختصار، إن إنجازات الاتحاد في تنظيم الفعاليات الاجتماعية والأكاديمية والثقافية، فضلاً عن دعمهم المتفاني للوافدين الجدد ومراعاة التقاليد المهمة، تجسد التزامهم المتميز بتعزيز مجتمع نابض بالحياة ومتناغم.",
 
     "upcomingEventSubtitle1": "اسم الحدث القادم 1",
     "upcomingEventDescription1": "وصف الحدث القادم 1",
 
     "upcomingEventSubtitle2": "اسم الحدث القادم 2",
-    "upcomingEventDescription2": "وصف الحدث القادم 2"
+    "upcomingEventDescription2": "وصف الحدث القادم 2",
+
+    "AcademicEvents": "فعاليات اللجنة  الأكاديمية",
+    "AcademicEventTitle1": "ورشة لوحات الدوائر المطبوعة 2023",
+    "AcademicEventCreator1": "أنس عامر",
+    "AcademicEventDescription1": "يغوص المشاركون في عالم تصميم لوحات الدوائر المطبوعة، ويصقلون مهاراتهم باستخدام برنامج KiCad ويتقنون فن صناعة لوحات الدوائر المذهلة.",
+
+    "AcademicEventTitle2": "الطريق إلى منحة دراسية",
+    "AcademicEventCreator2": "خالد خليل",
+    "AcademicEventDescription2": "ما هي المنحة الدراسية بالضبط؟ كيف يمكنني الحصول عليها؟ هدف الحصول على منحة دراسية لتمويل دراستهم موجود هنا.",
+
+    "AcademicEventTitle3": "كيفية تأمين وظيفة بعد التخرج",
+    "AcademicEventCreator3": "محمد طارق",
+    "AcademicEventDescription3": "وفرت هذه الفعالية إرشادات حيوية حول الفرص الوظيفية بعد التخرج، وأفضل الممارسات الأكاديمية، وإيجاد التدريب الصيفي، واستخدام LinkedIn، وإنشاء سيرة ذاتية متميز",
+
+    "SocialEvents": "فعاليات اللجنة  الاجتماعية",
+    "SocialEventTitle1": "رحلة كونتان باهانج",
+    "SocialEventDescription1": "انطلقنا في رحلة مثيرة لمدة يومين إلى كوانتان، باهانج، المعروفة بشواطئها الجذابة.",
+
+    "SocialEventTitle2": "التجمع في تلة UTM",
+    "SocialEventDescription2": "لقد احتفلنا بالتنوع والعاطفة والأحلام المشتركة التي تجعل مجتمعنا يزدهر، وعلينا أن نستمر في خلق تجارب سحرية وإقامة روابط تدوم مدى الحياة.",
+
+    "SocialEventTitle3": "ورشة الإسعافات الأولية",
+    "SocialEventDescription3": "لقد تعمقنا في عالم حالات الطوارئ، وزودنا المشاركين بالمهارات والمعرفة المنقذة للحياة من تقنيات الإنعاش القلبي الرئوي الأساسية إلى التعامل مع المواقف الحرجة.",
+
+    "CultureEvents": "فعاليات اللجنة  الثقافية",
+    "CultureEventTitle1": "محاضرة الأزهر الشريف",
+    "CultureEventCreator1": "حسام الميهي",
+    "CultureEventDescription1": "تمت دعوة الأزهر الشريف إلى ماليزيا لمناقشة شهر رمضان وكيفية الاستفادة منه.",
+
+    "CultureEventTitle2": "محاضرة السيرة النبوية",
+    "CultureEventCreator2": "أحمد علي",
+    "CultureEventDescription2": "قام الشيخ أحمد علي بسرد بعض الصور من سيرة الرسول محمد صلى الله عليه وسلم.",
+
+    "CultureEventTitle3": "مسابقة رمضان",
+    "CultureEventDescription3": "أقيمت ثلاث مسابقات رمضانية: تلاوة القرآن الكريم، والمسابقة الثقافية (سيرة)، والأناشيد الإسلامية مع جوائز للفائزين."
   }
 }

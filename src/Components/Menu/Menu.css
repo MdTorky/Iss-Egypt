@@ -6,7 +6,14 @@
     flex-direction: column;
     width: 400px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 30px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 100%;
+}
+
+.sideMenu.arabic {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 
@@ -17,23 +24,27 @@
     background: var(--hover);
     width: 100%;
     padding: 10px 0 0 10px;
-    border-top-left-radius: 30px;
+    border-top-left-radius: 10px;
     align-items: flex-start;
     line-height: 10px;
 
-
 }
+
 
 .sideMenu.arabic .title {
     padding: 10px 10px 0 0;
     border-top-right-radius: 30px;
     border-top-left-radius: 0;
+    font-family: 'Cairo', sans-serif;
+
+
 }
 
 
 .sideMenu .title h3 {
     color: rgba(255, 255, 255, 0.543);
     font-size: 0.9em;
+
 }
 
 
@@ -60,6 +71,13 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.arabic .peopleImg {
+    border-top: 3px solid red;
+    border-left: none;
+    border-right: 5px solid white;
+    border-bottom: 3px solid black;
+}
+
 .peopleImg img {
     width: 70px;
     height: 70px;
@@ -70,8 +88,6 @@
 
 
 .peopleText {
-    /* background: red; */
-    /* margin-left: 20px; */
     line-height: 3px;
     width: 100%;
     font-family: 'Rubik', sans-serif;
@@ -79,14 +95,16 @@
 }
 
 .peopleText .name {
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 22px;
+    font-weight: 500;
     white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .arabic .peopleText .name {
     font-family: 'Noto Kufi Arabic', sans-serif;
-    font-weight: 900;
+    font-weight: 400;
 }
 
 .peopleText .role {

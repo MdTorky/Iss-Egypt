@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100&display=swap');
+
+/* Arabic Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap');
 
 *::-webkit-scrollbar {
   width: 8px;
@@ -64,7 +68,7 @@ body {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1;
+  z-index: 999;
   background: var(--bg);
 }
 

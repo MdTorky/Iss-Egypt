@@ -3,9 +3,10 @@
 
 :root {
     --theme: #F05454;
-    --hover: #30475E;
+    /* --hover: #30475E; */
+    --hover: #252525;
     --bg: #E8F9FD;
-    --test: #122D4B
+    --test: #122D4B;
 }
 
 .navbar {
@@ -17,6 +18,7 @@
     top: 100px;
     z-index: 1;
     display: inline-block;
+    z-index: 100;
 }
 
 .navbar.arabic {
@@ -35,6 +37,7 @@
     align-items: flex-start;
     border-radius: 40px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
 }
 
 .navbar ul li {
@@ -63,6 +66,7 @@
     border-radius: 50px;
     position: relative;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
 }
 
 .navbar ul li:hover icon::after {
@@ -94,6 +98,7 @@
 
 .navbar ul li:hover:nth-child(4) icon::after {
     content: "English";
+
 }
 
 .navbar.arabic ul li:hover:nth-child(1) icon::after {

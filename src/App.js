@@ -14,7 +14,7 @@ function App() {
   const toggleLanguage = () => {
     // Function to toggle the language
     setLanguage(language === "ar" ? "en" : "ar");
-    console.log(language);
+    // console.log(language);
   };
 
   document.body.className = language === 'ar' ? 'arabic' : '';
@@ -28,7 +28,7 @@ function App() {
           <img src={img1} alt="" />
         </div>
         <div className="appContainer">
-          <NavBar language={language} toggleLanguage={toggleLanguage} />
+          <NavBar language={language} toggleLanguage={toggleLanguage} languageData={languageData} />
           <div className={`routes ${language === "ar" ? "arabic" : ""}`}>
             <Routes>
               <Route path="/" element={<Home language={language} languageData={languageData} />} />

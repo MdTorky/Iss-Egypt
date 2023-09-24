@@ -33,7 +33,7 @@
 
 .sideMenu.arabic .title {
     padding: 10px 10px 0 0;
-    border-top-right-radius: 30px;
+    border-top-right-radius: 10px;
     border-top-left-radius: 0;
     font-family: 'Cairo', sans-serif;
 
@@ -52,11 +52,25 @@
     width: 100%;
     padding: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.254);
+    background: inherit;
 }
 
-.sideMenu .people:last-child {
+
+
+/* .sideMenu .people:last-child {
     border-bottom: none;
+    border-radius: 10px;
 }
+
+.sideMenu .people:nth-child(2) {
+    background: var(--hover);
+    color: white;
+}
+
+.sideMenu .people:nth-child(2) .role {
+    color: rgba(227, 227, 227, 0.68);
+} */
+
 
 .peopleCard {
     display: flex;

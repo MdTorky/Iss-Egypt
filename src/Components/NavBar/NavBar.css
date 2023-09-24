@@ -1,14 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
-
-:root {
-    --theme: #F05454;
-    /* --hover: #30475E; */
-    --hover: #252525;
-    --bg: #E8F9FD;
-    --test: #122D4B;
-}
-
 .navbar {
     /* background: red; */
     position: fixed;
@@ -62,29 +51,37 @@
     /* transform: scale(1.1); */
     background: var(--hover);
     padding: 13px;
-    margin: auto;
     border-radius: 50px;
     position: relative;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-
 }
 
 .navbar ul li:hover icon::after {
+    content: attr(data-content);
     position: absolute;
     background: var(--hover);
     border-radius: 30px;
     padding: 0 10px;
     top: 15px;
-    font-size: 25px;
+    font-size: 20px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .navbar ul li:hover:nth-child(4) icon {
     font-size: 28px;
 }
 
+.navbar.arabic ul li:hover icon::after {
+    width: max-content;
+    font-size: 16px;
+    top: 16px;
+    font-family: 'Noto Kufi Arabic', sans-serif;
 
-.navbar ul li:hover:nth-child(1) icon::after {
+}
+
+/* .navbar ul li:hover:nth-child(1) icon::after {
     content: "Home";
 }
 
@@ -99,9 +96,9 @@
 .navbar ul li:hover:nth-child(4) icon::after {
     content: "English";
 
-}
+} */
 
-.navbar.arabic ul li:hover:nth-child(1) icon::after {
+/* .navbar.arabic ul li:hover:nth-child(1) icon::after {
     content: "الصفحة الرئيسية";
     width: max-content;
 
@@ -116,12 +113,10 @@
     content: "المعرض";
     width: max-content;
 
-}
+} */
 
 .navbar.arabic ul li:hover:nth-child(4) icon::after {
-    content: "عربي";
     width: max-content;
-
     /* display: none; */
 }
 
@@ -182,6 +177,9 @@
         justify-content: center;
         font-size: 8px;
         text-align: center;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
+        content: attr(data-content);
     }
 
     .navbar ul li:hover:nth-child(4) icon {
@@ -189,7 +187,14 @@
         background: none;
     }
 
-    .navbar ul li:nth-child(1) icon::after {
+    .navbar.navbar.arabic ul li icon::after {
+        font-family: 'Noto Kufi Arabic', sans-serif;
+        font-size: 6px;
+        font-weight: 500;
+
+    }
+
+    /* .navbar ul li:nth-child(1) icon::after {
         content: "Home";
     }
 
@@ -224,5 +229,5 @@
 
     .navbar.arabic ul li:nth-child(4) icon::after {
         content: "عربي";
-    }
+    } */
 }

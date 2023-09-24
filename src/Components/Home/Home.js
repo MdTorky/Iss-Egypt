@@ -4,7 +4,7 @@ import './Home.css';
 import { useLanguage } from '../../language';
 import Logo from './Logo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import the Logo component
-import { faArrowUp, faArrowDown, faTree } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUp, faArrowDown, faTree, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import images from '../../data/images.json';
 import { faFacebook, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
@@ -26,28 +26,28 @@ function Home({ language, languageData }) {
     // Define an array of objects with logo and text data
     const rows = [
         {
-            imgSrc: "https://drive.google.com/uc?export=view&id=1Vfiu3DK-3RM1f809nN3diCp3JF4PL5Ou",
+            imgSrc: images.presidentImg,
             text: languageText.President,
             name: languageText.PresidentName
         },
         {
-            imgSrc: "https://drive.google.com/uc?export=view&id=1mv16htDcHsPmq49GMV6rB-dFlJitpcHE",
+            imgSrc: images.vicePresidentImg,
             text: languageText.VicePresident,
             name: languageText.VicePresidentName
         },
         {
-            imgSrc: "https://media.licdn.com/dms/image/D5635AQF0MIeuBcl5Mg/profile-framedphoto-shrink_200_200/0/1685270083622?e=1695877200&v=beta&t=GeibXGb0ja1Pu01sujqekGljcF_crKJa-EQFmag6rg0",
+            imgSrc: images.academicPresident,
             text: languageText.Academic,
             name: languageText.AcademicName
 
         },
         {
-            imgSrc: "https://drive.google.com/uc?export=view&id=1syRLTGWu6_CrGM3s9XhQcCe5ZunzE2wZ",
+            imgSrc: images.socialPresident,
             text: languageText.Social,
             name: languageText.SocialName
         },
         {
-            imgSrc: "https://drive.google.com/uc?export=view&id=1RXetI-vSuvQCPYcvGg5C4qvRfFjAm08G",
+            imgSrc: images.culturePresident,
             text: languageText.Culture,
             name: languageText.CultureName
         },
@@ -63,7 +63,7 @@ function Home({ language, languageData }) {
             name: languageText.SportName
         },
         {
-            imgSrc: "https://drive.google.com/uc?export=view&id=1GV8vUzPG_jU-H5o9uj4hO8Fwb_N8iZ0E",
+            imgSrc: images.HR,
             text: languageText.HR,
             name: languageText.HRName
         },
@@ -155,6 +155,34 @@ function Home({ language, languageData }) {
 
 
 
+
+
+
+    function EventBoxTitle({ text, themeColor, isRtl }) {
+        return (
+            <h1>
+                {isRtl ? (
+                    <>
+                        {text.split(' ').slice(0, -1).join(' ')}
+                        <span style={{ color: themeColor }}>
+                            {text.split(' ').pop()}
+                        </span>
+                    </>
+                ) : (
+                    <>
+                        <span style={{ color: themeColor }}>
+                            {text.split(' ')[0]}
+                        </span>{' '}
+                        {text.split(' ').slice(1).join(' ')}
+                    </>
+                )}
+            </h1>
+        );
+    }
+
+
+
+
     return (
         <div className="home-container">
             <div className="homeWrapper">
@@ -219,23 +247,8 @@ function Home({ language, languageData }) {
 
                     {/* Academic Events */}
                     <div className="eventBox">
-                        <h1>
-                            {language === 'ar' ? (
-                                <>
-                                    {languageText.AcademicEvents.split(' ').slice(0, -1).join(' ')}
-                                    <span style={{ color: themeColor }}>
-                                        {languageText.AcademicEvents.split(' ').pop()}
-                                    </span>
-                                </>
-                            ) : (
-                                <>
-                                    <span style={{ color: themeColor }}>
-                                        {languageText.AcademicEvents.split(' ')[0]}
-                                    </span>{' '}
-                                    {languageText.AcademicEvents.split(' ').slice(1).join(' ')}
-                                </>
-                            )}
-                        </h1>
+                        <EventBoxTitle text={languageText.AcademicEvents} themeColor={themeColor} isRtl={isRtl} />
+
                         <div className="eventBox">
                             <div className="slide active">
                                 <img src={images.academicImg1} alt="" />
@@ -270,23 +283,9 @@ function Home({ language, languageData }) {
 
                     {/* Social Events */}
                     <div className="eventBox">
-                        <h1>
-                            {language === 'ar' ? (
-                                <>
-                                    {languageText.SocialEvents.split(' ').slice(0, -1).join(' ')}
-                                    <span style={{ color: themeColor }}>
-                                        {languageText.SocialEvents.split(' ').pop()}
-                                    </span>
-                                </>
-                            ) : (
-                                <>
-                                    <span style={{ color: themeColor }}>
-                                        {languageText.SocialEvents.split(' ')[0]}
-                                    </span>{' '}
-                                    {languageText.SocialEvents.split(' ').slice(1).join(' ')}
-                                </>
-                            )}
-                        </h1>
+
+                        <EventBoxTitle text={languageText.SocialEvents} themeColor={themeColor} isRtl={isRtl} />
+
                         <div className="eventBox">
                             <div className="slide2 active">
                                 <img src={images.socialImg1} alt="" />
@@ -321,23 +320,8 @@ function Home({ language, languageData }) {
 
                     {/* Cultural Events */}
                     <div className="eventBox">
-                        <h1>
-                            {language === 'ar' ? (
-                                <>
-                                    {languageText.CultureEvents.split(' ').slice(0, -1).join(' ')}
-                                    <span style={{ color: themeColor }}>
-                                        {languageText.CultureEvents.split(' ').pop()}
-                                    </span>
-                                </>
-                            ) : (
-                                <>
-                                    <span style={{ color: themeColor }}>
-                                        {languageText.CultureEvents.split(' ')[0]}
-                                    </span>{' '}
-                                    {languageText.CultureEvents.split(' ').slice(1).join(' ')}
-                                </>
-                            )}
-                        </h1>
+                        <EventBoxTitle text={languageText.CultureEvents} themeColor={themeColor} isRtl={isRtl} />
+
                         <div className="eventBox">
                             <div className="slide3 active">
                                 <img src={images.cultureImg1} alt="" />
@@ -372,16 +356,25 @@ function Home({ language, languageData }) {
                 </div>
 
 
-                <h1 className="connectTitle">Connect With Us</h1>
+                <h1 className="connectTitle">{languageText.connect}</h1>
                 <div className="connect">
                     <div className="socialBar">
-                        <a><div className="socialCircle facebook"><FontAwesomeIcon icon={faFacebook} className="facebook" /></div></a>
-                        <div className="socialCircle instagram"><FontAwesomeIcon icon={faInstagram} className="instagram" /></div>
-                        <div className="socialCircle youtube"><FontAwesomeIcon icon={faYoutube} className="youtube" /></div>
-                        <div className="socialCircle linkedIn"><FontAwesomeIcon icon={faLinkedin} className="linkedIn" /></div>
-                        <div className="socialCircle linktree"><FontAwesomeIcon icon={faTree} className="linktree" /></div>
+                        <a href="https://www.facebook.com/Eg.UTM"><div className="socialCircle facebook"><FontAwesomeIcon icon={faFacebook} className="facebook" /></div></a>
+                        <a href="https://www.instagram.com/issegypt/"><div className="socialCircle instagram"><FontAwesomeIcon icon={faInstagram} className="instagram" /></div></a>
+                        <a href="https://www.youtube.com/@issegypt7345"><div className="socialCircle youtube"><FontAwesomeIcon icon={faYoutube} className="youtube" /></div></a>
+                        <a href="https://www.linkedin.com/in/iss-egypt-utm-821447267/"><div className="socialCircle linkedIn"><FontAwesomeIcon icon={faLinkedin} className="linkedIn" /></div></a>
+                        <a href="https://linktr.ee/issegypt?utm_source=linktree_profile_share&ltsid=fd5e7ee8-41ba-4efa-bbc0-ac5f555b3edb"><div className="socialCircle linktree"><FontAwesomeIcon icon={faTree} className="linktree" /></div></a>
+                    </div>
+                    <div className="emailUs">
+                        <a href='mailto:issegypt0@gmail.com'>
+                            <button class="button" type="button">
+                                <span class="button__text">{languageText.email}</span>
+                                <span class="button__icon"><FontAwesomeIcon icon={faEnvelope} /></span>
+                            </button>
+                        </a>
                     </div>
                 </div>
+
             </div>
         </div >
     );

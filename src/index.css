@@ -7,6 +7,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap');
 
+:root {
+  /* --theme: #F05454; */
+  --theme: #DA0037;
+  /* --hover: #30475E; */
+  --hover: #252525;
+  --bg: #E8F9FD;
+  --test: #122D4B;
+}
+
+
 *::-webkit-scrollbar {
   width: 8px;
   border-radius: 20px

@@ -1,5 +1,7 @@
 {
   "en": {
+    "language": "English",
+
     "IssPres": "ISS Committee Presidents",
     "IssPres2": "Committee Presidents",
     "Egypt": "ISS Egypt",
@@ -43,7 +45,7 @@
     "linkedin": "LinkedIn",
     "linktree": "LinkTree",
     "home": "Home",
-    "about": "Services",
+    "services": "Services",
     "gallery": "Gallery",
     "rights": "\u00A9 2023 ISS-Egypt | All Rights Reserved",
     "together": "Together we ",
@@ -98,11 +100,15 @@
     "CultureEventDescription2": "Sheikh Ahmed Ali listed some images from the Messenger Muhammad's biography, may God bless him and grant him peace.",
 
     "CultureEventTitle3": "Ramadan Competition",
-    "CultureEventDescription3": "Three Ramadan contests were held: Quran Recitation, Cultural Competition (Seerah), and Nasheed (Islamic Song) with prizes for the winners."
+    "CultureEventDescription3": "Three Ramadan contests were held: Quran Recitation, Cultural Competition (Seerah), and Nasheed (Islamic Song) with prizes for the winners.",
+
+    "connect": "Connect With Us",
+    "email": "Email Us"
   },
   "ar": {
-    "IssPres": "رؤساء لجان الاتحاد",
+    "language": "عربي",
 
+    "IssPres": "رؤساء لجان الاتحاد",
     "IssPres2": "رؤساء اللجان",
     "Egypt": "الاتحاد المصري",
 
@@ -145,7 +151,7 @@
     "linkedin": "لينكدإن",
     "linktree": "لينك تري",
     "home": "الصفحة الرئيسية",
-    "about": "خدماتنا",
+    "services": "خدماتنا",
     "gallery": "المعرض",
     "rights": "\u00A9  ISS-Egypt 2023 | جميع الحقوق محفوظة",
     "together": "معا  ",
@@ -201,6 +207,9 @@
     "CultureEventDescription2": "قام الشيخ أحمد علي بسرد بعض الصور من سيرة الرسول محمد صلى الله عليه وسلم.",
 
     "CultureEventTitle3": "مسابقة رمضان",
-    "CultureEventDescription3": "أقيمت ثلاث مسابقات رمضانية: تلاوة القرآن الكريم، والمسابقة الثقافية (سيرة)، والأناشيد الإسلامية مع جوائز للفائزين."
+    "CultureEventDescription3": "أقيمت ثلاث مسابقات رمضانية: تلاوة القرآن الكريم، والمسابقة الثقافية (سيرة)، والأناشيد الإسلامية مع جوائز للفائزين.",
+
+    "connect": "تواصل معنا",
+    "email": "ارسل لنا"
   }
 }

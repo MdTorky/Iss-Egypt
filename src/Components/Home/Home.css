@@ -42,14 +42,17 @@
     margin: 0;
     font-size: 100px;
     color: transparent;
-    background: url(../../images/design.png);
+    background: url(../../images/design2.png);
     -webkit-background-clip: text;
     background-position: 0 0;
     visibility: visible;
     animation: animation 10s ease infinite, back 14s linear infinite;
     font-family: 'Poppins', sans-serif;
+}
 
-
+.arabic .homeWrapper span {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 5em
 }
 
 @keyframes back {
@@ -379,11 +382,19 @@
 
 }
 
-.eventBox .slide, .eventBox .slide2, .eventBox .slide3 {
+.eventBox .slide,
+.eventBox .slide2,
+.eventBox .slide3 {
     z-index: 1;
     position: absolute;
     /* width: 100%; */
     clip-path: circle(0% at 0 50%);
+}
+
+.arabic .eventBox .slide,
+.arabic .eventBox .slide2,
+.arabic .eventBox .slide3 {
+    clip-path: circle(0% at 100% 50%);
 }
 
 .eventBox h1 {
@@ -400,13 +411,24 @@
     color: gold;
 }
 
-.eventBox .slide.active, .eventBox .slide2.active, .eventBox .slide3.active {
+.eventBox .slide.active,
+.eventBox .slide2.active,
+.eventBox .slide3.active {
     transition: 2s;
     transition-property: clip-path;
     clip-path: circle(150% at 0 50%);
 }
 
-.eventBox .slide img, .eventBox .slide2 img, .eventBox .slide3 img {
+.arabic .eventBox .slide.active,
+.arabic.eventBox .slide2.active,
+.arabic .eventBox .slide3.active {
+    clip-path: circle(150% at 100% 50%);
+}
+
+
+.eventBox .slide img,
+.eventBox .slide2 img,
+.eventBox .slide3 img {
     width: 400px;
     height: 400px;
     z-index: 1;
@@ -541,10 +563,9 @@
 
 /* Connect With Us */
 .connect {
-    margin: 0px 80px 20px 20px;
+    margin: 0px 20px 20px 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: 2fr 1fr;
 }
 
 .connectTitle {
@@ -562,7 +583,7 @@
 }
 
 .connect .socialCircle {
-    background-color: var(--hover);
+    background: var(--hover);
     border-radius: 50%;
     width: 100px;
     display: flex;
@@ -574,28 +595,28 @@
     color: white;
     transition: 0.3s;
     cursor: pointer;
-    /* box-shadow: 3px 3px 15px var(--bg),
-        -3px -3px 15px rgb(115, 115, 115); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.connect .socialCircle.facebook {
-    background: #4867AA;
+.connect .socialCircle:hover.facebook {
+    color: #4867AA;
 }
 
-.connect .socialCircle.instagram {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+.connect .socialCircle:hover.instagram {
+    /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); */
+    color: #d6249f;
 }
 
-.connect .socialCircle.youtube {
-    background: #FE0000;
+.connect .socialCircle:hover.youtube {
+    color: #FE0000;
 }
 
-.connect .socialCircle.linkedIn {
-    background: #0077B5;
+.connect .socialCircle:hover.linkedIn {
+    color: #0077B5;
 }
 
-.connect .socialCircle.linktree {
-    background: #41DF5D;
+.connect .socialCircle:hover.linktree {
+    color: #41DF5D;
 }
 
 
@@ -605,7 +626,99 @@
     box-shadow: 0px 0px 6px 3px #00000027;
 }
 
+.connect .emailUs {
+    padding: 20px;
+}
 
+.connect .button {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: var(--hover);
+    overflow: hidden;
+    border-radius: 30px;
+    margin: auto;
+}
+
+.connect .button, .button__icon, .button__text {
+    transition: all 0.3s;
+}
+
+.connect a {
+    text-decoration: none;
+}
+
+.connect .button .button__text {
+    transform: translateX(22px);
+    color: var(--bg);
+    font-weight: 600;
+    font-size: 1.3em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.connect .button .button__icon {
+    position: absolute;
+    transform: translateX(200px);
+    height: 100%;
+    width: 90px;
+    background: var(--bg);
+    color: var(--hover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.connect .button:hover .button__text {
+    color: transparent;
+}
+
+.connect .button:hover .button__icon {
+    width: 300px;
+    transform: translateX(-10px);
+    color: var(--bg);
+    background: var(--hover);
+}
+
+.connect .button:active .button__icon {
+    background: var(--hover);
+    color: var(--bg)
+}
+
+.arabic .connectTitle {
+    margin: 120px 20px 20px 80px;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 600;
+}
+
+.arabic .connect .button .button__text {
+    transform: translateX(-22px);
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+.arabic .connect .button .button__icon {
+    transform: translateX(-200px);
+}
+
+.arabic .connect .button:hover .button__icon {
+    transform: translateX(10px);
+}
+
+
+
+
+
+
+.navbar ul li:nth-child(1) icon {
+    color: var(--hover)
+}
+
+.navbar ul li:nth-child(1) icon::after {
+    color: var(--bg)
+}
 
 /* Phone View */
 
@@ -614,7 +727,7 @@
     /* Animation Text */
 
     .homeWrapper {
-        margin: 0 auto 0 auto;
+        margin: -40px auto 0 auto;
         justify-content: center;
     }
 
@@ -635,8 +748,13 @@
 
     }
 
+    .arabic .homeWrapper {
+        margin: 0 auto 0 auto;
+    }
+
     .arabic .homeWrapper span {
-        font-family: 'Noto Kufi Arabic', sans-serif;
+        font-size: 30px;
+
     }
 
     @keyframes animation {
@@ -789,7 +907,7 @@
     /* Event */
     .events {
         grid-template-columns: repeat(1, 1fr);
-        margin: -100px auto 20px auto;
+        margin: -100px auto -20px auto;
         overflow: hidden;
     }
 
@@ -864,7 +982,7 @@
     }
 
     .arabic .events {
-        margin: -100px auto -20px auto;
+        margin: -100px auto -10px auto;
     }
 
     .arabic .eventBox .info h2 {
@@ -889,4 +1007,123 @@
     }
 
 
+
+
+    /* Connect with us */
+
+    .connect {
+        margin: 0px 20px 30% 20px;
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+
+    .connectTitle {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.323);
+        margin: 20px;
+        font-size: 1.2em;
+    }
+
+    .connect .socialBar {
+        padding: 5px;
+        gap: 10px;
+    }
+
+    .connect .socialCircle {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5em;
+    }
+
+    .connect .socialCircle.facebook {
+        background: #4867AA;
+    }
+
+    .connect .socialCircle.instagram {
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+        /* color: #d6249f; */
+    }
+
+    .connect .socialCircle.youtube {
+        background: #FE0000;
+    }
+
+    .connect .socialCircle.linkedIn {
+        background: #0077B5;
+    }
+
+    .connect .socialCircle.linktree {
+        background: #41DF5D;
+    }
+
+    .connect .socialCircle:hover {
+        background: var(--bg);
+        color: var(--hover);
+        box-shadow: 0px 0px 6px 3px #00000027;
+    }
+
+    .connect .emailUs {
+        padding: 20px 0 20px 0;
+    }
+
+    .connect .button {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        border-radius: 20px;
+        margin: 0;
+        background: var(--theme);
+        border: 2px solid var(--theme)
+    }
+
+    .connect .button .button__text {
+        font-size: 1.1em;
+    }
+
+    .connect .button .button__text {
+        transform: translateX(22%);
+    }
+
+    .connect .button .button__icon {
+        position: absolute;
+        transform: translateX(230%);
+        height: 100%;
+        width: 30%;
+        background: var(--bg);
+        color: var(--theme);
+        font-size: 25px;
+    }
+
+    .connect .button:hover .button__text {
+        color: transparent;
+    }
+
+    .connect .button:hover .button__icon {
+        width: 100%;
+        transform: translateX(0%);
+        background: var(--theme);
+    }
+
+    .connect .button:active .button__icon {
+        background: var(--hover);
+        color: var(--bg)
+    }
+
+
+    .arabic .connectTitle {
+        margin: 0px 20px 20px 20px;
+        font-weight: 600;
+    }
+
+    .arabic .connect .button .button__text {
+        transform: translateX(-22%);
+    }
+
+    .arabic .connect .button .button__icon {
+        transform: translateX(-230%);
+    }
+
+    .arabic .connect .button:hover .button__icon {
+        transform: translateX(0%);
+
+    }
 }

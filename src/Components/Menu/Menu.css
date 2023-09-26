@@ -11,6 +11,10 @@
     height: 100%;
 }
 
+.sideMenu.hidden {
+    display: none;
+}
+
 .sideMenu.arabic {
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
@@ -57,12 +61,12 @@
 
 
 
-/* .sideMenu .people:last-child {
+.sideMenu .people:last-child {
     border-bottom: none;
     border-radius: 10px;
 }
 
-.sideMenu .people:nth-child(2) {
+/* .sideMenu .people:nth-child(2) {
     background: var(--hover);
     color: white;
 }

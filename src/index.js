@@ -1,18 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './darkMode.css';
 import App from './App';
 import { LanguageProvider } from './language';
+import { DarkModeProvider } from './DarkModeContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
   //   <App />
   // </React.StrictMode>
-
-  <LanguageProvider>
-    <App />
-  </LanguageProvider>,
+  <DarkModeProvider> {/* Wrap your app with DarkModeProvider */}
+    <LanguageProvider>
+      <App />
+    </LanguageProvider>
+  </DarkModeProvider>,
   document.getElementById('root')
 );
 

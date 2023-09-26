@@ -4,9 +4,11 @@ import './Home.css';
 import { useLanguage } from '../../language';
 import Logo from './Logo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import the Logo component
-import { faArrowUp, faArrowDown, faTree, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import images from '../../data/images.json';
+import { faArrowUp, faArrowDown, faTree, faEnvelope, faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import images from '../../data/images.json';
+import link from '../../data/upcomingEvents.json'
+
 
 function Home({ language, languageData }) {
     const { toggleLanguage } = useLanguage();
@@ -156,6 +158,19 @@ function Home({ language, languageData }) {
 
 
 
+    function UpcomingEvent({ upcomingEventImg, upcomingEventSubtitle, upcomingEventDescription, eventLink }) {
+        return (<div className="blogItem">
+            <img src={upcomingEventImg} alt="" />
+            <div className="line">
+                <p className="subtitle">{upcomingEventSubtitle}</p>
+                <a target="_blank" href={eventLink}><button>{languageText.calender} <FontAwesomeIcon icon={faCalendarDays} /></button></a>
+            </div>
+            <h2 className="description">{upcomingEventDescription}</h2>
+        </div>
+        )
+    }
+
+
 
 
     function EventBoxTitle({ text, themeColor, isRtl }) {
@@ -185,6 +200,7 @@ function Home({ language, languageData }) {
 
     return (
         <div className="home-container">
+
             <div className="homeWrapper">
                 <p>{languageText.together}</p>
                 <div className="words">
@@ -231,16 +247,26 @@ function Home({ language, languageData }) {
                         </div>
                     </div>
                     <div className="blogContainer2">
-                        <div className="blogItem">
+                        {/* <div className="blogItem">
                             <img src={images.upcomingEventImg1} alt="" />
-                            <p className="subtitle">{languageText.upcomingEventSubtitle1}</p>
+                            <div className="line">
+                                <p className="subtitle">{languageText.upcomingEventSubtitle1}</p>
+                                <button>Add</button>
+                            </div>
                             <h2 className="description">{languageText.upcomingEventDescription1}</h2>
-                        </div>
-                        <div className="blogItem">
-                            <img src={images.upcomingEventImg2} alt="" />
-                            <p className="subtitle">{languageText.upcomingEventSubtitle2}</p>
-                            <h2 className="description">{languageText.upcomingEventDescription2}</h2>
-                        </div>
+                        </div> */}
+                        <UpcomingEvent
+                            upcomingEventImg={link.upcomingEventImg1}
+                            upcomingEventSubtitle={languageText.upcomingEventSubtitle1}
+                            upcomingEventDescription={languageText.upcomingEventDescription1}
+                            eventLink={link.upcomingEventLink1}
+                        />
+                        <UpcomingEvent
+                            upcomingEventImg={link.upcomingEventImg2}
+                            upcomingEventSubtitle={languageText.upcomingEventSubtitle2}
+                            upcomingEventDescription={languageText.upcomingEventDescription2}
+                            eventLink={link.upcomingEventLink2}
+                        />
                     </div>
                 </div>
                 <div className="events">

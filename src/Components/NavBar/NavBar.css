@@ -1,7 +1,7 @@
 .navbar {
     /* background: red; */
     position: fixed;
-    width: 5%;
+    width: 3%;
     margin: 50px 0 0 30px;
     padding: 10px;
     top: 100px;
@@ -18,13 +18,14 @@
 .navbar ul {
     background: var(--theme);
     margin: 0;
+    width: 100%;
     height: 400px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    border-radius: 40px;
+    border-radius: 100px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
 }
@@ -33,11 +34,21 @@
     list-style: none;
     margin: auto;
     cursor: pointer;
+    /* background: blue; */
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transition: all 0.3s;
+    padding: 2px;
+
 }
 
 
+
 .navbar ul li icon {
-    color: white;
+    color: var(--bg);
     font-size: 25px;
     transition: all 0.3s;
 }
@@ -46,11 +57,10 @@
     text-decoration: none;
 }
 
-.navbar ul li:hover icon {
-    font-size: 30px;
-    /* transform: scale(1.1); */
+.navbar ul li:hover {
+    /* font-size: 30px; */
+    transform: scale(1.4);
     background: var(--hover);
-    padding: 13px;
     border-radius: 50px;
     position: relative;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -61,72 +71,166 @@
     position: absolute;
     background: var(--hover);
     border-radius: 30px;
-    padding: 0 10px;
-    top: 15px;
-    font-size: 20px;
+    padding: 0 7px;
+    /* top: 15px; */
+    top: 10px;
+    left: 31.5px;
+    font-size: 15px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     font-family: 'Poppins', sans-serif;
+    z-index: -1;
 
 }
 
-.navbar ul li:hover:nth-child(4) icon {
-    font-size: 28px;
+.navbar ul li:nth-child(4) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.navbar ul li:hover:nth-child(4) {
+    font-size: 25px;
 }
 
 .navbar.arabic ul li:hover icon::after {
     width: max-content;
-    font-size: 16px;
-    top: 16px;
+    font-size: 12px;
+    top: 12px;
+    right: 32px;
     font-family: 'Noto Kufi Arabic', sans-serif;
 
 }
 
-/* .navbar ul li:hover:nth-child(1) icon::after {
-    content: "Home";
+
+.navbar ul li.active {
+    background: var(--bg);
+    border-radius: 20px;
 }
 
-.navbar ul li:hover:nth-child(2) icon::after {
-    content: "Services";
+.navbar ul li.active icon {
+    color: var(--hover);
 }
 
-.navbar ul li:hover:nth-child(3) icon::after {
-    content: "Gallery";
+.navbar ul li.active icon:hover::after {
+    color: var(--hover);
+    background: var(--bg);
 }
 
-.navbar ul li:hover:nth-child(4) icon::after {
-    content: "English";
-
-} */
-
-/* .navbar.arabic ul li:hover:nth-child(1) icon::after {
-    content: "الصفحة الرئيسية";
-    width: max-content;
-
+.navbar ul li:hover.active icon {
+    color: var(--hover);
 }
 
-.navbar.arabic ul li:hover:nth-child(2) icon::after {
-    content: "خدماتنا";
-    width: max-content;
-}
 
-.navbar.arabic ul li:hover:nth-child(3) icon::after {
-    content: "المعرض";
-    width: max-content;
-
-} */
-
-.navbar.arabic ul li:hover:nth-child(4) icon::after {
-    width: max-content;
-    /* display: none; */
+.navbar ul li:hover:last-child {
+    background: none;
+    box-shadow: none;
 }
 
 
 
 
+.theme__fill,
+.theme__icon {
+    transition: 0.3s;
+}
 
-@media screen and (max-width: 900px) {
+
+.theme__label,
+.theme__toggle,
+.theme__toggle-wrap {
+    position: relative;
+}
+
+.theme__toggle,
+.theme__toggle:before {
+    display: block;
+}
+
+.theme__toggle {
+    background-color: hsl(48, 90%, 85%);
+    border-radius: 25% / 50%;
+    box-shadow: 0 0 0 0.125em var(--primaryT);
+    padding: 0.25em;
+    width: 3.5em;
+    height: 2em;
+    -webkit-appearance: none;
+    appearance: none;
+    transition: background-color var(--transDur) ease-in-out,
+        box-shadow 0.15s ease-in-out,
+        transform var(--transDur) ease-in-out;
+}
+
+.theme__toggle:before {
+    background-color: hsl(48, 90%, 55%);
+    border-radius: 50%;
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    transition: 0.3s;
+}
+
+.theme__toggle:focus {
+    box-shadow: 0 0 0 0.125em var(--primary);
+    outline: transparent;
+}
+
+/* Checked */
+.theme__toggle:checked {
+    background-color: hsl(198, 90%, 15%);
+}
+
+.theme__toggle:checked:before,
+.theme__toggle:checked~.theme__icon {
+    transform: translateX(1.4em) translateY(-0.1em);
+}
+
+.theme__toggle:checked:before {
+    background-color: hsl(198, 90%, 55%);
+}
+
+.theme__toggle:checked~.theme__fill {
+    transform: translateX(0);
+}
+
+.theme__toggle:checked~.theme__icon .theme__icon-part:nth-child(1) {
+    box-shadow: 0.2em -0.2em 0 0.2em hsl(0, 0%, 100%) inset;
+    transform: scale(1);
+    top: 0.2em;
+    left: -0.2em;
+}
+
+.theme__toggle:checked~.theme__icon .theme__icon-part~.theme__icon-part {
+    opacity: 0;
+}
+
+.theme__toggle-wrap {
+    margin: 0 0.75em;
+}
+
+@supports selector(:focus-visible) {
+    .theme__toggle:focus {
+        box-shadow: 0 0 0 0.125em var(--primaryT);
+    }
+
+    .theme__toggle:focus-visible {
+        box-shadow: 0 0 0 0.125em var(--primary);
+    }
+}
+
+.arabic .theme__toggle:checked:before,
+.arabic .theme__toggle:checked~.theme__icon {
+    transform: translateX(-1.4em) translateY(-0.04em);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
     .navbar {
-        width: 90%;
+        display: flex;
+        width: 80%;
         margin: 0 auto 0 auto;
         box-sizing: border-box;
         padding: 0;
@@ -137,7 +241,7 @@
     }
 
     .navbar.arabic {
-        width: 90%;
+        width: 80%;
         margin: 0 auto 0 auto;
         box-sizing: border-box;
         padding: 0;
@@ -161,6 +265,14 @@
         display: none;
     }
 
+    .navbar ul li {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+    }
+
     .navbar ul li:hover icon {
         font-size: 23px;
         background: none;
@@ -169,65 +281,84 @@
         border-radius: none;
         position: relative;
         box-shadow: none;
+    }
+
+    .navbar ul li:hover {
+        box-shadow: none;
+        background: none;
 
     }
+
+
 
     .navbar ul li icon::after {
         display: flex;
         justify-content: center;
         font-size: 8px;
         text-align: center;
-        font-weight: 800;
+        font-weight: 700;
         font-family: 'Poppins', sans-serif;
         content: attr(data-content);
+        margin-bottom: 7px;
+        white-space: nowrap;
+    }
+
+    .navbar ul li.active {
+        background: none;
+        border-radius: 15px;
+    }
+
+    .navbar ul li.active icon::after {
+        color: var(--hover);
+        background: none;
+
+        /* display: none; */
     }
 
     .navbar ul li:hover:nth-child(4) icon {
-        font-size: 23px;
+        font-size: 20px;
         background: none;
-    }
-
-    .navbar.navbar.arabic ul li icon::after {
-        font-family: 'Noto Kufi Arabic', sans-serif;
-        font-size: 6px;
         font-weight: 500;
-
-    }
-
-    /* .navbar ul li:nth-child(1) icon::after {
-        content: "Home";
-    }
-
-    .navbar ul li:nth-child(2) icon::after {
-        content: "Services";
-    }
-
-    .navbar ul li:nth-child(3) icon::after {
-        content: "Gallery";
-    }
-
-    .navbar ul li:nth-child(4) icon::after {
-        content: "English";
-    }
-
-    .navbar.arabic ul li:nth-child(1) icon::after {
-        content: "الصفحة الرئيسية";
-        width: max-content;
-
-    }
-
-    .navbar.arabic ul li:nth-child(2) icon::after {
-        content: "خدماتنا";
-        width: max-content;
-    }
-
-    .navbar.arabic ul li:nth-child(3) icon::after {
-        content: "المعرض";
-        width: max-content;
+        top: -10px;
+        font-family: 'Poppins', sans-serif;
 
     }
 
     .navbar.arabic ul li:nth-child(4) icon::after {
-        content: "عربي";
-    } */
+        font-family: 'Noto Kufi Arabic', sans-serif;
+        font-size: 7px;
+        font-weight: 500;
+        white-space: nowrap;
+        margin-bottom: 15px;
+    }
+
+    .navbar ul li:nth-child(4) icon::after {
+        margin-bottom: 10px;
+        margin-top: -6px;
+    }
+
+    .theme__toggle {
+        padding: 0.25em;
+        width: 2em;
+        height: 1em;
+        margin-bottom: 10px;
+    }
+
+    .theme__toggle:before {
+        width: 0.5em;
+        height: 0.5em;
+    }
+
+    .theme__toggle:checked:before,
+    .theme__toggle:checked~.theme__icon {
+        transform: translateX(1em) translateY(-0.04em);
+    }
+
+    .arabic .theme__toggle:checked:before,
+    .arabic .theme__toggle:checked~.theme__icon {
+        transform: translateX(-1em) translateY(-0.04em);
+    }
+
+
+
 }

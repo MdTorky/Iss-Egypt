@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "abb": "FKE",
+    "email": "fke@utm.my",
+    "image": "ss"
+  },
+  {
+    "id": 2,
+    "abb": "FC",
+    "email": "computing@utm.my"
+  },
+  {
+    "id": 3,
+    "abb": "FKA",
+    "email": "fka@utm.my"
+  },
+  {
+    "id": 4,
+    "abb": "FKM",
+    "email": "fkm@utm.my"
+  },
+  {
+    "id": 5,
+    "abb": "FKT",
+    "email": "fcee@utm.my"
+  },
+  {
+    "id": 6,
+    "abb": "FKE",
+    "email": "utmidp@utmspace.edu.my"
+  }
+]

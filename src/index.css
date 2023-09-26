@@ -14,7 +14,11 @@
   --hover: #252525;
   --bg: #E8F9FD;
   --test: #122D4B;
+  --bg2: rgb(255, 255, 255);
+  --hover2: #353535;
+
 }
+
 
 
 *::-webkit-scrollbar {
@@ -46,6 +50,7 @@ body {
   /* font-family: 'Poppins', sans-serif; */
   font-family: 'Rubik', sans-serif;
 }
+
 
 .appContainer {
   display: flex;

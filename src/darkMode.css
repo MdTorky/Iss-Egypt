@@ -1,0 +1,213 @@
+body.dark-mode {
+    background: var(--hover);
+    color: var(--bg);
+}
+
+/* NavBar */
+
+.dark-mode .logo {
+    background: var(--hover);
+}
+
+.dark-mode .navbar ul li icon {
+    color: var(--hover);
+}
+
+.dark-mode .navbar ul li:hover icon {
+    color: var(--hover);
+}
+
+.dark-mode .navbar ul li:hover {
+    background: var(--bg);
+    /* border-left: 2px dashed var(--bg);
+    border-bottom: 2px solid var(--bg);
+    border-top: 2px solid var(--bg); */
+}
+
+.dark-mode .navbar ul li:hover icon::after {
+    background: var(--bg);
+    /* border-right: 2px solid var(--hover);
+    border-bottom: 1px solid var(--hover);
+    border-top: 1px solid var(--hover); */
+}
+
+.dark-mode .navbar ul li.active {
+    background: var(--hover);
+    border-radius: 25px;
+
+}
+
+
+.dark-mode .navbar ul li.active icon {
+    color: var(--bg);
+
+}
+
+.dark-mode .navbar ul li.active icon::after {
+    color: var(--bg);
+    /* display: none; */
+}
+
+.dark-mode .navbar ul li.active icon:hover::after {
+    color: var(--bg);
+    background: var(--hover);
+}
+
+.dark-mode .navbar ul li:hover.active icon {
+    color: var(--bg);
+
+}
+
+
+
+/* Side Menu */
+
+.dark-mode .sideMenu {
+    background: var(--hover);
+    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
+}
+
+.dark-mode .sideMenu .title {
+    color: var(--hover);
+    background: var(--bg);
+}
+
+.dark-mode .sideMenu .title h3 {
+    color: rgba(0, 0, 0, 0.543);
+}
+
+.dark-mode .sideMenu .people {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.254);
+}
+
+
+
+
+/* Home */
+
+.dark-mode .homeWrapper p {
+    color: var(--bg);
+}
+
+.dark-mode .homeWrapper span {
+    color: var(--theme);
+}
+
+.dark-mode .nameTitle {
+    border-bottom: 1px solid var(--bg);
+    /* opacity: 0.9; */
+}
+
+.dark-mode .row .rowCircle {
+    box-shadow: rgba(255, 255, 255, 0.34) 0px 3px 8px;
+}
+
+.dark-mode .homeBoxes .homeTitle {
+    /* border-bottom: 1px solid var(--bg); */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.323);
+
+}
+
+.dark-mode .blog .blogContainer {
+    /* border-bottom: 1px solid var(--bg); */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.323);
+
+}
+
+.dark-mode .blogContainer2 {
+    /* border-bottom: 1px solid var(--bg); */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.323);
+
+}
+
+.dark-mode .blogContainer2 .blogItem .line button {
+    color: var(--bg);
+    border: 1px solid var(--bg);
+}
+
+.dark-mode .blogContainer2 .blogItem .line button:hover {
+    background: var(--bg);
+    color: var(--hover);
+    border: 1px solid var(--bg);
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+.dark-mode .eventBox h1 {
+    color: var(--bg);
+}
+
+.dark-mode .connectTitle {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.323);
+}
+
+.dark-mode .connect .socialCircle {
+    background: var(--bg);
+    color: var(--hover);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+.dark-mode .connect .socialCircle:hover {
+    background: var(--hover);
+    color: var(--bg);
+    box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .connect .button {
+    background: var(--bg);
+}
+
+.dark-mode .connect .button .button__text {
+    color: var(--hover);
+}
+
+.dark-mode .connect .button .button__icon {
+    background: var(--hover);
+    color: var(--bg);
+}
+
+.dark-mode .connect .button:hover .button__icon {
+    color: var(--hover);
+    background: var(--bg);
+}
+
+.dark-mode .connect .button:active .button__icon {
+    background: var(--bg);
+    color: var(--hover)
+}
+
+
+
+
+
+
+/* Services */
+
+
+.dark-mode .services .annContainer .annStories .story {
+    background: var(--hover);
+}
+
+.dark-mode .services .annContainer .annStories .story::before {
+    border: 2px solid var(--bg);
+}
+
+.dark-mode .services .annContainer .annStories .story img {
+    background: var(--bg);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+    .dark-mode .navbar ul li.active icon::after {
+        color: var(--bg);
+    }
+
+    .dark-mode .navbar ul li.active {
+        background: none;
+    }
+}

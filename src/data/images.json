@@ -7,9 +7,6 @@
 
   "HR": "https://drive.google.com/uc?export=view&id=1GV8vUzPG_jU-H5o9uj4hO8Fwb_N8iZ0E",
 
-  "upcomingEventImg1": "https://drive.google.com/uc?export=view&id=1IdwpNokC5ILvmZne9L5rmb7PeCwZUk3i",
-  "upcomingEventImg2": "https://drive.google.com/uc?export=view&id=1GoI8_VNOFe_AqNjz6pQqFgWpZe_qw_xb",
-
   "achievementImg": "https://drive.google.com/uc?export=view&id=1ebPb8_uFXp_7RrmCk5y-ImZyAictfWSC",
 
   "academicImg1": "https://drive.google.com/uc?export=view&id=1GoI8_VNOFe_AqNjz6pQqFgWpZe_qw_xb",
@@ -22,5 +19,11 @@
 
   "cultureImg1": "https://drive.google.com/uc?export=view&id=10cUQEcSSj4D2536bCRDQFlAQwMduOSMx",
   "cultureImg2": "https://drive.google.com/uc?export=view&id=1Fu3c7OfUAy45xjNZywXYisrVUIxhQt0x",
-  "cultureImg3": "https://drive.google.com/uc?export=view&id=1TLS0ANaqkxE3RBDiAzyOfu6k1YZnv_DN"
+  "cultureImg3": "https://drive.google.com/uc?export=view&id=1TLS0ANaqkxE3RBDiAzyOfu6k1YZnv_DN",
+
+  "academicAnnouncement": "https://drive.google.com/uc?export=view&id=13ZeAu6UtHJ8OCCZR7sfvSR7udRJ_lhOX",
+  "socialAnnouncement": "https://drive.google.com/uc?export=view&id=1NbYyLPBApcG4hLkrGj7gK0Crou_dicNR",
+  "cultureAnnouncement": "https://drive.google.com/uc?export=view&id=1q90dmiaZ_oKqzCjvlsQ19p7yy20q1fga",
+
+  "otherAnnouncement": "https://drive.google.com/uc?export=view&id=10C-5monaYKKTJGl-ywmBgiGucUc1V8s7"
 }

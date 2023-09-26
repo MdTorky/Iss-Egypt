@@ -53,6 +53,8 @@
     "succeed": "succeed",
     "rejoice": "rejoice",
     "advance": "advance",
+    "calender": "Add A Reminder",
+    "info": "Know More",
 
     "achievements": "The Committees' Achievements",
     "blogSubtitle": "ISS Egypt Welcome Party",
@@ -60,12 +62,6 @@
     "blogTitle2": "International Student Society (ISS)",
     "blogTitle3": "Egypt Achievements",
     "blogDescription": "The International Student Society (ISS) Egypt has truly made remarkable strides in fostering a vibrant and inclusive community, leaving an indelible mark on the academic and social landscape. Through a rich tapestry of events and initiatives, ISS Egypt has demonstrated unwavering dedication to its members and the broader community. From meticulously organized academic symposiums that ignite intellectual curiosity to culturally enriching gatherings that celebrate diversity, ISS Egypt has showcased an impressive range of accomplishments. Their commitment to newcomers is especially noteworthy, as they extend a warm embrace to new students, easing their transition into the academic world. Moreover, during the sacred month of Ramadan, ISS Egypt's events have created a sense of togetherness and spirituality, embodying the essence of unity. Additionally, their Islamic events have served as platforms for deepening faith and understanding. In sum, ISS Egypt's achievements in organizing social, academic, cultural events, as well as their dedicated support for newcomers and the observance of important traditions, exemplify their outstanding commitment to fostering a vibrant and harmonious community.",
-
-    "upcomingEventSubtitle1": "Upcoming Event Name 1",
-    "upcomingEventDescription1": "Upcoming Event Description 1",
-
-    "upcomingEventSubtitle2": "Upcoming Event Name 2",
-    "upcomingEventDescription2": "Upcoming Event Description 2",
 
     "AcademicEvents": "Academic Committee Events",
     "AcademicEventTitle1": "PCB Workshop 2023",
@@ -103,7 +99,36 @@
     "CultureEventDescription3": "Three Ramadan contests were held: Quran Recitation, Cultural Competition (Seerah), and Nasheed (Islamic Song) with prizes for the winners.",
 
     "connect": "Connect With Us",
-    "email": "Email Us"
+    "email": "Email Us",
+
+    "upcomingEventSubtitle1": "Upcoming Event Name 1",
+    "upcomingEventDescription1": "Upcoming Event Description 1",
+
+    "upcomingEventSubtitle2": "Upcoming Event Name 2",
+    "upcomingEventDescription2": "Upcoming Event Description 2",
+
+    "academicAnnouncementOrganizer": "Academic Committee Event",
+    "socialAnnouncementOrganizer": "Social Committee Event",
+    "cultureAnnouncementOrganizer": "Cultural Committee Event",
+    "otherAnnouncementOrganizer": "ISS Egypt Event",
+
+    "FKE": "Electrical Engineering",
+    "FC": "Computing",
+    "FKA": "Civil Engineering",
+    "FKM": "Mechanical Engineering",
+    "FKT": "Chemical Engineering",
+    "Found": "Bridging & Foundation",
+
+    "announcements": "Announcements",
+
+    "announcementTitle1": "Solidworks Workshop",
+    "announcementTitle2": "",
+    "announcementTitle3": "",
+    "announcementTitle4": "",
+    "announcementTitle5": "",
+    "announcementTitle6": "",
+    "announcementTitle7": "",
+    "announcementTitle8": ""
   },
   "ar": {
     "language": "عربي",
@@ -159,6 +184,8 @@
     "succeed": "ننجح",
     "rejoice": "نسعد",
     "advance": "نتقدم",
+    "calender": "إضافة تذكير",
+    "info": "تعرف على المزيد",
 
     "achievements": "إنجازات الاتحاد",
 
@@ -167,12 +194,6 @@
     "blogTitle2": "اتحاد الطلبة ",
     "blogTitle3": "المصريين",
     "blogDescription": "لقد أظهر الاتحاد المصري خطوات ملحوظة في تعزيز مجتمع نابض بالحياة وشامل، مما ترك علامة لا تمحى على المشهد الأكاديمي والاجتماعي. ومن خلال نسيج غني من الأحداث والمبادرات، أظهر الاتحاد تفانيًا لا يتزعزع تجاه أعضائها والمجتمع الأوسع. بدءًا من الندوات الأكاديمية المنظمة بدقة والتي تثير الفضول الفكري وحتى التجمعات الغنية ثقافيًا والتي تحتفي بالتنوع، عرض الاتحاد مجموعة رائعة من الإنجازات و التزامهم تجاه الطلاب الجدد جدير بالملاحظة بشكل خاص، حيث يقدمون احتضانًا دافئًا للطلاب الجدد، مما يسهل انتقالهم إلى العالم الأكاديمي. علاوة على ذلك، خلال شهر رمضان المبارك، أحدث الاتحاد شعورًا بالروحانيات الدينية، مما يجسد جوهر الوحدة. بالإضافة إلى ذلك، كانت مناسباتهم الإسلامية بمثابة منصات لتعميق الإيمان والتفاهم. باختصار، إن إنجازات الاتحاد في تنظيم الفعاليات الاجتماعية والأكاديمية والثقافية، فضلاً عن دعمهم المتفاني للوافدين الجدد ومراعاة التقاليد المهمة، تجسد التزامهم المتميز بتعزيز مجتمع نابض بالحياة ومتناغم.",
-
-    "upcomingEventSubtitle1": "اسم الحدث القادم 1",
-    "upcomingEventDescription1": "وصف الحدث القادم 1",
-
-    "upcomingEventSubtitle2": "اسم الحدث القادم 2",
-    "upcomingEventDescription2": "وصف الحدث القادم 2",
 
     "AcademicEvents": "فعاليات اللجنة  الأكاديمية",
     "AcademicEventTitle1": "ورشة لوحات الدوائر المطبوعة 2023",
@@ -210,6 +231,28 @@
     "CultureEventDescription3": "أقيمت ثلاث مسابقات رمضانية: تلاوة القرآن الكريم، والمسابقة الثقافية (سيرة)، والأناشيد الإسلامية مع جوائز للفائزين.",
 
     "connect": "تواصل معنا",
-    "email": "ارسل لنا"
+    "email": "ارسل لنا",
+
+    "upcomingEventSubtitle1": "اسم الحدث القادم 1",
+    "upcomingEventDescription1": "وصف الحدث القادم 1",
+
+    "upcomingEventSubtitle2": "اسم الحدث القادم 2",
+    "upcomingEventDescription2": "وصف الحدث القادم 2",
+
+    "academicAnnouncementOrganizer": "فعالية للجنة الأكاديمية",
+    "socialAnnouncementOrganizer": "فعالية للجنة الاجتماعية",
+    "cultureAnnouncementOrganizer": "فعالية للجنة الثقافية",
+    "otherAnnouncementOrganizer": "فعالية للاتحاد المصري",
+
+    "announcements": "الإعلانات",
+
+    "announcementTitle1": "ورشة عمل سوليدووركس",
+    "announcementTitle2": "",
+    "announcementTitle3": "",
+    "announcementTitle4": "",
+    "announcementTitle5": "",
+    "announcementTitle6": "",
+    "announcementTitle7": "",
+    "announcementTitle8": ""
   }
 }

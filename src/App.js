@@ -1,44 +1,62 @@
-import Footer from './Components/Footer/Footer';
-import NavBar from './Components/NavBar/NavBar';
-import img1 from './images/logo.png';
-import { useState } from 'react'; // Import the LTR stylesheet // Import useState from React
-import languageData from './language.json';
-import { Routes, Route, BrowserRouter as Router } from 'react-router-dom'; // Import BrowserRouter and Route
+import React, { useState, useEffect } from 'react';
+import { Routes, Route, BrowserRouter as Router } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Menu from './Components/Menu/Menu';
-
+import Services from './Components/Services/Services';
+import NavBar from './Components/NavBar/NavBar';
+import Footer from './Components/Footer/Footer';
+import img1 from './images/logo.png';
+import languageData from './language.json';
+import { useDarkMode } from './DarkModeContext';
 
 function App() {
-  const [language, setLanguage] = useState("en"); // Initialize the language state in App.js
+  // Initialize the language state with the default language (e.g., "en")
+  const [language, setLanguage] = useState(localStorage.getItem('selectedLanguage') || 'en');
+  const { darkMode, setDarkMode } = useDarkMode(); // Initialize to false
 
-  const toggleLanguage = () => {
-    // Function to toggle the language
-    setLanguage(language === "ar" ? "en" : "ar");
-    // console.log(language);
+  const toggleDarkMode = () => {
+    // Toggle the dark mode state and it will automatically be saved to local storage
+    setDarkMode(!darkMode);
   };
 
-  document.body.className = language === 'ar' ? 'arabic' : '';
 
+  // Function to toggle the language
+  const toggleLanguage = () => {
+    // Toggle the language and save it to localStorage
+    const newLanguage = language === 'ar' ? 'en' : 'ar';
+    setLanguage(newLanguage);
+    localStorage.setItem('selectedLanguage', newLanguage);
+  };
 
+  // Set the document body class based on the selected language and dark mode
+  useEffect(() => {
+    document.body.className = `${language === 'ar' ? 'arabic' : ''} ${darkMode ? 'dark-mode' : ''}`;
+  }, [language, darkMode]);
 
   return (
     <Router>
-      <div className={`App ${language === "ar" ? "arabic" : ""}`}>
+      <div className={`App ${language === 'ar' ? 'arabic' : ''}`}>
         <div className="logo">
           <img src={img1} alt="" />
         </div>
         <div className="appContainer">
-          <NavBar language={language} toggleLanguage={toggleLanguage} languageData={languageData} />
-          <div className={`routes ${language === "ar" ? "arabic" : ""}`}>
+          <NavBar
+            language={language}
+            toggleLanguage={toggleLanguage}
+            languageData={languageData}
+            darkMode={darkMode}
+            toggleDarkMode={toggleDarkMode}
+          />
+          <div className={`routes ${language === 'ar' ? 'arabic' : ''}`}>
             <Routes>
               <Route path="/" element={<Home language={language} languageData={languageData} />} />
+              <Route path="/services" element={<Services language={language} languageData={languageData} />} />
+
             </Routes>
           </div>
           <Menu language={language} languageData={languageData} />
         </div>
         <Footer language={language} languageData={languageData} />
-
-
       </div>
     </Router>
   );

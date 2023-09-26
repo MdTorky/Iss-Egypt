@@ -1,0 +1,715 @@
+.services {
+    margin-bottom: 40%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    /* gap: 200px; */
+    gap: 1070px;
+}
+
+.arabic .services {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+
+/* Right Container */
+
+.services .annContainer {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg2);
+    padding: 10px;
+    border-radius: 20px;
+    /* width: 70%; */
+}
+
+
+.services .annContainer .annStories {
+    display: flex;
+    gap: 50px;
+}
+
+.services .annContainer .annStories .story {
+    background: var(--bg);
+    border-radius: 25px;
+    padding: 5px;
+    display: flex;
+    cursor: pointer;
+    position: relative
+}
+
+.services .annContainer .annStories .story::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid var(--hover);
+    border-radius: 25px;
+}
+
+.services .annContainer .annStories .story:hover::before {
+    animation: spin 0.8s linear infinite;
+}
+
+
+.services .annContainer .annStories .story.active::before {
+    animation: spin 1s linear infinite;
+}
+
+
+.services .annContainer .annStories .story img {
+    width: 60px;
+    background: var(--hover);
+    border-radius: 20px;
+    z-index: 1;
+    /* Ensure the image appears above the pseudo-element */
+}
+
+
+
+@keyframes spin {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+
+
+
+/* Left Container */
+.services .leftContainer {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg2);
+    border-radius: 20px;
+    padding: 20px;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+.services .leftContainer .collegesBoxTitle {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+    border-radius: 20px;
+    padding: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.services .leftContainer .collegesBoxTitle h2 {
+    font-size: 1.2em
+}
+
+.services .leftContainer .collegesBoxTitle .collegesBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.college {
+    width: 100%;
+    max-width: 390px;
+    height: 70px;
+    /* background: #353535; */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    backdrop-filter: blur(10px);
+    transition: 0.5s ease-in-out;
+}
+
+
+.college:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.college .img {
+    width: 70px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hover);
+    /* background: linear-gradient(var(--theme), var(--hover)); */
+    background: var(--bg2);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.college:hover>.img {
+    transition: 0.5s ease-in-out;
+    background: var(--hover);
+    color: var(--bg);
+
+
+}
+
+.college .textBox {
+    width: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-family: 'Poppins'sans-serif;
+    justify-content: space-between;
+    width: 100%
+}
+
+.college .textContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.college .span {
+    margin: 0;
+    font-size: 0.8em;
+    background: var(--hover);
+    color: var(--bg);
+    border-radius: 5px;
+    padding: 1px 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+
+
+.college .h1 {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.college .p {
+    font-size: 12px;
+    font-weight: lighter;
+    margin: 0;
+
+}
+
+
+
+
+
+
+
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg);
+    width: 15%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 20px;
+    z-index: 9999;
+    display: none;
+    border-radius: 30px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.popup-opening {
+    display: block;
+    animation: popup-open 0.5s ease-in-out forwards;
+}
+
+.popup-closing {
+    opacity: 0;
+    transform: scale(0.8) translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+@keyframes popup-open {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translate(-50%, -50%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translate(-50%, -50%);
+    }
+}
+
+@keyframes popup-close {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.8);
+        display: none;
+    }
+}
+
+.popup.show {
+    display: block;
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.topContent {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    height: 80%;
+    justify-content: space-between;
+
+
+}
+
+
+.topContent img {
+    width: 50px;
+    height: 50px;
+    background: var(--bg);
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+}
+
+.topContent .topText {
+    /* background: red; */
+    /* align-self: start;
+    justify-self: start; */
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    color: var(--bg);
+}
+
+.topContent .topText h3 {
+    margin: 0;
+    white-space: nowrap;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.topContent .topText p {
+    margin: 0;
+    white-space: nowrap;
+    font-size: 0.7em;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.popup .closeButton {
+    background: var(--theme);
+    border: none;
+    color: var(--bg);
+    font-size: 1.4em;
+    align-self: start;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.popup .closeButton:hover {
+    transform: scale(1.1);
+    color: var(--theme);
+    background: var(--bg);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.bottomContent {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.bottomContent button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.594);
+    background-color: var(--theme);
+}
+
+.bottomContent:nth-child(2) button:nth-child(2) {
+    background-color: mediumseagreen;
+}
+
+/* plus sign */
+.bottomContent .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: var(--bg);
+
+
+}
+
+.bottomContent .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: var(--bg);
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+    white-space: nowrap;
+}
+
+.bottomContent button:hover {
+    width: 200px;
+    border-radius: 40px;
+    transition-duration: .3s;
+}
+
+.bottomContent button:hover .sign {
+    width: 10%;
+    display: flex;
+    justify-self: flex-start;
+    /* background: blue; */
+    transition-duration: .3s;
+    padding-left: 20px;
+    text-align: center;
+
+}
+
+/* hover effect button's text */
+.bottomContent button:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+}
+
+/* button click effect*/
+.bottomContent button:active {
+    transform: translate(2px, 10px);
+}
+
+.arabic .topContent .topText {
+    padding-right: 10px;
+}
+
+
+.arabic .bottomContent button:hover {
+    /* width: 200px; */
+    border-radius: 40px;
+    transition-duration: .3s;
+}
+
+.arabic .bottomContent button:hover .sign {
+    display: inline;
+    transition-duration: .3s;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.popupFaculty {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 20px;
+    z-index: 9999;
+    display: none;
+    border-radius: 30px;
+    height: 280px;
+    background: var(--bg2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 230px;
+    /* border-radius: 20px;
+    background: #1b233d;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+}
+
+.popupFaculty.popup-opening {
+    display: block;
+    animation: popup-open 0.5s ease-in-out forwards;
+}
+
+.popupFaculty.popup-closing {
+    opacity: 0;
+    transform: scale(0.8) translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.popupFaculty .container {
+    background: var(--bg);
+    padding: 5px;
+    border-radius: 20px;
+    /* height: 100%; */
+}
+
+.popupFaculty .topSection {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.popupFaculty .topSection img {
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+
+.linksRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 23px;
+}
+
+.linksRow .abb {
+    color: var(--hover);
+    border-bottom: 1px solid var(--hover);
+    /* text-decoration: underline; */
+    font-weight: 800;
+}
+
+.linksRow .links {
+    display: flex;
+    gap: 0px;
+    color: var(--hover);
+    background: var(--hover);
+    font-size: 1.2em;
+    border-radius: 10px;
+    padding: 0 2px;
+
+}
+
+.linksRow .links a {
+    cursor: pointer;
+}
+
+.linksRow .links button {
+    cursor: pointer;
+    color: var(--bg);
+    background: none;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.popupFaculty .bottomSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popupFaculty .container .bottomSection h2 {
+    text-align: center;
+    color: var(--hover);
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.popupFaculty .bottomSection .bottomLinks {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.popupFaculty .bottomSection .bottomLinks div {
+    background: var(--hover);
+    padding: 1px;
+    opacity: 0.5;
+}
+
+.popupFaculty .bottomSection .bottomLinks button {
+    color: var(--bg);
+    background: linear-gradient(90deg, rgba(37, 37, 37, 1) 11%, rgba(218, 0, 55, 1) 92%);
+    padding: 6px;
+    width: 40%;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 20px 30px -6px rgba(37, 37, 37, 0.5);
+    outline: none;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.popupFaculty .bottomSection .bottomLinks button:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+
+    .services {
+        margin-bottom: 100%;
+        margin-left: 5%;
+
+    }
+
+    .arabic .services {
+
+        margin-right: 5%;
+
+    }
+
+    .services .annContainer .annStories {
+        display: flex;
+        gap: 15px;
+    }
+
+    .services .annContainer .annStories .story {
+        border-radius: 15px;
+    }
+
+    .services .annContainer .annStories .story::before {
+        border-radius: 15px;
+    }
+
+    .services .annContainer .annStories .story img {
+        width: 40px;
+        border-radius: 10px;
+    }
+
+
+
+    .popup {
+        width: 70%;
+    }
+
+
+    .topContent img {
+        width: 40px;
+        height: 40px;
+        background: var(--bg);
+        border-radius: 13px;
+    }
+
+    .topContent .topText h3 {
+        font-size: 0.9em;
+    }
+
+    .topContent .topText p {
+
+        font-size: 0.6em;
+    }
+
+    .popup .closeButton {
+        font-size: 1.2em;
+    }
+
+    .bottomContent button {
+        width: 125px;
+    }
+
+    .bottomContent:nth-child(2) button:nth-child(2) {
+        background-color: mediumseagreen;
+    }
+
+    /* plus sign */
+    .bottomContent .sign {
+        width: 15%;
+        font-size: 15px;
+    }
+
+    .bottomContent .text {
+        position: absolute;
+        width: 80%;
+        opacity: 1;
+        font-size: 0.8em;
+    }
+
+    .bottomContent button:hover {
+        width: 125px;
+    }
+
+    .bottomContent button:hover .sign {
+        width: 15%;
+        display: flex;
+        justify-self: flex-start;
+        /* background: blue; */
+        transition-duration: .3s;
+        padding-left: 0;
+        text-align: center;
+
+    }
+
+    /* hover effect button's text */
+    .bottomContent button:hover .text {
+        opacity: 1;
+        width: 70%;
+        transition-duration: .3s;
+        padding-right: 10px;
+    }
+
+    /* button click effect*/
+    .bottomContent button:active {
+        transform: translate(2px, 10px);
+    }
+
+    .arabic .bottomContent .text {
+        width: 90%;
+    }
+
+    .arabic .bottomContent button:hover .text {
+        padding-right: 12px;
+
+
+
+    }
+}

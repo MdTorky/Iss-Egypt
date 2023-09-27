@@ -87,23 +87,26 @@ const Menu = ({ language, languageData }) => {
 
     return (
         <div className={`sideMenu ${language === 'ar' ? 'arabic' : ''} ${isNotServicesPage ? '' : 'hidden'}${isNotGalleryPage ? '' : 'hidden'}`}>
-            <div className="title">
-                <h1>{languageText.Egypt}</h1>
-                <h3>{languageText.IssPres2}</h3>
-            </div>
-            {names.map((name, index) => (
-                <div className="people">
-                    <div className="peopleCard">
-                        <div className="peopleImg">
-                            <img src={name.imgSrc} alt="" />
-                        </div>
-                        <div className="peopleText">
-                            <p className="name">{name.name}</p>
-                            <p className="role">{name.text}</p>
+
+            <div className="liveBox">
+                <div className="title">
+                    <h1>{languageText.Egypt}</h1>
+                    <h3>{languageText.IssPres2}</h3>
+                </div>
+                {names.map((name, index) => (
+                    <div className="people">
+                        <div className="peopleCard">
+                            <div className="peopleImg">
+                                <img src={name.imgSrc} alt="" />
+                            </div>
+                            <div className="peopleText">
+                                <p className="name">{name.name}</p>
+                                <p className="role">{name.text}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     );
 }

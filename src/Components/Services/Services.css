@@ -5,7 +5,7 @@
     flex-direction: row;
     /* justify-content: space-around; */
     /* gap: 200px; */
-    gap: 1070px;
+    gap: 30px;
 }
 
 .arabic .services {
@@ -19,15 +19,28 @@
     display: flex;
     flex-direction: column;
     background: var(--bg2);
+    padding: 20px;
+    border-radius: 20px;
+    width: 70%;
+}
+
+.services .annContainer .annContainer2 {
+    background: var(--bg);
     padding: 10px;
     border-radius: 20px;
-    /* width: 70%; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+}
+
+.services .annContainer h2 {
+    font-size: 1.2em
 }
 
 
 .services .annContainer .annStories {
     display: flex;
     gap: 50px;
+
 }
 
 .services .annContainer .annStories .story {
@@ -80,7 +93,6 @@
 
 
 
-
 /* Left Container */
 .services .leftContainer {
     display: flex;
@@ -101,7 +113,7 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
-.services .leftContainer .collegesBoxTitle h2 {
+.services .leftContainer .collegesBoxTitle>h2 {
     font-size: 1.2em
 }
 
@@ -150,7 +162,6 @@
     background: var(--hover);
     color: var(--bg);
 
-
 }
 
 .college .textBox {
@@ -177,7 +188,6 @@
     border-radius: 5px;
     padding: 1px 5px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-
 }
 
 
@@ -460,18 +470,12 @@
     z-index: 9999;
     display: none;
     border-radius: 30px;
-    height: 280px;
+    height: 300px;
     background: var(--bg2);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 230px;
-    /* border-radius: 20px;
-    background: #1b233d;
-    padding: 5px;
-    overflow: hidden;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
-    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+    width: 300px;
 }
 
 .popupFaculty.popup-opening {
@@ -487,107 +491,236 @@
 
 .popupFaculty .container {
     background: var(--bg);
-    padding: 5px;
+    padding: 10px;
     border-radius: 20px;
-    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .popupFaculty .topSection {
     display: flex;
+    border-radius: 10px;
+}
+
+
+
+.topSection .img {
+    width: 70px;
+    height: 50px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hover);
+    /* background: linear-gradient(var(--theme), var(--hover)); */
+    background: var(--bg2);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.topSection .textBox {
+    display: flex;
     flex-direction: column;
-    gap: 7px;
+    margin-left: 10px;
+    font-family: 'Poppins'sans-serif;
+    width: 100%;
+    padding-top: 5px;
 }
 
-.popupFaculty .topSection img {
-    border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
-
-.linksRow {
+.topSection .textContent {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    padding: 0 10px;
-    height: 23px;
 }
 
-.linksRow .abb {
-    color: var(--hover);
-    border-bottom: 1px solid var(--hover);
-    /* text-decoration: underline; */
-    font-weight: 800;
-}
-
-.linksRow .links {
-    display: flex;
-    gap: 0px;
-    color: var(--hover);
+.topSection .span {
+    margin: 0;
+    font-size: 0.8em;
     background: var(--hover);
-    font-size: 1.2em;
-    border-radius: 10px;
-    padding: 0 2px;
-
-}
-
-.linksRow .links a {
-    cursor: pointer;
-}
-
-.linksRow .links button {
-    cursor: pointer;
     color: var(--bg);
-    background: none;
+    border-radius: 5px;
+    padding: 1px 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+
+.arabic .topSection .textBox {
+    line-height: 20px;
+}
+
+
+
+.topSection h3 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 0.9em;
+    opacity: 0.6;
+}
+
+
+.topSection h2 {
+    font-size: 1em;
+    font-weight: 900;
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+.topSection button {
+    background: var(--theme);
+    color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
+    width: 20px;
+    height: 20px;
     border-radius: 10px;
+    margin: 0;
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    transition: 0.5s ease;
+
+}
+
+.topSection button:hover {
+    transform: translateY(3px);
+    box-shadow: none;
 }
 
 
 .popupFaculty .bottomSection {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* margin-top: 20px; */
+    /* background: red; */
+    height: 100%;
+    gap: 20px;
+
 }
 
-.popupFaculty .container .bottomSection h2 {
-    text-align: center;
-    color: var(--hover);
-    margin-top: 20px;
-    font-size: 1em;
+.popupFaculty .bottomSection img {
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    height: 170px;
 }
+
 
 .popupFaculty .bottomSection .bottomLinks {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    /* margin-bottom: 10px; */
 }
 
-.popupFaculty .bottomSection .bottomLinks div {
-    background: var(--hover);
-    padding: 1px;
-    opacity: 0.5;
-}
+
 
 .popupFaculty .bottomSection .bottomLinks button {
-    color: var(--bg);
-    background: linear-gradient(90deg, rgba(37, 37, 37, 1) 11%, rgba(218, 0, 55, 1) 92%);
-    padding: 6px;
-    width: 40%;
-    border-radius: 20px;
-    cursor: pointer;
-    border: none;
-    box-shadow: 0 20px 30px -6px rgba(37, 37, 37, 0.5);
-    outline: none;
-    transition: 0.3s ease-in-out;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.594);
+    background-color: var(--hover);
+    margin: auto;
+
+}
+
+/* .popupFaculty .bottomSection .bottomLinks:nth-child(2) button:nth-child(2) {
+    background-color: mediumseagreen;
+} */
+
+/* plus sign */
+.popupFaculty .bottomSection .bottomLinks .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: var(--bg);
+    /* font-weight: ; */
+
+
+}
+
+.popupFaculty .bottomSection .bottomLinks .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: var(--bg);
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+    white-space: nowrap;
 }
 
 .popupFaculty .bottomSection .bottomLinks button:hover {
-    transform: translateY(3px);
-    box-shadow: none;
+    width: 130px;
+    border-radius: 40px;
+    transition-duration: .3s;
 }
 
+.popupFaculty .bottomSection .bottomLinks button:hover .sign {
+    width: 5%;
+    display: flex;
+    justify-self: flex-start;
+    transition-duration: .3s;
+    padding-left: 20px;
+    text-align: center;
+
+}
+
+/* hover effect button's text */
+.popupFaculty .bottomSection .bottomLinks button:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+    font-size: 1em;
+
+}
+
+/* .popupFaculty .bottomSection:nth-child(2) button:nth-child(1)>.text {
+    font-size: 1em;
+} */
+
+
+/* button click effect*/
+.popupFaculty .bottomSection .bottomLinks button:active {
+    transform: translate(2px, 10px);
+}
+
+.arabic .popupFaculty .bottomSection .bottomLinks button:hover {
+    border-radius: 40px;
+    transition-duration: .3s;
+}
+
+.arabic .popupFaculty .bottomSection .bottomLinks button:hover .sign {
+    display: inline;
+    transition-duration: .3s;
+    text-align: center;
+}
+
+.arabic .popupFaculty .bottomSection .bottomLinks button:hover .text {
+    font-size: 1em;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+
+
+}
 
 
 

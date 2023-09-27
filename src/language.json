@@ -113,11 +113,15 @@
     "otherAnnouncementOrganizer": "ISS Egypt Event",
 
     "FKE": "Electrical Engineering",
-    "FC": "Computing",
+    "FC": "Computer Science",
     "FKA": "Civil Engineering",
     "FKM": "Mechanical Engineering",
     "FKT": "Chemical Engineering",
     "Found": "Bridging & Foundation",
+    "Group": "WhatsApp",
+    "Location": "Location",
+    "Website": "Website",
+    "Email": "Email",
 
     "announcements": "Announcements",
 
@@ -243,6 +247,17 @@
     "socialAnnouncementOrganizer": "فعالية للجنة الاجتماعية",
     "cultureAnnouncementOrganizer": "فعالية للجنة الثقافية",
     "otherAnnouncementOrganizer": "فعالية للاتحاد المصري",
+
+    "FKE": "هندسة كهربائية",
+    "FC": "علوم الكمبيوتر",
+    "FKA": "Civil Engineering",
+    "FKM": "هندسة مدنية",
+    "FKT": "هندسة كيميائية",
+    "Found": "الدراسات التأسيسية",
+    "Group": "واتساب",
+    "Location": "العنوان",
+    "Website": "الموقع",
+    "Email": "البريد",
 
     "announcements": "الإعلانات",
 

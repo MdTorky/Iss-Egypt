@@ -1,28 +1,4 @@
-.sideMenu {
-    background: var(--bg);
-    margin-top: 130px;
-    margin-bottom: 10%;
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    height: 100%;
-}
-
-.sideMenu.hidden {
-    display: none;
-}
-
-.sideMenu.arabic {
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-
-.sideMenu .title {
-    /* margin: 0; */
+/* .sideMenu .title {
     font-size: 12px;
     color: var(--bg);
     background: var(--hover);
@@ -66,14 +42,6 @@
     border-radius: 10px;
 }
 
-/* .sideMenu .people:nth-child(2) {
-    background: var(--hover);
-    color: white;
-}
-
-.sideMenu .people:nth-child(2) .role {
-    color: rgba(227, 227, 227, 0.68);
-} */
 
 
 .peopleCard {
@@ -123,6 +91,129 @@
 .arabic .peopleText .name {
     font-family: 'Noto Kufi Arabic', sans-serif;
     font-weight: 400;
+}
+
+.peopleText .role {
+    font-size: 15px;
+    font-weight: 100;
+    color: gray;
+} */
+
+
+
+.sideMenu {
+    background: var(--bg2);
+    margin-top: 130px;
+    margin-bottom: 10%;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 100%;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.sideMenu.hidden {
+    display: none;
+}
+
+.sideMenu.arabic {
+    margin-left: 10px;
+
+}
+
+.sideMenu .liveBox {
+    padding: 10px;
+    background: var(--bg);
+    border-radius: 20px;
+
+}
+
+.sideMenu .liveBox .title {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    width: 100%;
+    padding: 10px 0 0 10px;
+    border-top-left-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.arabic .sideMenu .liveBox .title {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+
+}
+
+.sideMenu .liveBox .title h3 {
+    color: var(--hover);
+    opacity: 0.7;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.sideMenu .liveBox .title h1 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+
+.sideMenu .people {
+    width: 100%;
+    padding: 10px;
+}
+
+.peopleCard {
+    display: flex;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.peopleCard:hover {
+    transform: scale(1.1);
+}
+
+.peopleImg {
+    border-top: 3px solid red;
+    border-left: 5px solid white;
+    border-bottom: 3px solid black;
+    border-radius: 50px;
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.arabic .peopleImg {
+    border-top: 3px solid red;
+    border-left: none;
+    border-right: 5px solid white;
+    border-bottom: 3px solid black;
+}
+
+.peopleImg img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.peopleText {
+    line-height: 3px;
+    width: 80%;
+
+    padding: 0 20px;
+}
+
+.peopleText .name {
+    font-size: 1.1em;
+    font-weight: 600;
+    white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
+}
+
+.arabic .peopleText .name {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 700;
 }
 
 .peopleText .role {

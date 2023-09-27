@@ -4,7 +4,12 @@ import './Services.css';
 import img1 from '../../images/logo.png';
 import img2 from '../../images/flag.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMap, faCalendarDays, faXmark, faCircleInfo, faCarBattery, faDna, faLaptopCode, faHelmetSafety, faGears, faFlaskVial, faBookBookmark, faUserGroup } from '@fortawesome/free-solid-svg-icons';
+import {
+    faCalendarDays, faXmark, faCircleInfo, faCarBattery,
+    faLaptopCode, faHelmetSafety, faGears, faFlaskVial, faBookBookmark, faEnvelope, faLocationDot, faInfoCircle
+} from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+
 import images from "../../data/images.json";
 import links from "../../data/upcomingEvents.json";
 import faculties from "../../data/faculties.json";
@@ -23,6 +28,15 @@ const Services = ({ language, languageData }) => {
             const updatedAnnouncement = announcements.find(announcement => announcement.id === selectedAnnouncement.id);
             if (updatedAnnouncement) {
                 setSelectedAnnouncement(updatedAnnouncement);
+            }
+        }
+    }, [language]);
+
+    useEffect(() => {
+        if (selectedFaculty && selectedFaculty.id) {
+            const updatedFaculty = combinedFaculties.find(combinedFaculties => combinedFaculties.id === selectedFaculty.id);
+            if (updatedFaculty) {
+                setSelectedFaculty(updatedFaculty);
             }
         }
     }, [language]);
@@ -174,10 +188,8 @@ const Services = ({ language, languageData }) => {
 
     const handleMoreInfoClick = () => {
         if (selectedAnnouncement && selectedAnnouncement.link) {
-            // If there is a link, open it in a new tab or window
             window.open(selectedAnnouncement.link, '_blank');
         } else {
-            // Show an alert if there is no link for the selected announcement
             alert("No link available for this announcement.");
         }
 
@@ -186,13 +198,38 @@ const Services = ({ language, languageData }) => {
 
     const handleCalenderLinkClick = () => {
         if (selectedAnnouncement && selectedAnnouncement.calendarLink) {
-            // If there is a link, open it in a new tab or window
             window.open(selectedAnnouncement.calendarLink, '_blank');
         } else {
-            // Show an alert if there is no link for the selected announcement
             alert("No Calender link available for this announcement.");
         }
     }
+
+
+    const GroupClick = () => {
+        // if (selectedFaculty && selectedFaculty.group) {
+        // } 
+        window.open(selectedFaculty.group, '_blank');
+    }
+
+    const LocationClick = () => {
+        // if (selectedFaculty && selectedFaculty.group) {
+        // } 
+        window.open(selectedFaculty.location, '_blank');
+    }
+
+    const WebsiteClick = () => {
+        // if (selectedFaculty && selectedFaculty.group) {
+        // } 
+        window.open(selectedFaculty.website, '_blank');
+    }
+
+    const EmailClick = () => {
+        // if (selectedFaculty && selectedFaculty.group) {
+        // } 
+        window.open(selectedFaculty.email2, '_blank');
+    }
+
+
 
 
 
@@ -200,53 +237,55 @@ const Services = ({ language, languageData }) => {
     return (
         <div className="services">
             <div className="annContainer">
-                <h2>{languageText.announcements}</h2>
-                <div className="annStories">
-                    {announcements.map((announcement, index) => (
-                        <div className={`story ${popupVisible && selectedAnnouncement && selectedAnnouncement.id === announcement.id
-                            ? 'active' : ''}`} key={index} onClick={() => togglePopup(announcement)}>
-                            <img src={announcement.img} alt={announcement.title} />
-                        </div>
-                    ))}
-                </div>
-
-                {popupVisible && selectedAnnouncement && (
-                    <div className={`popup ${popupVisible ? 'popup-opening' : 'popup-closing'}`} style={{
-                        backgroundImage: `linear-gradient(rgba(0, 0, 0,
-            0.5), rgba(0, 0, 0, 0.5)), url(${selectedAnnouncement.backgroundImg})`
-                    }}>
-                        <div className="popup-content">
-                            <div className="topContent">
-                                <img src={selectedAnnouncement.img} alt={selectedAnnouncement.title} />
-                                <div className="topText">
-                                    <h3>{selectedAnnouncement.title}</h3>
-                                    <p>{selectedAnnouncement.organizer}</p>
-                                </div>
-                                <button onClick={closePopup} className="closeButton">
-                                    <FontAwesomeIcon icon={faXmark} />
-                                </button>
+                <div className="annContainer2">
+                    <h2>{languageText.announcements}</h2>
+                    <div className="annStories">
+                        {announcements.map((announcement, index) => (
+                            <div className={`story ${popupVisible && selectedAnnouncement && selectedAnnouncement.id === announcement.id
+                                ? 'active' : ''}`} key={index} onClick={() => togglePopup(announcement)}>
+                                <img src={announcement.img} alt={announcement.title} />
                             </div>
-                            <div className="bottomContent">
-
-                                <button onClick={handleMoreInfoClick}>
-                                    <div className="sign">
-                                        <FontAwesomeIcon icon={faCircleInfo} />
-                                    </div>
-                                    <div className="text">{languageText.info}</div>
-                                </button>
-
-                                <button onClick={handleCalenderLinkClick}>
-                                    <div className="sign">
-                                        <FontAwesomeIcon icon={faCalendarDays} />
-                                    </div>
-                                    <div className="text">{languageText.calender}</div>
-                                </button>
-
-                            </div>
-                        </div>
+                        ))}
                     </div>
-                )}
-                <h2>Help</h2>
+
+                    {popupVisible && selectedAnnouncement && (
+                        <div className={`popup ${popupVisible ? 'popup-opening' : 'popup-closing'}`} style={{
+                            backgroundImage: `linear-gradient(rgba(0, 0, 0,
+                0.5), rgba(0, 0, 0, 0.5)), url(${selectedAnnouncement.backgroundImg})`
+                        }}>
+                            <div className="popup-content">
+                                <div className="topContent">
+                                    <img src={selectedAnnouncement.img} alt={selectedAnnouncement.title} />
+                                    <div className="topText">
+                                        <h3>{selectedAnnouncement.title}</h3>
+                                        <p>{selectedAnnouncement.organizer}</p>
+                                    </div>
+                                    <button onClick={closePopup} className="closeButton">
+                                        <FontAwesomeIcon icon={faXmark} />
+                                    </button>
+                                </div>
+                                <div className="bottomContent">
+
+                                    <button onClick={handleMoreInfoClick}>
+                                        <div className="sign">
+                                            <FontAwesomeIcon icon={faCircleInfo} />
+                                        </div>
+                                        <div className="text">{languageText.info}</div>
+                                    </button>
+
+                                    <button onClick={handleCalenderLinkClick}>
+                                        <div className="sign">
+                                            <FontAwesomeIcon icon={faCalendarDays} />
+                                        </div>
+                                        <div className="text">{languageText.calender}</div>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                    <h2>Help</h2>
+                </div>
             </div>
             <div className="leftContainer">
                 <div className="collegesBoxTitle">
@@ -302,25 +341,52 @@ const Services = ({ language, languageData }) => {
 
                                 <div className="container">
                                     <div className="topSection">
-                                        <div className="linksRow">
-                                            <div className="abb">{selectedFaculty.abb}</div>
-                                            <div className="links">
-                                                <button><FontAwesomeIcon icon={faCircleInfo} /></button>
-                                                <button><FontAwesomeIcon icon={faMap} /></button>
+                                        <div className="img">
+                                            <FontAwesomeIcon icon={selectedFaculty.Icon} />
+                                        </div>
+                                        <div className="textBox">
+                                            <div className="textContent">
+                                                <h3>{selectedFaculty.abb}</h3>
                                                 <button onClick={closePopup} className="closeButton">
                                                     <FontAwesomeIcon icon={faXmark} />
                                                 </button>
                                             </div>
+                                            <h2 className="p">{selectedFaculty.Title}</h2>
                                         </div>
-                                        <img src={images.achievementImg} alt="" />
                                     </div>
 
                                     <div className="bottomSection">
-                                        <h2>{selectedFaculty.Title}</h2>
+                                        <img src={selectedFaculty.image} alt="" />
                                         <div className="bottomLinks">
-                                            <button> <FontAwesomeIcon icon={faUserGroup} />Group</button>
-                                            <div></div>
-                                            <button>Email</button>
+                                            <button onClick={GroupClick}>
+                                                <div className="sign">
+                                                    <FontAwesomeIcon icon={faWhatsapp} />
+                                                </div>
+                                                <div className="text">{languageText.Group}</div>
+                                            </button>
+                                            <button onClick={LocationClick}>
+                                                <div className="sign">
+                                                    <FontAwesomeIcon icon={faLocationDot} />
+                                                </div>
+                                                <div className="text">{languageText.Location}</div>
+                                            </button>
+                                            <button onClick={WebsiteClick}>
+                                                <div className="sign">
+                                                    <FontAwesomeIcon icon={faInfoCircle} />
+                                                </div>
+                                                <div className="text">{languageText.Website}</div>
+
+                                            </button>
+                                            <button onClick={EmailClick}>
+                                                <div className="sign">
+                                                    <FontAwesomeIcon icon={faEnvelope} />
+                                                </div>
+                                                <div className="text">{languageText.Email}</div>
+
+                                            </button>
+                                            {/* <button><FontAwesomeIcon icon={faEnvelope} />Email</button>
+                                            <button><FontAwesomeIcon icon={faEnvelope} />Email</button>
+                                            <button><FontAwesomeIcon icon={faEnvelope} />Email</button> */}
                                         </div>
                                     </div>
                                 </div>
@@ -334,3 +400,6 @@ const Services = ({ language, languageData }) => {
 };
 
 export default Services;
+
+{/* <button><FontAwesomeIcon icon={faCircleInfo} /></button>
+                                                <button><FontAwesomeIcon icon={faMap} /></button> */}

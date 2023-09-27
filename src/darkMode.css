@@ -63,24 +63,17 @@ body.dark-mode {
 /* Side Menu */
 
 .dark-mode .sideMenu {
+    background: var(--hover2);
+}
+
+
+.dark-mode .sideMenu .liveBox {
     background: var(--hover);
-    box-shadow: rgba(255, 255, 255, 0.24) 0px 3px 8px;
 }
 
-.dark-mode .sideMenu .title {
-    color: var(--hover);
-    background: var(--bg);
+.dark-mode .sideMenu .liveBox .title h3 {
+    color: var(--bg);
 }
-
-.dark-mode .sideMenu .title h3 {
-    color: rgba(0, 0, 0, 0.543);
-}
-
-.dark-mode .sideMenu .people {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.254);
-}
-
-
 
 
 /* Home */
@@ -184,6 +177,15 @@ body.dark-mode {
 /* Services */
 
 
+.dark-mode .services .annContainer {
+    background: var(--hover2);
+}
+
+.dark-mode .services .annContainer .annContainer2 {
+    background: var(--hover);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
 .dark-mode .services .annContainer .annStories .story {
     background: var(--hover);
 }
@@ -196,9 +198,42 @@ body.dark-mode {
     background: var(--bg);
 }
 
+.dark-mode .services .leftContainer {
+    background: var(--hover2);
+}
 
+.dark-mode .services .leftContainer .collegesBoxTitle {
+    background: var(--hover);
+}
 
+.dark-mode .college .img {
+    color: var(--bg);
+    background: var(--hover2);
+}
 
+.dark-mode .college:hover>.img {
+    background: var(--bg);
+    color: var(--hover);
+}
+
+.dark-mode .college .span {
+    background: var(--bg);
+    color: var(--hover);
+}
+
+.dark-mode .popupFaculty {
+    background: var(--hover2);
+}
+
+.dark-mode .popupFaculty .container {
+    background: var(--hover);
+}
+
+.dark-mode .topSection .img {
+    color: var(--bg);
+    /* background: linear-gradient(var(--theme), var(--hover)); */
+    background: var(--hover2);
+}
 
 
 

@@ -112,6 +112,8 @@
     "cultureAnnouncementOrganizer": "Cultural Committee Event",
     "otherAnnouncementOrganizer": "ISS Egypt Event",
 
+    "Faculties": "Faculties",
+    "Drives": "Drives",
     "FKE": "Electrical Engineering",
     "FC": "Computer Science",
     "FKA": "Civil Engineering",
@@ -122,6 +124,27 @@
     "Location": "Location",
     "Website": "Website",
     "Email": "Email",
+
+    "newStudents": "New Students",
+    "extraServices": "Extra Services",
+
+    "residence": "Residence",
+    "attractions": "Attractions",
+    "transportation": "Transportation",
+    "handbook": "Handbook",
+    "bankAccount": "Bank Account",
+    "groups": "Groups",
+    "clubs": "Clubs",
+    "extraCourses": "Extra Courses",
+
+    "residence2": "Find Your Ideal Home",
+    "attractions2": "Explore The City",
+    "transportation2": "Discover Your Ride Options",
+    "handbook2": "COMING SOON",
+    "bankAccount2": "Bank Account Setup Made Easy",
+    "groups2": "Access Various Groups",
+    "clubs2": "Join Vibrant Communities",
+    "extraCourses2": "Supplemental Courses",
 
     "announcements": "Announcements",
 
@@ -248,16 +271,39 @@
     "cultureAnnouncementOrganizer": "فعالية للجنة الثقافية",
     "otherAnnouncementOrganizer": "فعالية للاتحاد المصري",
 
+    "Faculties": "الكليات",
+    "Drives": "الملفات",
     "FKE": "هندسة كهربائية",
     "FC": "علوم الكمبيوتر",
-    "FKA": "Civil Engineering",
-    "FKM": "هندسة مدنية",
+    "FKA": "هندسة مدنية",
+    "FKM": "هندسة ميكانيكية",
     "FKT": "هندسة كيميائية",
     "Found": "الدراسات التأسيسية",
     "Group": "واتساب",
     "Location": "العنوان",
     "Website": "الموقع",
     "Email": "البريد",
+
+    "newStudents": "الطلاب الجدد",
+    "extraServices": "خدمات إضافية",
+
+    "residence": "سكن",
+    "attractions": "أماكن التنزه",
+    "transportation": "المواصلات",
+    "handbook": "الدليل",
+    "bankAccount": "حساب البنك",
+    "groups": "مجموعات",
+    "clubs": "الأندية",
+    "extraCourses": "دورات اضافية",
+
+    "residence2": "ابحث عن منزلك المثالي",
+    "attractions2": "اكتشف المدينة",
+    "transportation2": "اكتشف خيارات تنقلك",
+    "handbook2": "قادم قريباً",
+    "bankAccount2": "افتح حسابًا بنكيًا بسهولة",
+    "groups2": "انضم إلى مجموعات مختلفة",
+    "clubs2": "انضم إلى الأندية المتعددة",
+    "extraCourses2": "الدورات التكميلية إضافية",
 
     "announcements": "الإعلانات",
 

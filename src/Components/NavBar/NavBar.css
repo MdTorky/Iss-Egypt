@@ -110,14 +110,20 @@
     color: var(--hover);
 }
 
-.navbar ul li.active icon:hover::after {
+/* .navbar ul li.active icon:hover::after {
     color: var(--hover);
     background: var(--bg);
-}
+} */
 
 .navbar ul li:hover.active icon {
     color: var(--hover);
 }
+
+.navbar ul li:hover.active icon::after {
+    color: var(--hover);
+    background: var(--bg);
+}
+
 
 
 .navbar ul li:hover:last-child {

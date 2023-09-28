@@ -6,9 +6,10 @@ import img2 from '../../images/flag.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faCalendarDays, faXmark, faCircleInfo, faCarBattery,
-    faLaptopCode, faHelmetSafety, faGears, faFlaskVial, faBookBookmark, faEnvelope, faLocationDot, faInfoCircle
+    faLaptopCode, faHelmetSafety, faGears, faFlaskVial, faBookBookmark, faEnvelope, faLocationDot, faInfoCircle,
+    faBuilding, faMapLocationDot, faCarSide, faFilePdf, faCreditCard, faGraduationCap, faFutbol
 } from '@fortawesome/free-solid-svg-icons';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faWhatsapp, faTelegram } from '@fortawesome/free-brands-svg-icons';
 
 import images from "../../data/images.json";
 import links from "../../data/upcomingEvents.json";
@@ -47,25 +48,35 @@ const Services = ({ language, languageData }) => {
     const type = "Academic";
 
 
+
+    var AcademicImg = images.academicAnnouncement;
+    var SocialImg = images.socialAnnouncement;
+    var CultureImg = images.cultureAnnouncement;
+    var OtherImg = images.otherAnnouncement;
+
+
+    var Academic = languageText.academicAnnouncementOrganizer
+    var Social = languageText.socialAnnouncementOrganizer
+    var Culture = languageText.cultureAnnouncementOrganizer
+    var Other = languageText.otherAnnouncementOrganizer
     // 1. Add a new Id
 
     // 2. Add Icon based on the Announcement, choose from these
-    // a. images.academicAnnouncement (if academic announcement)
-    // b. images.socialAnnouncement (if social announcement)
-    // c. images.cultureAnnouncement (if culture announcement)
-    // d. images.otherAnnouncement (if any other announcement)
+    //              a. AcademicImg (if academic announcement)
+    //              b. SocialImg (if social announcement)
+    //              c. CultureImg (if culture announcement)
+    //              d. OtherImg (if any other announcement)
 
     // 3. Add Event Image in the Background Image
-
 
     // 4. Add A TITLE in English and Arabic in language.Json
     // Then add announcementTitle1 or announcementTitle2 until announcementTitle7 based on what you written
 
     // 5. Add Organizer either
-    // a. languageText.academicAnnouncementOrganizer (if the academic committee is the organizer)
-    // b. languageText.socialAnnouncementOrganizer (if the social committee is the organizer)
-    // c. languageText.cultureAnnouncementOrganizer (if the culture committee is the organizer)
-    // d. languageText.otherAnnouncementOrganizer (if the other committee is the organizer)
+    //               a. Academic (if the academic committee is the organizer)
+    //               b. Social (if the social committee is the organizer)
+    //               c. Culture (if the culture committee is the organizer)
+    //               d. Other (if the other committee is the organizer)
 
     // FOR 6 AND 7 IF THERE IS NO LINKS LEAVE IT BLANK
 
@@ -76,31 +87,95 @@ const Services = ({ language, languageData }) => {
     const announcements = [
         {
             id: 1,
-            img: images.academicAnnouncement,
+            img: AcademicImg,
             backgroundImg: "https://drive.google.com/uc?export=view&id=1IdwpNokC5ILvmZne9L5rmb7PeCwZUk3i",
             title: languageText.announcementTitle1,
-            organizer: languageText.academicAnnouncementOrganizer,
+            organizer: Academic,
             link: "https://www.google.com",
             calendarLink: links.upcomingEventLink1,
         },
         {
             id: 2,
-            img: img2,
+            img: SocialImg,
             backgroundImg: images.academicAnnouncement,
             title: "Title 2",
-            organizer: languageText.socialAnnouncementOrganizer,
+            organizer: Social,
             link: "Link 2",
             calendarLink: "",
         },
         {
             id: 3,
-            img: img1,
+            img: CultureImg,
             backgroundImg: images.academicAnnouncement,
             title: "Title3",
-            organizer: languageText.cultureAnnouncementOrganizer,
+            organizer: Culture,
             link: "",
             calendarLink: "Calendar Link3",
         },
+        // {
+        //     id: 3,
+        //     img: img1,
+        //     backgroundImg: images.academicAnnouncement,
+        //     title: "Title3",
+        //     organizer: Culture,
+        //     link: "",
+        //     calendarLink: "Calendar Link3",
+        // },
+        // {
+        //     id: 3,
+        //     img: img1,
+        //     backgroundImg: images.academicAnnouncement,
+        //     title: "Title3",
+        //     organizer: Culture,
+        //     link: "",
+        //     calendarLink: "Calendar Link3",
+        // },
+        // {
+        //     id: 3,
+        //     img: img1,
+        //     backgroundImg: images.academicAnnouncement,
+        //     title: "Title3",
+        //     organizer: Culture,
+        //     link: "",
+        //     calendarLink: "Calendar Link3",
+        // },
+        // {
+        //     id: 3,
+        //     img: img1,
+        //     backgroundImg: images.academicAnnouncement,
+        //     title: "Title3",
+        //     organizer: Culture,
+        //     link: "",
+        //     calendarLink: "Calendar Link3",
+        // },
+        // {
+        //     id: 3,
+        //     img: img1,
+        //     backgroundImg: images.academicAnnouncement,
+        //     title: "Title3",
+        //     organizer: Culture,
+        //     link: "",
+        //     calendarLink: "Calendar Link3",
+        // },
+        // {
+        //     id: 3,
+        //     img: img1,
+        //     backgroundImg: images.academicAnnouncement,
+        //     title: "Title3",
+        //     organizer: Culture,
+        //     link: "",
+        //     calendarLink: "Calendar Link3",
+        // },
+        // {
+        //     id: 3,
+        //     img: img1,
+        //     backgroundImg: images.academicAnnouncement,
+        //     title: "Title3",
+        //     organizer: Culture,
+        //     link: "",
+        //     calendarLink: "Calendar Link3",
+        // },
+
     ];
 
 
@@ -236,16 +311,38 @@ const Services = ({ language, languageData }) => {
 
     return (
         <div className="services">
-            <div className="annContainer">
-                <div className="annContainer2">
-                    <h2>{languageText.announcements}</h2>
-                    <div className="annStories">
-                        {announcements.map((announcement, index) => (
-                            <div className={`story ${popupVisible && selectedAnnouncement && selectedAnnouncement.id === announcement.id
-                                ? 'active' : ''}`} key={index} onClick={() => togglePopup(announcement)}>
-                                <img src={announcement.img} alt={announcement.title} />
+            <div className="rightContainer">
+                <div className="collegesBoxTitle">
+                    <h2>{languageText.Drives}</h2>
+                    <div className="collegesBox">
+                        {combinedFaculties.map((faculty, index) => (
+                            <div
+                                className="college"
+                                key={index}
+                                onClick={() => { window.open(faculty.driveLink, '_blank') }}
+                            >
+                                <div className="img">
+                                    <FontAwesomeIcon icon={faculty.Icon} />
+
+                                    {/* <img src={faculty.image} alt="" /> */}
+                                </div>
                             </div>
                         ))}
+                    </div>
+                </div>
+            </div>
+            <div className="annContainer">
+                <div className="annContainer2">
+                    <div className="annStories">
+                        <h2>{languageText.announcements}</h2>
+                        <div className='annStories2'>
+                            {announcements.map((announcement, index) => (
+                                <div className={`story ${popupVisible && selectedAnnouncement && selectedAnnouncement.id === announcement.id
+                                    ? 'active' : ''}`} key={index} onClick={() => togglePopup(announcement)}>
+                                    <img src={announcement.img} alt={announcement.title} />
+                                </div>
+                            ))}
+                        </div>
                     </div>
 
                     {popupVisible && selectedAnnouncement && (
@@ -284,12 +381,62 @@ const Services = ({ language, languageData }) => {
                             </div>
                         </div>
                     )}
-                    <h2>Help</h2>
+                    <div className="newStudents">
+                        <h2>{languageText.newStudents}</h2>
+                        <div className="newStudentsRow">
+                            <div className="newStudentCard">
+                                <p className="time-text"><span>{languageText.residence}</span><span className="time-sub-text"></span></p>
+                                <p className="day-text">{languageText.residence2}</p>
+                                <FontAwesomeIcon icon={faBuilding} className='moon' />
+                            </div>
+                            <div className="newStudentCard">
+                                <p className="time-text"><span>{languageText.attractions}</span><span className="time-sub-text"></span></p>
+                                <p className="day-text">{languageText.attractions2}</p>
+                                <FontAwesomeIcon icon={faMapLocationDot} className='moon' />
+                            </div>
+                            <div className="newStudentCard">
+                                <p className="time-text"><span>{languageText.transportation}</span><span className="time-sub-text"></span></p>
+                                <p className="day-text">{languageText.transportation2}</p>
+                                <FontAwesomeIcon icon={faCarSide} className='moon' />
+                            </div>
+                            <div className="newStudentCard">
+                                <p className="time-text"><span>{languageText.handbook}</span><span className="time-sub-text"></span></p>
+                                <p className="day-text">{languageText.handbook2}</p>
+                                <FontAwesomeIcon icon={faFilePdf} className='moon' />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="newStudents">
+                        <h2>{languageText.extraServices}</h2>
+                        <div className="newStudentsRow2">
+                            <div className="newStudentCard">
+                                <p className="time-text"><span>{languageText.bankAccount}</span><span className="time-sub-text"></span></p>
+                                {/* <p className="day-text">Unlock Financial Freedom</p> */}
+                                <p className="day-text">{languageText.bankAccount2}</p>
+                                <FontAwesomeIcon icon={faCreditCard} className='moon' />
+                            </div>
+                            <div className="newStudentCard">
+                                <p className="time-text"><span>{languageText.groups}</span><span className="time-sub-text"></span></p>
+                                <p className="day-text">{languageText.groups2}</p>
+                                <FontAwesomeIcon icon={faTelegram} className='moon' />
+                            </div>
+                            <div className="newStudentCard">
+                                <p className="time-text"><span>{languageText.clubs}</span><span className="time-sub-text"></span></p>
+                                <p className="day-text">{languageText.clubs2}</p>
+                                <FontAwesomeIcon icon={faFutbol} className='moon' />
+                            </div>
+                            <div className="newStudentCard">
+                                <p className="time-text"><span>{languageText.extraCourses}</span><span className="time-sub-text"></span></p>
+                                <p className="day-text">{languageText.extraCourses2}</p>
+                                <FontAwesomeIcon icon={faGraduationCap} className='moon' />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className="leftContainer">
                 <div className="collegesBoxTitle">
-                    <h2>Faculties</h2>
+                    <h2>{languageText.Faculties}</h2>
                     <div className="collegesBox">
                         {combinedFaculties.map((faculty, index) => (
                             <div
@@ -307,38 +454,12 @@ const Services = ({ language, languageData }) => {
                                     </div>
                                     <p className="p">{faculty.email}</p>
                                 </div>
+
                             </div>
                         ))}
 
                         {popupVisibleFaculty && selectedFaculty && (
                             <div className={`popupFaculty ${popupVisibleFaculty ? 'popup-opening' : 'popup-closing'}`}>
-                                {/* <div className="popup-content">
-                                    <div className="topContent">
-                                        <img src={selectedFaculty.Icon} alt={selectedFaculty.Title} />
-                                        <div className="topText">
-                                            <h3>{selectedFaculty.Title}</h3>
-                                            <p>{selectedFaculty.organizer}</p>
-                                        </div>
-                                        <button onClick={closePopup} className="closeButton">
-                                            <FontAwesomeIcon icon={faXmark} />
-                                        </button>
-                                    </div>
-                                    <div className="bottomContent">
-                                        <button onClick={handleMoreInfoClick}>
-                                            <div className="sign">
-                                                <FontAwesomeIcon icon={faCircleInfo} />
-                                            </div>
-                                            <div className="text">{languageText.info}</div>
-                                        </button>
-                                        <button onClick={handleCalenderLinkClick}>
-                                            <div className="sign">
-                                                <FontAwesomeIcon icon={faCalendarDays} />
-                                            </div>
-                                            <div className="text">{languageText.calender}</div>
-                                        </button>
-                                    </div>
-                                </div> */}
-
                                 <div className="container">
                                     <div className="topSection">
                                         <div className="img">
@@ -384,9 +505,6 @@ const Services = ({ language, languageData }) => {
                                                 <div className="text">{languageText.Email}</div>
 
                                             </button>
-                                            {/* <button><FontAwesomeIcon icon={faEnvelope} />Email</button>
-                                            <button><FontAwesomeIcon icon={faEnvelope} />Email</button>
-                                            <button><FontAwesomeIcon icon={faEnvelope} />Email</button> */}
                                         </div>
                                     </div>
                                 </div>

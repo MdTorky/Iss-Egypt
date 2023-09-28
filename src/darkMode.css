@@ -48,7 +48,7 @@ body.dark-mode {
     /* display: none; */
 }
 
-.dark-mode .navbar ul li.active icon:hover::after {
+.dark-mode .navbar ul li:hover.active icon::after {
     color: var(--bg);
     background: var(--hover);
 }
@@ -74,6 +74,8 @@ body.dark-mode {
 .dark-mode .sideMenu .liveBox .title h3 {
     color: var(--bg);
 }
+
+
 
 
 /* Home */
@@ -148,6 +150,7 @@ body.dark-mode {
 
 .dark-mode .connect .button {
     background: var(--bg);
+    border: 2px solid var(--bg)
 }
 
 .dark-mode .connect .button .button__text {
@@ -198,6 +201,35 @@ body.dark-mode {
     background: var(--bg);
 }
 
+
+
+.dark-mode .services .rightContainer {
+    background: var(--hover2);
+}
+
+.dark-mode .services .rightContainer .collegesBoxTitle {
+    background: var(--hover);
+}
+
+.dark-mode .rightContainer .college .img {
+    color: var(--bg);
+    /* background: var(--hover2); */
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+
+}
+
+.dark-mode .arabic .rightContainer .college .img {
+    background: linear-gradient(to left, var(--hover), var(--hover2));
+
+}
+
+
+.dark-mode .rightContainer .college:hover>.img {
+    background: var(--bg);
+    color: var(--hover);
+}
+
+
 .dark-mode .services .leftContainer {
     background: var(--hover2);
 }
@@ -206,17 +238,21 @@ body.dark-mode {
     background: var(--hover);
 }
 
-.dark-mode .college .img {
+.dark-mode .leftContainer .college .img {
     color: var(--bg);
-    background: var(--hover2);
+    background: linear-gradient(to right, var(--hover), var(--hover2));
 }
 
-.dark-mode .college:hover>.img {
+.dark-mode .arabic .leftContainer .college .img {
+    background: linear-gradient(to left, var(--hover), var(--hover2));
+}
+
+.dark-mode .leftContainer .college:hover>.img {
     background: var(--bg);
     color: var(--hover);
 }
 
-.dark-mode .college .span {
+.dark-mode .leftContainer .college .span {
     background: var(--bg);
     color: var(--hover);
 }
@@ -233,6 +269,23 @@ body.dark-mode {
     color: var(--bg);
     /* background: linear-gradient(var(--theme), var(--hover)); */
     background: var(--hover2);
+}
+
+
+.dark-mode .newStudents .newStudentsRow .newStudentCard,
+.dark-mode .newStudents .newStudentsRow2 .newStudentCard {
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.dark-mode .newStudentsRow2 :nth-child(3) .moon {
+    color: var(--bg2);
+}
+
+
+.dark-mode .arabic .newStudents .newStudentsRow .newStudentCard,
+.dark-mode .arabic .newStudents .newStudentsRow2 .newStudentCard {
+    background: linear-gradient(to left, var(--hover), var(--hover2));
 }
 
 

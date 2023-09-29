@@ -26,7 +26,7 @@ const NavBar = ({ language, toggleLanguage, languageData }) => {
             <ul>
                 <li className={location.pathname === '/' ? 'active' : ''}><a href="/"><icon data-content={languageText.home}><FontAwesomeIcon icon={faHouse} /></icon></a></li>
                 <li className={location.pathname === '/services' ? 'active' : ''}><a href="/services"><icon data-content={languageText.services}><FontAwesomeIcon icon={faBook} /></icon></a></li>
-                <li className={location.pathname === '/gallery' ? 'active' : ''}><a href="/gallery"><icon data-content={languageText.gallery}><FontAwesomeIcon icon={faImage} /></icon></a></li>
+                {/* <li className={location.pathname === '/gallery' ? 'active' : ''}><a href="/gallery"><icon data-content={languageText.gallery}><FontAwesomeIcon icon={faImage} /></icon></a></li> */}
                 <li>
                     <a onClick={toggleLanguage}>
                         <icon data-content={languageText.language}>

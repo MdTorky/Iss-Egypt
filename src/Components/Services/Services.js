@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import './Services.css';
-import img1 from '../../images/logo.png';
-import img2 from '../../images/flag.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faCalendarDays, faXmark, faCircleInfo, faCarBattery,
@@ -42,10 +40,8 @@ const Services = ({ language, languageData }) => {
         }
     }, [language]);
     const languageText = languageData[language];
-    const isRtl = language === 'ar';
 
-    const isServicesPage = location.pathname === '/services';
-    const type = "Academic";
+
 
 
 
@@ -384,12 +380,12 @@ const Services = ({ language, languageData }) => {
                     <div className="newStudents">
                         <h2>{languageText.newStudents}</h2>
                         <div className="newStudentsRow">
-                            <div className="newStudentCard">
+                            <div className="newStudentCard" onClick={() => { window.open("/residences", "_self") }}>
                                 <p className="time-text"><span>{languageText.residence}</span><span className="time-sub-text"></span></p>
                                 <p className="day-text">{languageText.residence2}</p>
                                 <FontAwesomeIcon icon={faBuilding} className='moon' />
                             </div>
-                            <div className="newStudentCard">
+                            <div className="newStudentCard" onClick={() => { window.open("/attractions", "_self") }}>
                                 <p className="time-text"><span>{languageText.attractions}</span><span className="time-sub-text"></span></p>
                                 <p className="day-text">{languageText.attractions2}</p>
                                 <FontAwesomeIcon icon={faMapLocationDot} className='moon' />
@@ -409,7 +405,7 @@ const Services = ({ language, languageData }) => {
                     <div className="newStudents">
                         <h2>{languageText.extraServices}</h2>
                         <div className="newStudentsRow2">
-                            <div className="newStudentCard">
+                            <div className="newStudentCard" >
                                 <p className="time-text"><span>{languageText.bankAccount}</span><span className="time-sub-text"></span></p>
                                 {/* <p className="day-text">Unlock Financial Freedom</p> */}
                                 <p className="day-text">{languageText.bankAccount2}</p>

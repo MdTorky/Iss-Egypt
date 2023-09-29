@@ -94,7 +94,9 @@ body.dark-mode {
 }
 
 .dark-mode .row .rowCircle {
-    box-shadow: rgba(255, 255, 255, 0.34) 0px 3px 8px;
+    /* box-shadow: rgba(255, 255, 255, 0.34) 0px 3px 8px; */
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+
 }
 
 .dark-mode .homeBoxes .homeTitle {
@@ -136,40 +138,47 @@ body.dark-mode {
 }
 
 .dark-mode .connect .socialCircle {
-    background: var(--bg);
-    color: var(--hover);
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+
+    color: var(--bg);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.35) 0px -2px 6px 0px inset;
 }
 
 
 .dark-mode .connect .socialCircle:hover {
-    background: var(--hover);
-    color: var(--bg);
-    box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.2);
+    background: linear-gradient(to right, var(--bg), var(--bg2));
+
+    color: var(--hover);
+    /* box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.2); */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
 }
 
 .dark-mode .connect .button {
-    background: var(--bg);
-    border: 2px solid var(--bg)
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+
+    /* border: 2px solid var(--bg) */
 }
 
 .dark-mode .connect .button .button__text {
-    color: var(--hover);
-}
-
-.dark-mode .connect .button .button__icon {
-    background: var(--hover);
     color: var(--bg);
 }
 
-.dark-mode .connect .button:hover .button__icon {
+.dark-mode .connect .button .button__icon {
+    background: linear-gradient(to right, var(--bg), var(--bg2));
+
     color: var(--hover);
-    background: var(--bg);
+}
+
+.dark-mode .connect .button:hover .button__icon {
+    color: var(--bg);
+    background: linear-gradient(to right, var(--hover), var(--hover2));
 }
 
 .dark-mode .connect .button:active .button__icon {
-    background: var(--bg);
-    color: var(--hover)
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+
+    color: var(--bg)
 }
 
 
@@ -288,6 +297,116 @@ body.dark-mode {
     background: linear-gradient(to left, var(--hover), var(--hover2));
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pages */
+
+.dark-mode .section .sectionBox {
+    /* background: var(--hover2); */
+
+}
+
+.dark-mode .section .outerBox {
+    background: var(--hover2);
+}
+
+.dark-mode .section .outerBox .innerBox {
+    background: var(--hover);
+}
+
+.dark-mode .attraction .outerBox {
+    background: var(--hover2);
+}
+
+.dark-mode .attraction .outerBox .innerBox {
+    background: var(--hover);
+}
+
+
+.dark-mode .cards .card {
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.dark-mode .icons .icon {
+    color: var(--bg);
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+}
+
+
+.dark-mode .icon:hover {
+    background: linear-gradient(to right, var(--bg), var(--bg2));
+    color: var(--hover);
+}
+
+.dark-mode .icon:hover .tooltip,
+.dark-mode .icon:hover .tooltip::before {
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+
+    color: var(--bg);
+}
+
+.dark-mode .arabic .cards .card {
+    background: linear-gradient(to left, var(--hover), var(--hover2));
+
+}
+
+
+
+.dark-mode .attraction .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: linear-gradient(to right, var(--hover), var(--hover2)); */
+    background: var(--hover)
+}
+
+.dark-mode .attraction .icon {
+    color: var(--bg);
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+.dark-mode .attraction .icon:hover {
+    background: linear-gradient(to right, var(--bg), var(--bg2));
+    color: var(--hover);
+}
+
+
+
+.dark-mode .attraction .popup-opening {
+    display: block;
+    animation: popup-open 0.5s ease-in-out forwards;
+}
+
+.dark-mode .attraction .popup-closing {
+    opacity: 0;
+    transform: scale(0.8) translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dark-mode .attraction .top {
+    background: var(--hover2);
+}
+
+.dark-mode .attraction .bottom {
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
 
 
 @media screen and (max-width: 700px) {

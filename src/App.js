@@ -4,10 +4,12 @@ import Home from './Components/Home/Home';
 import Menu from './Components/Menu/Menu';
 import Services from './Components/Services/Services';
 import NavBar from './Components/NavBar/NavBar';
+import Residences from './Components/Residences/Residences';
 import Footer from './Components/Footer/Footer';
 import img1 from './images/logo.png';
 import languageData from './language.json';
 import { useDarkMode } from './DarkModeContext';
+import Attractions from './Components/Attractions/Attractions';
 
 function App() {
   // Initialize the language state with the default language (e.g., "en")
@@ -51,6 +53,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home language={language} languageData={languageData} />} />
               <Route path="/services" element={<Services language={language} languageData={languageData} />} />
+              <Route path="/residences" element={<Residences language={language} languageData={languageData} />} />
+              <Route path="/attractions" element={<Attractions language={language} languageData={languageData} />} />
 
             </Routes>
           </div>

@@ -55,6 +55,7 @@
     "advance": "advance",
     "calender": "Add A Reminder",
     "info": "Know More",
+    "close": "Close",
 
     "achievements": "The Committees' Achievements",
     "blogSubtitle": "ISS Egypt Welcome Party",
@@ -124,6 +125,8 @@
     "Location": "Location",
     "Website": "Website",
     "Email": "Email",
+    "Phone": "Phone",
+    "Bus": "Bus",
 
     "newStudents": "New Students",
     "extraServices": "Extra Services",
@@ -145,6 +148,15 @@
     "groups2": "Access Various Groups",
     "clubs2": "Join Vibrant Communities",
     "extraCourses2": "Supplemental Courses",
+
+    "on": "On Campus",
+    "off": "Off Campus",
+    "groceries": "Groceries",
+    "mosques": "Mosques",
+    "other": "Other Places",
+    "error": "Sorry no website available for this Residence",
+    "error2": "Sorry no emails available for this Residence",
+    "error3": "Sorry no buses go to",
 
     "announcements": "Announcements",
 
@@ -213,6 +225,7 @@
     "advance": "نتقدم",
     "calender": "إضافة تذكير",
     "info": "تعرف على المزيد",
+    "close": "أغلق",
 
     "achievements": "إنجازات الاتحاد",
 
@@ -283,6 +296,8 @@
     "Location": "العنوان",
     "Website": "الموقع",
     "Email": "البريد",
+    "Phone": "الهاتف",
+    "Bus": "باص",
 
     "newStudents": "الطلاب الجدد",
     "extraServices": "خدمات إضافية",
@@ -304,6 +319,15 @@
     "groups2": "انضم إلى مجموعات مختلفة",
     "clubs2": "انضم إلى الأندية المتعددة",
     "extraCourses2": "الدورات التكميلية إضافية",
+
+    "on": "داخل الحرم الجامعي",
+    "off": "خارج الحرم الجامعي",
+    "groceries": "البقالة",
+    "mosques": "المساجد",
+    "other": "اماكن اخرى",
+    "error": "عفوا لا يوجد موقع متاح لهذا السكن",
+    "error2": "عفوا لا يوجد رسائل بريد متاحة لهذا السكن",
+    "error3": "عفوا لا توجد حافلات تذهب إلى",
 
     "announcements": "الإعلانات",
 

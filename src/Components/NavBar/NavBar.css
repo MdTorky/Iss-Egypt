@@ -262,7 +262,7 @@
         flex-direction: row;
         height: 30px;
         border-radius: 0;
-        padding-top: 5px;
+        /* padding-top: 5px; */
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
@@ -321,7 +321,7 @@
         /* display: none; */
     }
 
-    .navbar ul li:hover:nth-child(4) icon {
+    .navbar ul li:hover:nth-child(3) icon {
         font-size: 20px;
         background: none;
         font-weight: 500;
@@ -330,7 +330,7 @@
 
     }
 
-    .navbar.arabic ul li:nth-child(4) icon::after {
+    .navbar.arabic ul li:nth-child(3) icon::after {
         font-family: 'Noto Kufi Arabic', sans-serif;
         font-size: 7px;
         font-weight: 500;

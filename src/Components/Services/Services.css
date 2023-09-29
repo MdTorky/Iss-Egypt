@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+    height: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* background: var(--hover2); */
+    box-sizing: border-box;
+
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 10px;
+    background: transparent;
+    border-radius: 10px;
+}
+
+
 h2 {
     transition: all 0.3s ease-in-out;
 }
@@ -28,7 +43,6 @@ h2 {
     border-radius: 20px;
     width: 65%;
     /* transition: all 0.3s ease-in-out; */
-
 }
 
 .services .annContainer .annContainer2 {
@@ -133,7 +147,6 @@ h2 {
 .newStudents .newStudentsRow2 .newStudentCard {
     width: 250px;
     height: 100px;
-    background: rgb(17, 4, 134);
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -171,6 +184,17 @@ h2 {
 
 }
 
+a {
+    text-decoration: none;
+
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 .time-text {
     font-size: 1.3em;
     margin: 0 0 0 15px;
@@ -189,8 +213,6 @@ h2 {
     margin: 0 0 0 15px;
     font-weight: 500;
     transition: all 0.3s ease-in-out;
-
-
 }
 
 
@@ -295,6 +317,11 @@ h2 {
 .arabic .newStudents .newStudentsRow .newStudentCard:hover>.time-text,
 .arabic .newStudents .newStudentsRow2 .newStudentCard:hover>.time-text {
     font-size: 0.9em;
+}
+
+.newStudents .newStudentsRow .newStudentCard:hover>.day-text,
+.newStudents .newStudentsRow2 .newStudentCard:hover>.day-text {
+    font-size: 0.7em;
 }
 
 .arabic .newStudents .newStudentsRow .newStudentCard:nth-child(3):hover>.day-text {
@@ -1055,21 +1082,39 @@ h2 {
 @media screen and (max-width: 700px) {
 
 
-    .services {
-        margin-bottom: 100%;
-        margin-left: 5%;
 
+
+
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        box-sizing: border-box;
+        margin: -7% 0 50% 0;
+        padding: 10px;
+        gap: 5px;
     }
 
     .arabic .services {
-
-        margin-right: 5%;
-
+        margin-top: 10%;
     }
 
-    .services .annContainer .annStories {
-        display: flex;
-        gap: 15px;
+    .services .annContainer {
+        flex: 1;
+        order: 1;
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .services .annContainer h2 {
+        font-size: 1em;
+    }
+
+    .services .annContainer .annStories .annStories2 {
+        gap: 20px;
     }
 
     .services .annContainer .annStories .story {
@@ -1084,6 +1129,296 @@ h2 {
         width: 40px;
         border-radius: 10px;
     }
+
+
+    .newStudents .newStudentsRow,
+    .newStudents .newStudentsRow2 {
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        padding: 0;
+    }
+
+
+
+
+    .newStudents .newStudentsRow .newStudentCard,
+    .newStudents .newStudentsRow2 .newStudentCard {
+        width: 45%;
+        height: 100px;
+    }
+
+
+    .newStudents .newStudentsRow:hover .newStudentCard,
+    .newStudents .newStudentsRow2:hover .newStudentCard {
+        filter: blur(0px);
+    }
+
+
+    .time-text {
+        font-size: 0.8em;
+    }
+
+    .day-text {
+        font-size: 0.5em;
+    }
+
+
+    .newStudentsRow .moon,
+    .newStudentsRow2 .moon {
+        font-size: 0.9em;
+    }
+
+
+
+
+    .newStudents .newStudentsRow .newStudentCard:hover>.moon,
+    .newStudents .newStudentsRow2 .newStudentCard:hover>.moon {
+        font-size: 1em;
+    }
+
+    .newStudents .newStudentsRow .newStudentCard:nth-child(3):hover>.day-text {
+        font-size: 0.5em;
+
+    }
+
+    .newStudents .newStudentsRow2 .newStudentCard:first-child:hover>.day-text {
+        font-size: 0.5em;
+    }
+
+    .arabic .time-text {
+        font-size: 0.8em;
+    }
+
+    .arabic .day-text {
+        font-size: 0.6em;
+        margin: 0 15px 0 0;
+        font-weight: 500;
+    }
+
+
+
+    .arabic .newStudents .newStudentsRow .newStudentCard:hover>.moon,
+    .arabic .newStudents .newStudentsRow2 .newStudentCard:hover>.moon {
+        font-size: 1.2em;
+    }
+
+    .arabic .newStudents .newStudentsRow .newStudentCard:hover>.time-text,
+    .arabic .newStudents .newStudentsRow2 .newStudentCard:hover>.time-text {
+        font-size: 0.7em;
+    }
+
+
+    .newStudents .newStudentsRow .newStudentCard:hover>.day-text,
+    .newStudents .newStudentsRow2 .newStudentCard:hover>.day-text {
+        font-size: 0.5em;
+    }
+
+    .arabic .newStudents .newStudentsRow .newStudentCard:nth-child(3):hover>.day-text {
+        font-size: 0.5em;
+
+    }
+
+    .arabic .newStudents .newStudentsRow2 .newStudentCard:first-child:hover>.day-text {
+        font-size: 0.5em;
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .services .rightContainer {
+        flex: 1;
+        order: 2;
+        height: fit-content;
+        padding: 15px;
+        line-height: 1px;
+    }
+
+    .services .rightContainer .collegesBoxTitle {
+        /* overflow: auto; */
+        scroll-snap-type: x mandatory;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 10px;
+
+    }
+
+    .services .rightContainer .collegesBoxTitle .collegesBox {
+        flex-direction: row;
+
+    }
+
+    .services .rightContainer .collegesBoxTitle>h2 {
+        font-size: 1em;
+        text-align: start;
+    }
+
+    .collegesBoxTitle:hover .college {
+        filter: blur(0px);
+
+    }
+
+    .rightContainer .college .img {
+        font-size: 1.4em;
+        height: 40px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .services .leftContainer {
+        order: 1;
+        height: 130px;
+        padding: 15px;
+        line-height: 1px;
+
+    }
+
+    .services .leftContainer .collegesBoxTitle {
+        /* overflow: auto; */
+        scroll-snap-type: x mandatory;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+    }
+
+    .services .leftContainer .collegesBoxTitle .collegesBox {
+        flex-direction: row;
+        line-height: 15px;
+        ;
+
+    }
+
+
+    .services .leftContainer .collegesBoxTitle>h2 {
+        font-size: 1em;
+        /* text-align: center; */
+
+    }
+
+    .leftContainer .college {
+        max-width: 600px;
+        height: 90px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .leftContainer .college .img {
+        width: 50px;
+        height: 40px;
+        margin-left: 10px;
+        border-radius: 10px;
+        font-size: 1.4em;
+        margin-bottom: 1px;
+    }
+
+
+    .leftContainer .college .textBox {
+        display: flex;
+        margin-left: 5px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .leftContainer .college .textContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .leftContainer .college .span {
+        display: none;
+    }
+
+
+    .leftContainer .college .h1 {
+        font-size: 0.8em;
+        font-weight: bold;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    .leftContainer .college .p {
+        font-size: 0.65em;
+        font-weight: lighter;
+        margin: 0;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

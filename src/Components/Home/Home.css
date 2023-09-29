@@ -121,9 +121,13 @@
 
 
 .homeItems .row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2em;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    /* background: red; */
+    padding: 10px;
+    /* justify-content: space-around; */
+
 }
 
 .homeItems.expanded {
@@ -190,8 +194,18 @@
 
 .row .rowCircle p {
     text-align: center;
-    font-size: 0.8em;
+    font-size: 0.9em;
     white-space: nowrap;
+    font-weight: 800;
+
+}
+
+.arabic .row .rowCircle p {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: 800;
+    font-size: 0.8em;
+
+
 }
 
 .row .rowCircle span {
@@ -204,6 +218,11 @@
     text-align: center;
     color: #E8F9FD;
     font-size: 0.7em;
+}
+
+.arabic .row .rowCircle span {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+
 }
 
 .row .rowCircle .logo {
@@ -613,7 +632,8 @@
 }
 
 .connect .socialCircle {
-    background: var(--hover);
+    background: linear-gradient(to right, var(--bg), var(--bg2));
+
     border-radius: 50%;
     width: 100px;
     display: flex;
@@ -622,9 +642,11 @@
     height: 100px;
     text-align: center;
     font-size: 50px;
-    color: var(--bg);
-    transition: 0.3s;
+    color: var(--hover);
+    transition: 0.5s ease;
     cursor: pointer;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
@@ -651,9 +673,13 @@
 
 
 .connect .socialCircle:hover {
-    background: var(--bg);
-    color: var(--hover);
-    box-shadow: 0px 0px 6px 3px #00000027;
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+
+    /* background: var(--bg); */
+    /* color: var(--hover); */
+
+    /* box-shadow: 0px 0px 6px 3px var(--bg2); */
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .connect .emailUs {
@@ -667,7 +693,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
-    background: var(--hover);
+    background: var(--bg);
     overflow: hidden;
     border-radius: 30px;
     margin: auto;
@@ -683,7 +709,7 @@
 
 .connect .button .button__text {
     transform: translateX(22px);
-    color: var(--bg);
+    color: var(--hover);
     font-weight: 600;
     font-size: 1.3em;
     font-family: 'Poppins', sans-serif;
@@ -694,8 +720,10 @@
     transform: translateX(200px);
     height: 100%;
     width: 90px;
-    background: var(--bg);
-    color: var(--hover);
+    /* background: var(--hover); */
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+
+    color: var(--bg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -709,13 +737,15 @@
 .connect .button:hover .button__icon {
     width: 300px;
     transform: translateX(-10px);
-    color: var(--bg);
-    background: var(--hover);
+    color: var(--hover);
+    background: var(--bg);
+    background: linear-gradient(to right, var(--bg), var(--bg2));
+
 }
 
 .connect .button:active .button__icon {
-    background: var(--hover);
-    color: var(--bg)
+    background: var(--bg);
+    color: var(--hover)
 }
 
 .arabic .connectTitle {
@@ -1124,8 +1154,9 @@
         height: 40px;
         border-radius: 20px;
         margin: 0;
-        background: var(--theme);
-        border: 2px solid var(--theme)
+        background: linear-gradient(to right, var(--bg), var(--bg2));
+
+        /* border: 2px solid var(--theme) */
     }
 
     .connect .button .button__text {
@@ -1141,8 +1172,9 @@
         transform: translateX(230%);
         height: 100%;
         width: 30%;
-        background: var(--bg);
-        color: var(--theme);
+        background: linear-gradient(to right, var(--hover), var(--hover2));
+
+        color: var(--bg);
         font-size: 25px;
     }
 

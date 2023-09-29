@@ -363,15 +363,10 @@ body.dark-mode {
 
 }
 
-
-
 .dark-mode .attraction .popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     /* background: linear-gradient(to right, var(--hover), var(--hover2)); */
-    background: var(--hover)
+    background: var(--hover);
+
 }
 
 .dark-mode .attraction .icon {
@@ -406,8 +401,90 @@ body.dark-mode {
 .dark-mode .attraction .bottom {
     background: linear-gradient(to right, var(--hover), var(--hover2));
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
 }
 
+
+
+
+
+
+.dark-mode .transportation .outerBox {
+    background: var(--hover2);
+}
+
+.dark-mode .transportation .outerBox .innerBox {
+    background: var(--hover);
+}
+
+
+.dark-mode .transportation .popup {
+    /* background: linear-gradient(to right, var(--hover), var(--hover2)); */
+    background: var(--hover)
+}
+
+.dark-mode .transportation .icon {
+    color: var(--bg);
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+.dark-mode .transportation .icon:hover {
+    background: linear-gradient(to right, var(--bg), var(--bg2));
+    color: var(--hover);
+}
+
+
+
+.dark-mode .transportation .popup-opening {
+    display: block;
+    animation: popup-open 0.5s ease-in-out forwards;
+}
+
+.dark-mode .transportation .popup-closing {
+    opacity: 0;
+    transform: scale(0.8) translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dark-mode .transportation .top {
+    background: var(--hover2);
+}
+
+.dark-mode .transportation .bottom {
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.dark-mode .account .outerBox .innerBox .button .icon {
+    color: var(--bg);
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+}
+
+.dark-mode .pop {
+    background: var(--hover);
+}
+
+.dark-mode .pop .popup-content {
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.35) 0px -2px 6px 0px inset;
+
+
+}
+
+
+
+
+
+.dark-mode .account .outerBox {
+    background: var(--hover2);
+}
+
+.dark-mode .account .outerBox .innerBox {
+    background: var(--hover);
+}
 
 @media screen and (max-width: 700px) {
     .dark-mode .navbar ul li.active icon::after {

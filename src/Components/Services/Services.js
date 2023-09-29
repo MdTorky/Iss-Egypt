@@ -390,7 +390,7 @@ const Services = ({ language, languageData }) => {
                                 <p className="day-text">{languageText.attractions2}</p>
                                 <FontAwesomeIcon icon={faMapLocationDot} className='moon' />
                             </div>
-                            <div className="newStudentCard">
+                            <div className="newStudentCard" onClick={() => { window.open("/transportation", "_self") }}>
                                 <p className="time-text"><span>{languageText.transportation}</span><span className="time-sub-text"></span></p>
                                 <p className="day-text">{languageText.transportation2}</p>
                                 <FontAwesomeIcon icon={faCarSide} className='moon' />
@@ -405,7 +405,7 @@ const Services = ({ language, languageData }) => {
                     <div className="newStudents">
                         <h2>{languageText.extraServices}</h2>
                         <div className="newStudentsRow2">
-                            <div className="newStudentCard" >
+                            <div className="newStudentCard" onClick={() => { window.open("/openAccount", "_self") }}>
                                 <p className="time-text"><span>{languageText.bankAccount}</span><span className="time-sub-text"></span></p>
                                 {/* <p className="day-text">Unlock Financial Freedom</p> */}
                                 <p className="day-text">{languageText.bankAccount2}</p>

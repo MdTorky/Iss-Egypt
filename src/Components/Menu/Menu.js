@@ -86,6 +86,8 @@ const Menu = ({ language, languageData }) => {
     const isNotGalleryPage = location.pathname !== '/gallery';
     const isNotResidencesPage = location.pathname !== '/residences';
     const isNotAttractionsPage = location.pathname !== '/attractions';
+    const isNotTransportationPage = location.pathname !== '/transportation';
+    const isNotAccountPage = location.pathname !== '/openAccount';
 
     return (
         <div className={`sideMenu 
@@ -94,6 +96,8 @@ const Menu = ({ language, languageData }) => {
         ${isNotGalleryPage ? '' : 'hidden'}
         ${isNotResidencesPage ? '' : 'hidden'}
         ${isNotAttractionsPage ? '' : 'hidden'}
+        ${isNotTransportationPage ? '' : 'hidden'}
+        ${isNotAccountPage ? '' : 'hidden'}
         `}>
 
             <div className="liveBox">

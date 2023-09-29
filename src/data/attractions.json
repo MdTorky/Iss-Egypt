@@ -35,10 +35,10 @@
     {
       "id": 5,
       "name": "Premium Outlet",
-      "location": "https://maps.app.goo.gl/S5eawTWM5QJE4CPHA",
-      "bus": "T31(Pulai Indah/Taman U)",
+      "location": "https://maps.app.goo.gl/qqRy3Yw7Jo1YV2iJ9",
+      "bus": "T31[Opp MBIP] -> JPO1",
       "busImg": "https://drive.google.com/uc?export=view&id=1fDKM9WIabYSaUs-Gm5aKfH0U028CudaD",
-      "img": "https://drive.google.com/uc?export=view&id=1c_88SMhDELzU_Mk3wUOa_WveKCe_6Hid"
+      "img": "https://drive.google.com/uc?export=view&id=1At8aTq1YEVM64VUqkXOTgcS7f7_MFNpo"
     }
   ],
   "attractions": [
@@ -136,5 +136,21 @@
       "img": "https://drive.google.com/uc?export=view&id=1Aogm9x1GXDhLUfQKC2bbx5DbCpeB6gIO"
     }
   ],
-  "other": [{}]
+  "utm": [
+    {
+      "id": 1,
+      "name": "UTM International",
+      "location": "https://maps.app.goo.gl/6RjyRNvt5ZK5ABor6",
+      "bus": "UTM BUS A, B, E",
+      "busImg": "https://drive.google.com/uc?export=view&id=1gON3ailZLeYE8D2LPL_T67FoQi0DyG4r",
+      "img": "https://drive.google.com/uc?export=view&id=175_e6WBf738l6ZkY58uEinSZ1K22it6M"
+    },
+    {
+      "id": 2,
+      "name": "F54 (SRAD)",
+      "location": "https://maps.app.goo.gl/bx3sTLgJtDM4abgM6",
+      "busImg": "https://drive.google.com/uc?export=view&id=1gON3ailZLeYE8D2LPL_T67FoQi0DyG4r",
+      "img": "https://drive.google.com/uc?export=view&id=1DVzSIt3dCGZ5J0DG5OJDosITtEWTafSQ"
+    }
+  ]
 }

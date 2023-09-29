@@ -1,4 +1,4 @@
-.attraction {
+.transportation {
     margin-bottom: 10%;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -7,7 +7,7 @@
     margin-right: 130px;
 }
 
-.arabic .attraction {
+.arabic .transportation {
     font-family: 'Noto Kufi Arabic', sans-serif;
     margin-left: 275px;
     margin-top: -15px;
@@ -15,7 +15,7 @@
 
 }
 
-.attraction .sectionBox {
+.transportation .sectionBox {
     width: fit-content;
     display: flex;
     /* background: var(--bg2); */
@@ -26,40 +26,21 @@
     border-radius: 20px;
 }
 
-.attraction .title {
+.transportation .title {
     text-align: center;
     font-size: 2em;
 }
 
 
-/* .section .overlay {
-    position: absolute;
-    font-size: 30em;
-    top: 10%;
-    left: 70%;
-    z-index: -1;
-    opacity: 0.4;
-    transform: rotate(15deg);
-    color: #a0ced9
-} */
 
-.attraction>map {
-    width: fit-content;
-    box-sizing: border-box;
-    text-align: center;
-    margin: auto;
-    /* background: red; */
-}
-
-
-.attraction .outerBox {
+.transportation .outerBox {
     background: var(--bg2);
     padding: 20px;
     border-radius: 20px;
     height: max-content;
 }
 
-.attraction .outerBox .innerBox {
+.transportation .outerBox .innerBox {
     background: var(--bg);
     padding: 10px;
     border-radius: 20px;
@@ -70,29 +51,31 @@
     text-align: center;
 }
 
-.arabic .attraction .outerBox .innerBox {
+/* .arabic .transportation .outerBox .innerBox {
     direction: ltr;
-}
+} */
 
 
-.cards {
+.transportation .cards {
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.cards .card {
+.transportation .cards .card {
     background: linear-gradient(to right, var(--bg2), var(--bg));
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 15px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     transition: 0.7s ease;
+    align-items: center;
+    /* padding: 5px; */
 }
 
 
-.cards .card:hover {
+.transportation .cards .card:hover {
     box-shadow: var(--hover2) 0px 1px 4px, var(--hover) 0px 0px 0px 3px;
     cursor: pointer;
     transform: scale(1.1);
@@ -104,14 +87,14 @@
 } */
 
 
-.cards .card .cardsBottomContent {
-    padding: 15px 15px 15px 15px;
+.transportation .cards .card .cardsBottomContent {
+    padding: 20px;
     border-radius: 20px;
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 
-.cards .card .cardsBottomContent p {
+.transportation .cards .card .cardsBottomContent p {
     margin: 0;
     font-size: 1.1em;
     font-weight: 600;
@@ -120,43 +103,41 @@
     gap: 5px;
 }
 
-.cards .card .cardsBottomContent p span {
+.transportation .cards .card .cardsBottomContent p span {
     color: var(--theme);
     font-size: 0.7em;
     margin-top: 5px;
 }
 
-.arabic .cards .card .cardsBottomContent p span {
-    order: 1;
-}
 
 
-.cards .card .cardsBottomContent p span::after {
-    content: "Females";
-    display: none;
-    transition: 0.5s all ease;
-}
-
-.arabic .cards .card .cardsBottomContent p span::after {
-    content: "للنساء";
-}
-
-
-.cards .card .cardsBottomContent p span:hover::after {
-    display: inline;
-}
-
-.cards .card .img img {
-    width: 300px;
-    height: 150px;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+.transportation .cards .card .img {
+    width: 70px;
+    height: 100%;
+    border-radius: 50px;
     transition: 0.7s ease;
+    padding: 5px;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transportation .cards .card .img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    transition: 0.7s ease;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
 }
 
+.transportation .cards .card .cardsBottomContent {
+    display: flex;
+    flex-direction: column;
+}
 
-.cards .card .cardsBottomContent .icons {
+.transportation .cards .card .cardsBottomContent .icons {
     display: flex;
     justify-content: space-evenly;
     gap: 10px;
@@ -199,6 +180,8 @@
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     font-family: "Poppins", sans-serif;
     font-weight: 500;
+    white-space: nowrap;
+
 
 }
 
@@ -224,6 +207,7 @@
     background: linear-gradient(to right, var(--hover), var(--hover2));
     color: var(--bg);
 
+
 }
 
 .icon:hover .tooltip {
@@ -231,11 +215,14 @@
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    white-space: nowrap;
 }
 
 .icon:hover span,
 .icon:hover .tooltip {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+
 }
 
 
@@ -243,6 +230,8 @@
 .icon:hover .tooltip::before {
     background: var(--bg2);
     color: var(--hover);
+    white-space: nowrap;
+
 }
 
 
@@ -272,7 +261,7 @@
 
 
 
-.attraction .popup {
+.transportation .popup {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -293,16 +282,16 @@
 }
 
 
-.arabic .attraction .popup {
+/* .arabic .transportation .popup {
     direction: ltr
-}
+} */
 
-.attraction .popup-opening {
+.transportation .popup-opening {
     display: block;
     animation: popup-open 0.5s ease-in-out forwards;
 }
 
-.attraction .popup-closing {
+.transportation .popup-closing {
     opacity: 0;
     transform: scale(0.8) translate(-50%, -50%);
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -385,12 +374,14 @@
     font-weight: 500;
     box-sizing: border-box;
     width: 90%;
+    /* text-align: justify; */
 
 }
 
+.popup .bottom .bus.new {
+    width: 70%;
 
-
-
+}
 
 
 .iconAnimation {
@@ -456,7 +447,15 @@
     }
 }
 
+@keyframes rotateBus {
+    0% {
+        transform: rotate(0deg);
+    }
 
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 
 
@@ -476,7 +475,7 @@
 
 @media screen and (max-width:700px) {
 
-    .attraction {
+    .transportation {
         font-family: 'Poppins', sans-serif;
         display: flex;
         flex-direction: column;
@@ -489,7 +488,8 @@
         /* Center horizontally */
     }
 
-    .arabic .attraction {
+
+    .arabic .transportation {
         font-family: 'Noto Kufi Arabic', sans-serif;
         margin: 0;
         margin: 40px auto 50% auto;
@@ -498,7 +498,7 @@
 
     }
 
-    .attraction .sectionBox {
+    .transportation .sectionBox {
         width: fit-content;
         flex-direction: column;
         padding: 15px;
@@ -511,11 +511,11 @@
     } */
 
 
-    .attraction .outerBox {
+    .transportation .outerBox {
         padding: 15px;
     }
 
-    .attraction .outerBox .innerBox {
+    .transportation .outerBox .innerBox {
         /* background: var(--bg2); */
         padding: 5px;
     }
@@ -531,7 +531,7 @@
         height: 120px;
     }
 
-    .attraction .popup {
+    .transportation .popup {
         width: 70%;
     }
 }

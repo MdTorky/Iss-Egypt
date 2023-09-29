@@ -64,9 +64,9 @@ const Footer = ({ language, languageData }) => {
                 </li>
             </div>
             <div className="menu">
-                <li className="menu__item"><a class="menu__link" href="#">{languageText.home}</a></li>
-                <li className="menu__item"><a class="menu__link" href="#">{languageText.services}</a></li>
-                <li className="menu__item"><a class="menu__link" href="#">{languageText.gallery}</a></li>
+                <li className="menu__item"><a class="menu__link" href="/">{languageText.home}</a></li>
+                <li className="menu__item"><a class="menu__link" href="/services">{languageText.services}</a></li>
+                {/* <li className="menu__item"><a class="menu__link" href="#">{languageText.gallery}</a></li> */}
             </div>
             <p>{languageText.rights}</p>
         </footer>

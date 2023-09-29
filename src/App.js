@@ -10,6 +10,8 @@ import img1 from './images/logo.png';
 import languageData from './language.json';
 import { useDarkMode } from './DarkModeContext';
 import Attractions from './Components/Attractions/Attractions';
+import Transportation from './Components/Transportation/Transportation';
+import BankAccount from './Components/BankAccount/BankAccount';
 
 function App() {
   // Initialize the language state with the default language (e.g., "en")
@@ -55,6 +57,8 @@ function App() {
               <Route path="/services" element={<Services language={language} languageData={languageData} />} />
               <Route path="/residences" element={<Residences language={language} languageData={languageData} />} />
               <Route path="/attractions" element={<Attractions language={language} languageData={languageData} />} />
+              <Route path="/transportation" element={<Transportation language={language} languageData={languageData} />} />
+              <Route path="/openAccount" element={<BankAccount language={language} languageData={languageData} />} />
 
             </Routes>
           </div>

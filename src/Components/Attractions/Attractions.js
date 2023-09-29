@@ -10,6 +10,7 @@ import attractionsData from "../../data/attractions.json"
 var groceries = attractionsData.groceries
 var attractions = attractionsData.attractions
 var mosques = attractionsData.mosques
+var utm = attractionsData.utm
 
 const Attractions = ({ language, languageData }) => {
     useEffect(() => {
@@ -115,7 +116,7 @@ const Attractions = ({ language, languageData }) => {
                 </div>
                 <div className="outerBox">
                     <div className="innerBox">
-                        <h2>{languageText.attractions}</h2>
+                        <h2>{languageText.attraction}</h2>
                         <div className="cards">
                             {attractions.map((attraction, index) => (
                                 <div className="card" key={index}>
@@ -123,6 +124,22 @@ const Attractions = ({ language, languageData }) => {
                                     <div className="cardsBottomContent">
                                         <p>{attraction.name} </p>
                                         <Button item={attraction} languageText={languageText} />
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+                <div className="outerBox">
+                    <div className="innerBox">
+                        <h2>UTM</h2>
+                        <div className="cards">
+                            {utm.map((utm, index) => (
+                                <div className="card" key={index}>
+                                    <div className="img"><img src={utm.img} alt="" /></div>
+                                    <div className="cardsBottomContent">
+                                        <p>{utm.name} </p>
+                                        <Button item={utm} languageText={languageText} />
                                     </div>
                                 </div>
                             ))}

@@ -287,6 +287,8 @@
         border-radius: none;
         position: relative;
         box-shadow: none;
+        background: none;
+
     }
 
     .navbar ul li:hover {

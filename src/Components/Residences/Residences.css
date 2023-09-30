@@ -298,11 +298,13 @@
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
+        align-items: center;
+        margin: 0 auto 50% auto;
     }
 
     .arabic .section {
         font-family: 'Noto Kufi Arabic', sans-serif;
-        margin-top: 40px;
+        margin: 40px auto 50% auto;
 
     }
 

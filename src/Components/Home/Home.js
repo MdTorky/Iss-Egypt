@@ -70,7 +70,7 @@ function Home({ language, languageData }) {
             name: languageText.HRName
         },
         {
-            imgSrc: images.HR,
+            // imgSrc: images.HR,
             text: languageText.Logistics,
             name: languageText.LogisticsName
         },

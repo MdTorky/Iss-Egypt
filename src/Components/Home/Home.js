@@ -283,9 +283,9 @@ function Home({ language, languageData }) {
                         <EventBoxTitle text={languageText.AcademicEvents} themeColor={themeColor} isRtl={isRtl} />
 
                         <div className="eventBox">
-                            <div className="slide active">
+                            <div className="slide active ">
                                 <img src={images.academicImg1} alt="" />
-                                <div className="info">
+                                <div className="info special">
                                     <h2>{languageText.AcademicEventTitle1}<span className="creator"> {languageText.AcademicEventCreator1}</span></h2>
                                     <p>{languageText.AcademicEventDescription1}</p>
                                 </div>

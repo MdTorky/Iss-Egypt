@@ -267,9 +267,7 @@
         border-bottom-right-radius: 20px;
     }
 
-    .navbar ul li:hover icon::after {
-        display: none;
-    }
+
 
     .navbar ul li {
         display: flex;
@@ -277,6 +275,8 @@
         text-align: center;
         width: 35px;
         height: 35px;
+        background: none;
+
     }
 
     .navbar ul li:hover icon {
@@ -311,9 +311,15 @@
         white-space: nowrap;
     }
 
+    .navbar ul li:hover icon::after {
+        display: none;
+    }
+
     .navbar ul li.active {
         background: none;
         border-radius: 15px;
+        background: none;
+
     }
 
     .navbar ul li.active icon::after {
@@ -329,6 +335,8 @@
         font-weight: 500;
         top: -10px;
         font-family: 'Poppins', sans-serif;
+        background: none;
+
 
     }
 
@@ -338,6 +346,8 @@
         font-weight: 500;
         white-space: nowrap;
         margin-bottom: 15px;
+        background: none;
+
     }
 
     .navbar ul li:nth-child(4) icon::after {

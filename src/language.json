@@ -131,6 +131,8 @@
     "Bus": "Bus",
     "Apple": "IOS Link",
     "Android": "Android Link",
+    "WhatsApp": "WhatsApp Link",
+    "Telegram": "Telegram Link",
     "Download": "Download",
     "Description": "Description",
 
@@ -201,6 +203,18 @@
     "d6": "Latest Tuition Fees Receipt",
     "d7": "Eval (Immigration Approval)",
     "d8": "250RM Cash",
+
+    "SelfImprovement": "Self Improvement",
+    "Hobby": "Hobby",
+    "AcademicTitle": "Academic",
+    "aiesecDesc": "A worldwide platform enabling young people to develop their leadership potential via a variety of practical experiences, such as internships, volunteer opportunities, and more.",
+    "globalDesc": "A group for students who are interested in international relations and want to interact with international students.",
+    "volunteerDesc": "A club where you may volunteer alongside other student",
+    "tedDesc": "A passionate community that hosts a series of presentations in order to bring people from many disciplines and cultures together to discuss their views under one roof.",
+    "toastDesc": "The club offers an excellent opportunity for all members to practice and enhance their communication and leadership abilities.",
+    "photoDesc": "The club offers photographic services such as seminars, weddings and events, conferences, group photos, annual dinners, and more.",
+    "esportsDesc": "A club with the objective of forming, organizing, and preparing teams to compete in video games against other clubs and at other events",
+    "roboconDesc": "It is a robotics club where students may learn how to code and write commands for robots via play, as well as build robots to compete in international competitions.",
 
     "announcements": "Announcements",
 
@@ -344,8 +358,10 @@
     "Image": "صورة",
     "Form": "استمارة",
     "Bus": "باص",
-    "Apple": "IOS رابط",
-    "Android": "Android رابط",
+    "Apple": "رابط IOS",
+    "Android": "رابط Android",
+    "WhatsApp": "رابط WhatsApp",
+    "Telegram": "رابط Telegram",
     "Download": "تنزيل",
     "Description": "وصف",
 
@@ -369,7 +385,7 @@
     "bankAccount2": "افتح حسابًا بنكيًا بسهولة",
     "groups2": "انضم إلى مجموعات مختلفة",
     "clubs2": "انضم إلى الأندية المتعددة",
-    "extraCourses2": "الدورات التكميلية إضافية",
+    "extraCourses2": "دورات تكميلية إضافية",
 
     "on": "داخل الحرم الجامعي",
     "off": "خارج الحرم الجامعي",
@@ -416,6 +432,18 @@
     "d6": " آخر إيصال للرسوم الدراسية",
     "d7": " Eval (الموافقة على الهجرة)",
     "d8": " 250 رينجيت ماليزي نقدًا",
+
+    "SelfImprovement": "تطوير الذات",
+    "Hobby": "هواية",
+    "AcademicTitle": "أكاديمي",
+    "aiesecDesc": "منصة عالمية تمكن الشباب من تطوير إمكاناتهم القيادية من خلال مجموعة متنوعة من الخبرات العملية، مثل التدريب الداخلي وفرص التطوع والمزيد",
+    "globalDesc": "مجموعة للطلاب المهتمين بالعلاقات الدولية ويريدون التفاعل مع الطلاب الدوليين",
+    "volunteerDesc": "نادي يمكنك من خلاله التطوع جنبًا إلى جنب مع طلاب آخرين",
+    "tedDesc": "مجتمع طموح يستضيف سلسلة من العروض التقديمية من أجل جمع الأشخاص من العديد من التخصصات والثقافات معًا لمناقشة وجهات نظرهم",
+    "toastDesc": "يوفر النادي فرصة ممتازة لجميع الأعضاء لممارسة وتعزيز قدراتهم في التواصل والقيادة",
+    "photoDesc": "يقدم النادي خدمات التصوير الفوتوغرافي مثل الندوات وحفلات الزفاف والمناسبات والمؤتمرات والصور الجماعية وحفلات العشاء السنوية والمزيد",
+    "esportsDesc": "نادي يهدف إلى تشكيل وتنظيم وإعداد الفرق للمنافسة في ألعاب الفيديو ضد الأندية الأخرى وفي الأحداث الأخرى",
+    "roboconDesc": "هو نادي للروبوتات حيث يمكن للطلاب تعلم كيفية البرمجة وكتابة الأوامر للروبوتات من خلال اللعب، بالإضافة إلى بناء الروبوتات للمنافسة في المسابقات الدولية",
 
     "announcements": "الإعلانات",
 

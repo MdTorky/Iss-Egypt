@@ -1,0 +1,56 @@
+{
+  "academic": [
+    {
+      "id": 1,
+      "name": "Robocon",
+      "link": "https://linktr.ee/UTM_RBC",
+      "img": "https://drive.google.com/uc?export=view&id=1IedRb9V0SfTjO7A4TLPeMddcTiDBmwbs"
+    }
+  ],
+  "hobby": [
+    {
+      "id": 1,
+      "name": "Photography Club",
+      "link": "https://beacons.ai/kfkutm",
+      "img": "https://drive.google.com/uc?export=view&id=1MmF1674Rj00SCfOqIRdWUJfvoLw8NPDL"
+    },
+    {
+      "id": 2,
+      "name": "Esports Club",
+      "link": "https://linktr.ee/ESPORTSOFUTM_2122",
+      "img": "https://drive.google.com/uc?export=view&id=1hLqNqVa672VI7lLsTvXvFBwJnX9NnNG6"
+    }
+  ],
+  "selfImprovement": [
+    {
+      "id": 1,
+      "name": "AIESEC",
+      "link": "https://aiesec.my/",
+      "img": "https://drive.google.com/uc?export=view&id=1UIGjWNEWOIwSgOi8PheHtngVotBkDRsk"
+    },
+    {
+      "id": 2,
+      "name": "Global Buddies",
+      "link": "https://www.instagram.com/globalbuddies.utm/?hl=en",
+      "img": "https://drive.google.com/uc?export=view&id=1lZeLrWOULa8ma6KlBGD8ykDudDg1hbOy"
+    },
+    {
+      "id": 3,
+      "name": "Volunteer Club",
+      "link": "https://www.instagram.com/volunteer_utm/",
+      "img": "https://drive.google.com/uc?export=view&id=134N0fLwV3Hy-_b33gSDGDKWxcLnk2l9o"
+    },
+    {
+      "id": 4,
+      "name": "TED x UTM",
+      "link": "https://linktr.ee/tedxutm",
+      "img": "https://drive.google.com/uc?export=view&id=1p5iVDqOgX6fHWUdM2atR3RgNZTLqNop4"
+    },
+    {
+      "id": 5,
+      "name": "Toastmasters",
+      "link": " https://www.facebook.com/utmtmcpage",
+      "img": "https://drive.google.com/uc?export=view&id=1xv-JNX1pOSwhLL-gouwfEk-85JGouhi1"
+    }
+  ]
+}

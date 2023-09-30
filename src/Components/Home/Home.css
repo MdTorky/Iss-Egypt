@@ -19,6 +19,7 @@
     white-space: nowrap;
     margin-top: 50px;
     width: fit-content;
+    animation: fadeInLeft 5s ease 0s 1 normal forwards;
 }
 
 .homeWrapper p {
@@ -48,6 +49,11 @@
     visibility: visible;
     animation: animation 10s ease infinite, back 14s linear infinite;
     font-family: 'Poppins', sans-serif;
+}
+
+.arabic .homeWrapper {
+    animation: fadeInRight 5s ease 0s 1 normal forwards;
+
 }
 
 .arabic .homeWrapper span {
@@ -183,6 +189,7 @@
 
 }
 
+
 .row .rowCircle img {
     border-radius: 50%;
     width: 100px;
@@ -277,6 +284,7 @@
 .blog .blogImg img {
     width: 850px;
     border-radius: 10px;
+    /* animation: horizontalScaleAnim 2s ease 0s 1 normal forwards; */
 }
 
 
@@ -391,6 +399,8 @@
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
     line-height: 15px;
+    animation: fadeInUp 2s ease 0s 1 normal forwards;
+
 }
 
 
@@ -1115,6 +1125,7 @@
         width: 50px;
         height: 50px;
         font-size: 1.5em;
+        color: var(--bg);
     }
 
     .connect .socialCircle.facebook {

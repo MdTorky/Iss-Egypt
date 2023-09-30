@@ -54,13 +54,13 @@ function Home({ language, languageData }) {
             name: languageText.CultureName
         },
         {
-            imgSrc: "https://drive.google.com/uc?export=view&id=1Vfiu3DK-3RM1f809nN3diCp3JF4PL5Ou",
+            // imgSrc: "https://drive.google.com/uc?export=view&id=1Vfiu3DK-3RM1f809nN3diCp3JF4PL5Ou",
             text: languageText.Media,
             name: languageText.MediaName
         },
         {
 
-            imgSrc: "https://drive.google.com/uc?export=view&id=1Vfiu3DK-3RM1f809nN3diCp3JF4PL5Ou",
+            // imgSrc: "https://drive.google.com/uc?export=view&id=1Vfiu3DK-3RM1f809nN3diCp3JF4PL5Ou",
             text: languageText.Sport,
             name: languageText.SportName
         },
@@ -70,17 +70,17 @@ function Home({ language, languageData }) {
             name: languageText.HRName
         },
         {
-            imgSrc: "https://drive.google.com/uc?export=view&id=1Vfiu3DK-3RM1f809nN3diCp3JF4PL5Ou",
+            // imgSrc: "https://drive.google.com/uc?export=view&id=1Vfiu3DK-3RM1f809nN3diCp3JF4PL5Ou",
             text: languageText.Logistics,
             name: languageText.LogisticsName
         },
         {
-            imgSrc: "https://drive.google.com/uc?export=view&id=1Vfiu3DK-3RM1f809nN3diCp3JF4PL5Ou",
+            // imgSrc: "https://drive.google.com/uc?export=view&id=1Vfiu3DK-3RM1f809nN3diCp3JF4PL5Ou",
             text: languageText.Women,
             name: languageText.WomenName
         },
         {
-            imgSrc: "https://drive.google.com/uc?export=view&id=1Vfiu3DK-3RM1f809nN3diCp3JF4PL5Ou",
+            // imgSrc: "https://drive.google.com/uc?export=view&id=1Vfiu3DK-3RM1f809nN3diCp3JF4PL5Ou",
             text: languageText.PublicReleation,
             name: languageText.PublicReleationName
         },
@@ -198,12 +198,19 @@ function Home({ language, languageData }) {
 
 
 
-    return (
-        <div className="home-container">
+    // useEffect(()=>{
 
-            <div className="homeWrapper">
+    // })
+
+
+
+
+    return (
+        <div className="home-container ">
+
+            <div className="homeWrapper ">
                 <p>{languageText.together}</p>
-                <div className="words">
+                <div className="words ">
                     <span>
                         {languageText.rise} <br />
                         {languageText.advance} <br />
@@ -213,7 +220,7 @@ function Home({ language, languageData }) {
                 </div>
             </div>
 
-            <h1 className="nameTitle">{languageText.IssPres}
+            <h1 className="nameTitle ">{languageText.IssPres}
                 <div className="showMore" onClick={() => setIsExpanded(!isExpanded)}>
                     {isExpanded ? <FontAwesomeIcon icon={faArrowUp} className='color' /> : <FontAwesomeIcon icon={faArrowDown} className='color2' />}
                 </div>
@@ -236,11 +243,11 @@ function Home({ language, languageData }) {
             <div className="homeBoxes">
                 <h1 className="homeTitle">{languageText.achievements}</h1>
                 <div className="blog">
-                    <div className="blogContainer">
+                    <div className="blogContainer ">
                         <div className="blogImg">
                             <img src={images.achievementImg} alt="" />
                         </div>
-                        <div className="blogText">
+                        <div className="blogText reveal">
                             <p className="subtitle">{languageText.blogSubtitle}</p>
                             <h2 className="title">{languageText.blogTitle1} <span className="color">{languageText.blogTitle2} </span>{languageText.blogTitle3}</h2>
                             <p className="description">{languageText.blogDescription}</p>
@@ -272,7 +279,7 @@ function Home({ language, languageData }) {
                 <div className="events">
 
                     {/* Academic Events */}
-                    <div className="eventBox">
+                    <div className="eventBox reveal">
                         <EventBoxTitle text={languageText.AcademicEvents} themeColor={themeColor} isRtl={isRtl} />
 
                         <div className="eventBox">
@@ -308,7 +315,7 @@ function Home({ language, languageData }) {
                     </div>
 
                     {/* Social Events */}
-                    <div className="eventBox">
+                    <div className="eventBox reveal">
 
                         <EventBoxTitle text={languageText.SocialEvents} themeColor={themeColor} isRtl={isRtl} />
 
@@ -345,7 +352,7 @@ function Home({ language, languageData }) {
                     </div>
 
                     {/* Cultural Events */}
-                    <div className="eventBox">
+                    <div className="eventBox reveal">
                         <EventBoxTitle text={languageText.CultureEvents} themeColor={themeColor} isRtl={isRtl} />
 
                         <div className="eventBox">
@@ -372,7 +379,7 @@ function Home({ language, languageData }) {
 
                                 </div>
                             </div>
-                            <div className="navigation">
+                            <div className="navigation ">
                                 <div className="btn3 active"></div>
                                 <div className="btn3"></div>
                                 <div className="btn3"></div>
@@ -382,16 +389,16 @@ function Home({ language, languageData }) {
                 </div>
 
 
-                <h1 className="connectTitle">{languageText.connect}</h1>
+                <h1 className="connectTitle ">{languageText.connect}</h1>
                 <div className="connect">
-                    <div className="socialBar">
+                    <div className="socialBar reveal">
                         <a href="https://www.facebook.com/Eg.UTM"><div className="socialCircle facebook"><FontAwesomeIcon icon={faFacebook} className="facebook" /></div></a>
                         <a href="https://www.instagram.com/issegypt/"><div className="socialCircle instagram"><FontAwesomeIcon icon={faInstagram} className="instagram" /></div></a>
                         <a href="https://www.youtube.com/@issegypt7345"><div className="socialCircle youtube"><FontAwesomeIcon icon={faYoutube} className="youtube" /></div></a>
                         <a href="https://www.linkedin.com/in/iss-egypt-utm-821447267/"><div className="socialCircle linkedIn"><FontAwesomeIcon icon={faLinkedin} className="linkedIn" /></div></a>
                         <a href="https://linktr.ee/issegypt?utm_source=linktree_profile_share&ltsid=fd5e7ee8-41ba-4efa-bbc0-ac5f555b3edb"><div className="socialCircle linktree"><FontAwesomeIcon icon={faTree} className="linktree" /></div></a>
                     </div>
-                    <div className="emailUs">
+                    <div className="emailUs reveal reveal2">
                         <a href='mailto:issegypt0@gmail.com'>
                             <button class="button" type="button">
                                 <span class="button__text">{languageText.email}</span>

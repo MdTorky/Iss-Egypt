@@ -82,12 +82,23 @@ const Menu = ({ language, languageData }) => {
         // Add more objects as needed
     ];
 
+    useEffect(() => {
+        // Calculate and set animation delay for each card
+        const peopleCards = document.querySelectorAll('.peopleCard');
+
+        peopleCards.forEach((card, index) => {
+            card.style.animationDelay = `${0.1 * index}s`; // Adjust the delay as needed
+        });
+    }, []);
+
     const isNotServicesPage = location.pathname !== '/services';
     const isNotGalleryPage = location.pathname !== '/gallery';
     const isNotResidencesPage = location.pathname !== '/residences';
     const isNotAttractionsPage = location.pathname !== '/attractions';
     const isNotTransportationPage = location.pathname !== '/transportation';
     const isNotAccountPage = location.pathname !== '/openAccount';
+    const isNotGroupsPage = location.pathname !== '/groups';
+    const isNotClubsPage = location.pathname !== '/clubs';
 
     return (
         <div className={`sideMenu 
@@ -98,6 +109,8 @@ const Menu = ({ language, languageData }) => {
         ${isNotAttractionsPage ? '' : 'hidden'}
         ${isNotTransportationPage ? '' : 'hidden'}
         ${isNotAccountPage ? '' : 'hidden'}
+        ${isNotGroupsPage ? '' : 'hidden'}
+        ${isNotClubsPage ? '' : 'hidden'}
         `}>
 
             <div className="liveBox">
@@ -106,7 +119,7 @@ const Menu = ({ language, languageData }) => {
                     <h3>{languageText.IssPres2}</h3>
                 </div>
                 {names.map((name, index) => (
-                    <div className="people">
+                    <div className="people" key={index}>
                         <div className="peopleCard">
                             <div className="peopleImg">
                                 <img src={name.imgSrc} alt="" />

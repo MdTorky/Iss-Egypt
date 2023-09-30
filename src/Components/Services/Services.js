@@ -302,7 +302,26 @@ const Services = ({ language, languageData }) => {
 
 
 
+    useEffect(() => {
+        // Calculate and set animation delay for each card
+        const peopleCards = document.querySelectorAll('.college');
 
+
+        peopleCards.forEach((card, index) => {
+            card.style.animationDelay = `${0.2 * index}s`; // Adjust the delay as needed
+        });
+    }, []);
+
+
+    useEffect(() => {
+        // Calculate and set animation delay for each card
+        const peopleCards = document.querySelectorAll('.newStudentCard');
+
+
+        peopleCards.forEach((card, index) => {
+            card.style.animationDelay = `${0.2 * index}s`; // Adjust the delay as needed
+        });
+    }, []);
 
 
     return (
@@ -411,12 +430,8 @@ const Services = ({ language, languageData }) => {
                                 <p className="day-text">{languageText.bankAccount2}</p>
                                 <FontAwesomeIcon icon={faCreditCard} className='moon' />
                             </div>
-                            <div className="newStudentCard">
-                                <p className="time-text"><span>{languageText.groups}</span><span className="time-sub-text"></span></p>
-                                <p className="day-text">{languageText.groups2}</p>
-                                <FontAwesomeIcon icon={faTelegram} className='moon' />
-                            </div>
-                            <div className="newStudentCard">
+
+                            <div className="newStudentCard" onClick={() => { window.open("/clubs", "_self") }}>
                                 <p className="time-text"><span>{languageText.clubs}</span><span className="time-sub-text"></span></p>
                                 <p className="day-text">{languageText.clubs2}</p>
                                 <FontAwesomeIcon icon={faFutbol} className='moon' />
@@ -425,6 +440,15 @@ const Services = ({ language, languageData }) => {
                                 <p className="time-text"><span>{languageText.extraCourses}</span><span className="time-sub-text"></span></p>
                                 <p className="day-text">{languageText.extraCourses2}</p>
                                 <FontAwesomeIcon icon={faGraduationCap} className='moon' />
+                            </div>
+                            <div className="newStudentCard"
+                            // onClick={() => { window.open("/groups", "_self") }}
+                            >
+                                <p className="time-text"><span>{languageText.groups}</span><span className="time-sub-text"></span></p>
+                                {/* <p className="day-text">{languageText.groups2}</p> */}
+                                <p className="day-text">{languageText.handbook2}</p>
+
+                                <FontAwesomeIcon icon={faTelegram} className='moon' />
                             </div>
                         </div>
                     </div>

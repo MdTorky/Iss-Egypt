@@ -287,7 +287,21 @@ body.dark-mode {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.dark-mode .newStudentsRow2 :nth-child(3) .moon {
+.dark-mode .newStudents .newStudentsRow .newStudentCard:nth-child(4),
+.dark-mode .newStudents .newStudentsRow2 .newStudentCard:nth-child(4) {
+    background: #5A0009;
+    color: var(--bg);
+}
+
+.dark-mode .arabic .newStudents .newStudentsRow .newStudentCard:nth-child(4),
+.dark-mode .arabic .newStudents .newStudentsRow2 .newStudentCard:nth-child(4) {
+    background: #5A0009;
+    color: var(--bg);
+}
+
+
+
+.dark-mode .newStudentsRow2 :nth-child(2) .moon {
     color: var(--bg2);
 }
 
@@ -417,6 +431,13 @@ body.dark-mode {
     background: var(--hover);
 }
 
+.dark-mode .transportation .cards .card {
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+}
+
+.dark-mode .arabic .transportation .cards .card {
+    background: linear-gradient(to left, var(--hover), var(--hover2));
+}
 
 .dark-mode .transportation .popup {
     /* background: linear-gradient(to right, var(--hover), var(--hover2)); */
@@ -468,15 +489,8 @@ body.dark-mode {
 
 .dark-mode .pop .popup-content {
     background: linear-gradient(to right, var(--hover), var(--hover2));
-
     box-shadow: rgba(0, 0, 0, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(0, 0, 0, 0.35) 0px -2px 6px 0px inset;
-
-
 }
-
-
-
-
 
 .dark-mode .account .outerBox {
     background: var(--hover2);
@@ -484,6 +498,65 @@ body.dark-mode {
 
 .dark-mode .account .outerBox .innerBox {
     background: var(--hover);
+}
+
+
+
+
+
+.dark-mode .clubs .outerBox {
+    background: var(--hover2);
+}
+
+.dark-mode .clubs .outerBox .innerBox {
+    background: var(--hover);
+}
+
+.dark-mode .clubs .cards .card {
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+}
+
+.dark-mode .arabic .clubs .cards .card {
+    background: linear-gradient(to left, var(--hover), var(--hover2));
+}
+
+.dark-mode .clubs .popup {
+    /* background: linear-gradient(to right, var(--hover), var(--hover2)); */
+    background: var(--hover)
+}
+
+.dark-mode .clubs .icon {
+    color: var(--bg);
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+.dark-mode .clubs .icon:hover {
+    background: linear-gradient(to right, var(--bg), var(--bg2));
+    color: var(--hover);
+}
+
+
+
+.dark-mode .clubs .popup-opening {
+    display: block;
+    animation: popup-open 0.5s ease-in-out forwards;
+}
+
+.dark-mode .clubs .popup-closing {
+    opacity: 0;
+    transform: scale(0.8) translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dark-mode .clubs .top {
+    background: var(--hover2);
+}
+
+.dark-mode .clubs .bottom {
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 @media screen and (max-width: 700px) {

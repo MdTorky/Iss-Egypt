@@ -76,6 +76,16 @@ const Attractions = ({ language, languageData }) => {
     //     busElement.innerHTML = "Bus: " + item;
     // }
 
+    useEffect(() => {
+        // Calculate and set animation delay for each card
+        const peopleCards = document.querySelectorAll('.card');
+
+
+        peopleCards.forEach((card, index) => {
+            card.style.animationDelay = `${0.2 * index}s`; // Adjust the delay as needed
+        });
+    }, []);
+
     return (
         <div className="attraction">
             <h1 className="title">{languageText.attractions}</h1>

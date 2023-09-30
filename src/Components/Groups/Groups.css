@@ -1,5 +1,5 @@
-.transportation {
-    margin-bottom: 10%;
+.groups {
+    margin-bottom: 20%;
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
@@ -7,15 +7,15 @@
     margin-right: 130px;
 }
 
-.arabic .transportation {
+.arabic .groups {
     font-family: 'Noto Kufi Arabic', sans-serif;
     margin-left: 275px;
     margin-top: -15px;
-    /* margin-right: 0; */
+    /* margin-right: 130px; */
 
 }
 
-.transportation .sectionBox {
+.groups .sectionBox {
     width: fit-content;
     display: flex;
     /* background: var(--bg2); */
@@ -26,21 +26,21 @@
     border-radius: 20px;
 }
 
-.transportation .title {
+.groups .title {
     text-align: center;
     font-size: 2em;
 }
 
 
 
-.transportation .outerBox {
+.groups .outerBox {
     background: var(--bg2);
     padding: 20px;
     border-radius: 20px;
     height: max-content;
 }
 
-.transportation .outerBox .innerBox {
+.groups .outerBox .innerBox {
     background: var(--bg);
     padding: 10px;
     border-radius: 20px;
@@ -51,19 +51,19 @@
     text-align: center;
 }
 
-/* .arabic .transportation .outerBox .innerBox {
+/* .arabic .groups .outerBox .innerBox {
     direction: ltr;
 } */
 
 
-.transportation .cards {
+.groups .cards {
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.transportation .cards .card {
+.groups .cards .card {
     background: linear-gradient(to right, var(--bg2), var(--bg));
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 15px;
@@ -75,7 +75,7 @@
 }
 
 
-.transportation .cards .card:hover {
+.groups .cards .card:hover {
     box-shadow: var(--hover2) 0px 1px 4px, var(--hover) 0px 0px 0px 3px;
     cursor: pointer;
     transform: scale(1.1);
@@ -87,14 +87,14 @@
 } */
 
 
-.transportation .cards .card .cardsBottomContent {
+.groups .cards .card .cardsBottomContent {
     padding: 20px;
     border-radius: 20px;
     display: flex;
     /* justify-content: space-evenly; */
 }
 
-.transportation .cards .card .cardsBottomContent p {
+.groups .cards .card .cardsBottomContent p {
     margin: 0;
     font-size: 1.1em;
     font-weight: 600;
@@ -103,7 +103,7 @@
     gap: 5px;
 }
 
-.transportation .cards .card .cardsBottomContent p span {
+.groups .cards .card .cardsBottomContent p span {
     color: var(--theme);
     font-size: 0.7em;
     margin-top: 5px;
@@ -111,7 +111,7 @@
 
 
 
-.transportation .cards .card .img {
+.groups .cards .card .img {
     width: 70px;
     height: 100%;
     border-radius: 50px;
@@ -123,7 +123,7 @@
     justify-content: center;
 }
 
-.transportation .cards .card .img img {
+.groups .cards .card .img img {
     width: 60px;
     height: 60px;
     border-radius: 50px;
@@ -132,12 +132,12 @@
 
 }
 
-.transportation .cards .card .cardsBottomContent {
+.groups .cards .card .cardsBottomContent {
     display: flex;
     flex-direction: column;
 }
 
-.transportation .cards .card .cardsBottomContent .icons {
+.groups .cards .card .cardsBottomContent .icons {
     display: flex;
     justify-content: space-evenly;
     gap: 10px;
@@ -261,7 +261,7 @@
 
 
 
-.transportation .popup {
+.groups .popup {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -282,16 +282,16 @@
 }
 
 
-/* .arabic .transportation .popup {
+/* .arabic .groups .popup {
     direction: ltr
 } */
 
-.transportation .popup-opening {
+.groups .popup-opening {
     display: block;
     animation: popup-open 0.5s ease-in-out forwards;
 }
 
-.transportation .popup-closing {
+.groups .popup-closing {
     opacity: 0;
     transform: scale(0.8) translate(-50%, -50%);
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -475,7 +475,7 @@
 
 @media screen and (max-width:700px) {
 
-    .transportation {
+    .groups {
         font-family: 'Poppins', sans-serif;
         display: flex;
         flex-direction: column;
@@ -489,7 +489,7 @@
     }
 
 
-    .arabic .transportation {
+    .arabic .groups {
         font-family: 'Noto Kufi Arabic', sans-serif;
         margin: 0;
         margin: 40px auto 50% auto;
@@ -498,7 +498,7 @@
 
     }
 
-    .transportation .sectionBox {
+    .groups .sectionBox {
         width: fit-content;
         flex-direction: column;
         padding: 15px;
@@ -511,11 +511,11 @@
     } */
 
 
-    .transportation .outerBox {
+    .groups .outerBox {
         padding: 15px;
     }
 
-    .transportation .outerBox .innerBox {
+    .groups .outerBox .innerBox {
         /* background: var(--bg2); */
         padding: 5px;
     }
@@ -531,7 +531,7 @@
         height: 120px;
     }
 
-    .transportation .popup {
+    .groups .popup {
         width: 70%;
     }
 }

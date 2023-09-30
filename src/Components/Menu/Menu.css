@@ -162,12 +162,17 @@
 .sideMenu .people {
     width: 100%;
     padding: 10px;
+
 }
 
 .peopleCard {
     display: flex;
     transition: 0.5s ease;
     cursor: pointer;
+    animation: fadeInRight 2s ease 0s 1 normal forwards;
+    opacity: 0;
+
+    animation-delay: 0.2s;
 }
 
 .peopleCard:hover {
@@ -182,6 +187,11 @@
     height: 50px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
+}
+
+.arabic .peopleCard {
+    animation: fadeInLeft 2s ease 0s 1 normal forwards;
+    animation-delay: 0.2s;
 }
 
 .arabic .peopleImg {

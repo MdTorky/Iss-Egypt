@@ -12,6 +12,8 @@ import { useDarkMode } from './DarkModeContext';
 import Attractions from './Components/Attractions/Attractions';
 import Transportation from './Components/Transportation/Transportation';
 import BankAccount from './Components/BankAccount/BankAccount';
+import Groups from './Components/Groups/Groups';
+import Clubs from './Components/Clubs/Clubs';
 
 function App() {
   // Initialize the language state with the default language (e.g., "en")
@@ -31,6 +33,27 @@ function App() {
     setLanguage(newLanguage);
     localStorage.setItem('selectedLanguage', newLanguage);
   };
+
+
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+    var reveals2 = document.querySelectorAll(".reveal2");
+    var reveals3 = document.querySelectorAll(".reveal3");
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+
+  window.addEventListener("scroll", reveal);
 
   // Set the document body class based on the selected language and dark mode
   useEffect(() => {
@@ -59,6 +82,8 @@ function App() {
               <Route path="/attractions" element={<Attractions language={language} languageData={languageData} />} />
               <Route path="/transportation" element={<Transportation language={language} languageData={languageData} />} />
               <Route path="/openAccount" element={<BankAccount language={language} languageData={languageData} />} />
+              <Route path="/clubs" element={<Clubs language={language} languageData={languageData} />} />
+              {/* <Route path="/groups" element={<Groups language={language} languageData={languageData} />} /> */}
 
             </Routes>
           </div>

@@ -690,6 +690,7 @@
 
     /* box-shadow: 0px 0px 6px 3px var(--bg2); */
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
 }
 
 .connect .emailUs {
@@ -940,13 +941,14 @@
     }
 
     .blog .blogText .description {
-        font-size: 0.7em;
-        line-height: 15px;
+        font-size: 0.75em;
+        line-height: 18px;
         width: 96%;
     }
 
     .arabic .blog .blogText .description {
         width: 100%;
+        font-size: 0.8em;
     }
 
     .blogContainer2 {

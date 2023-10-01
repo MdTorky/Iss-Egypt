@@ -80,7 +80,7 @@ function Home({ language, languageData }) {
             name: languageText.WomenName
         },
         {
-            // imgSrc: "https://drive.google.com/uc?export=view&id=1Vfiu3DK-3RM1f809nN3diCp3JF4PL5Ou",
+            imgSrc: images.PR,
             text: languageText.PublicReleation,
             name: languageText.PublicReleationName
         },

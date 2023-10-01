@@ -24,30 +24,30 @@ const NavBar = ({ language, toggleLanguage, languageData }) => {
     return (
         <div className={`navbar ${language === "ar" ? "arabic" : ""}`}>
             <ul>
-                <li className={location.pathname === '/' ? 'active' : ''}><a href="/"><icon data-content={languageText.home}><FontAwesomeIcon icon={faHouse} /></icon></a></li>
-                <li className={location.pathname === '/services' ? 'active' : ''}><a href="/services"><icon data-content={languageText.services}><FontAwesomeIcon icon={faBook} /></icon></a></li>
+                <li className={location.pathname === '/' ? 'active' : ''} onClick={() => window.open("/", "_self")}><icon data-content={languageText.home}><FontAwesomeIcon icon={faHouse} /></icon></li>
+                <li className={location.pathname === '/services' ? 'active' : ''} onClick={() => window.open("/services", "_self")} ><icon data-content={languageText.services}><FontAwesomeIcon icon={faBook} /></icon></li>
                 {/* <li className={location.pathname === '/gallery' ? 'active' : ''}><a href="/gallery"><icon data-content={languageText.gallery}><FontAwesomeIcon icon={faImage} /></icon></a></li> */}
-                <li>
-                    <a onClick={toggleLanguage}>
-                        <icon data-content={languageText.language}>
-                            {language === "en" ? "EN" : "ع"}
-                        </icon>
-                    </a>
+                <li onClick={toggleLanguage}>
+
+                    <icon data-content={languageText.language}>
+                        {language === "en" ? "EN" : "ع"}
+                    </icon>
+
                 </li>
-                <li>
+                <li onClick={toggleDarkMode}>
                     <span className="theme__toggle-wrap">
-                        <a onClick={toggleDarkMode}>
-                            <input
-                                id="theme"
-                                className="theme__toggle"
-                                type="checkbox"
-                                role="switch"
-                                name="theme"
-                                value="dark"
-                                checked={darkMode} // Set the checked state based on darkMode
-                                onChange={() => { }}
-                            />
-                        </a>
+
+                        <input
+                            id="theme"
+                            className="theme__toggle"
+                            type="checkbox"
+                            role="switch"
+                            name="theme"
+                            value="dark"
+                            checked={darkMode} // Set the checked state based on darkMode
+                            onChange={() => { }}
+                        />
+
                         <span className="theme__fill"></span>
                     </span>
                 </li>

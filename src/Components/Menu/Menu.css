@@ -121,6 +121,8 @@
 
 .sideMenu.arabic {
     margin-left: 10px;
+    width: 400px;
+
 
 }
 
@@ -167,16 +169,16 @@
 
 .peopleCard {
     display: flex;
-    transition: 0.5s ease;
     cursor: pointer;
-    animation: fadeInRight 2s ease 0s 1 normal forwards;
+    animation: fadeInRight 2s ease 0s 1 alternate forwards;
+    transition: transform 0.5s ease, opacity 0.5s ease !important;
     opacity: 0;
-
-    animation-delay: 0.2s;
 }
 
 .peopleCard:hover {
     transform: scale(1.1);
+    opacity: 1;
+
 }
 
 .peopleImg {

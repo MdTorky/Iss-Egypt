@@ -45,6 +45,9 @@
 
 }
 
+a {
+    text-decoration: none;
+}
 
 
 .navbar ul li icon {
@@ -294,6 +297,14 @@
     .navbar ul li:hover {
         box-shadow: none;
         background: none;
+        transform: scale(1);
+
+    }
+
+    .navbar ul li:focus {
+        box-shadow: none;
+        background: none;
+        transform: scale(1);
 
     }
 
@@ -317,9 +328,8 @@
 
     .navbar ul li.active {
         background: none;
-        border-radius: 15px;
-        background: none;
-
+        border-radius: 0px;
+        box-shadow: none;
     }
 
     .navbar ul li.active icon::after {
@@ -336,9 +346,8 @@
         top: -10px;
         font-family: 'Poppins', sans-serif;
         background: none;
-
-
     }
+
 
     .navbar.arabic ul li:nth-child(3) icon::after {
         font-family: 'Noto Kufi Arabic', sans-serif;
@@ -348,11 +357,6 @@
         margin-bottom: 15px;
         background: none;
 
-    }
-
-    .navbar ul li:nth-child(4) icon::after {
-        margin-bottom: 10px;
-        margin-top: -6px;
     }
 
     .theme__toggle {

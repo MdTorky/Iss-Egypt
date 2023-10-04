@@ -75,6 +75,25 @@ body.dark-mode {
     color: var(--bg);
 }
 
+.dark-mode .sideMenu .popup {
+    /* background: linear-gradient(to right, var(--bg), var(--bg2)); */
+    background: var(--hover);
+}
+
+.dark-mode .sideMenu .popup .middlePart img {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.dark-mode .sideMenu .bottomPart {
+    background: var(--hover2);
+}
+
+
+.dark-mode .sideMenu .icon {
+    color: var(--bg);
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+}
+
 
 
 
@@ -89,7 +108,9 @@ body.dark-mode {
 }
 
 .dark-mode .nameTitle {
-    border-bottom: 1px solid var(--bg);
+    /* border-bottom: 1px solid var(--bg); */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.323);
+
     /* opacity: 0.9; */
 }
 
@@ -185,6 +206,25 @@ body.dark-mode {
     color: var(--bg)
 }
 
+
+.dark-mode .home-container .popup {
+    /* background: linear-gradient(to right, var(--bg), var(--bg2)); */
+    background: var(--hover);
+}
+
+.dark-mode .home-container .popup .middlePart img {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.dark-mode .home-container .bottomPart {
+    background: var(--hover2);
+}
+
+
+.dark-mode .home-container .icon {
+    color: var(--bg);
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+}
 
 
 

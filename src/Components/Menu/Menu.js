@@ -1,8 +1,12 @@
 import "./Menu.css"
 import { useLanguage } from '../../language';
 import { useLocation } from 'react-router-dom';
-import React, { useEffect } from 'react';
-import images from '../../data/images.json';
+import React, { useEffect, useState } from 'react';
+import people from "../../data/people.json";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 
 
 
@@ -21,66 +25,73 @@ const Menu = ({ language, languageData }) => {
 
     const names = [
         {
-            imgSrc: images.presidentImg,
+            id: 1,
             text: languageText.President,
             name: languageText.PresidentName
         },
         {
-            imgSrc: images.vicePresidentImg,
+            id: 2,
             text: languageText.VicePresident,
             name: languageText.VicePresidentName
         },
         {
-            imgSrc: images.academicPresident,
+            id: 3,
             text: languageText.Academic,
             name: languageText.AcademicName
 
         },
         {
-            imgSrc: images.socialPresident,
+            id: 4,
             text: languageText.Social,
             name: languageText.SocialName
         },
         {
-            imgSrc: images.culturePresident,
+            id: 5,
             text: languageText.Culture,
             name: languageText.CultureName
         },
         {
-            imgSrc: "https://drive.google.com/uc?export=view&id=1Vfiu3DK-3RM1f809nN3diCp3JF4PL5Ou",
+            id: 6,
             text: languageText.Media,
             name: languageText.MediaName
         },
         {
-
-            imgSrc: "https://drive.google.com/uc?export=view&id=1Vfiu3DK-3RM1f809nN3diCp3JF4PL5Ou",
+            id: 7,
             text: languageText.Sport,
             name: languageText.SportName
         },
         {
-            imgSrc: images.HR,
+            id: 8,
             text: languageText.HR,
             name: languageText.HRName
         },
         {
-            imgSrc: "https://drive.google.com/uc?export=view&id=1Vfiu3DK-3RM1f809nN3diCp3JF4PL5Ou",
+            id: 9,
             text: languageText.Logistics,
             name: languageText.LogisticsName
         },
         {
-            imgSrc: "https://drive.google.com/uc?export=view&id=1Vfiu3DK-3RM1f809nN3diCp3JF4PL5Ou",
+            id: 10,
             text: languageText.Women,
             name: languageText.WomenName
         },
         {
-            imgSrc: images.PR,
-            text: languageText.PublicReleation,
-            name: languageText.PublicReleationName
+            id: 11,
+            text: languageText.PublicRelation,
+            name: languageText.PublicRelationName
         },
 
 
         // Add more objects as needed
     ];
+
+
+    const combinedPeople = people.map((person, index) => ({
+        ...person,
+        text: names[index].text,
+        name: names[index].name,
+    }));
+
 
     useEffect(() => {
         // Calculate and set animation delay for each card
@@ -100,8 +111,37 @@ const Menu = ({ language, languageData }) => {
     const isNotGroupsPage = location.pathname !== '/groups';
     const isNotClubsPage = location.pathname !== '/clubs';
 
+
+    const [popupVisible, setPopupVisible] = useState(false);
+    const [selectedItem, setSelectedItem] = useState(null);
+
+    const togglePopup = (person) => {
+        if (selectedItem && selectedItem.id === person.id) {
+            // If the same story is clicked again, close the popup
+            setPopupVisible(false);
+            setSelectedItem(null);
+        } else {
+            // Close the college popup if open
+            setSelectedItem(person);
+            setPopupVisible(true);
+        }
+    };
+
+    const closePopup = () => {
+        setPopupVisible(false);
+    };
+
+    useEffect(() => {
+        if (selectedItem && selectedItem.id) {
+            const updatedItem = combinedPeople.find(combinedPeople => combinedPeople.id === selectedItem.id);
+            if (updatedItem) {
+                setSelectedItem(updatedItem);
+            }
+        }
+    }, [language]);
+
     return (
-        <div className={`sideMenu 
+        <div className={`sideMenu
         ${language === 'ar' ? 'arabic' : ''} 
         ${isNotServicesPage ? '' : 'hidden'}
         ${isNotGalleryPage ? '' : 'hidden'}
@@ -118,19 +158,63 @@ const Menu = ({ language, languageData }) => {
                     <h1>{languageText.Egypt}</h1>
                     <h3>{languageText.IssPres2}</h3>
                 </div>
-                {names.map((name, index) => (
+                {combinedPeople.map((person, index) => (
                     <div className="people" key={index}>
-                        <div className="peopleCard">
+                        <div className={`peopleCard ${popupVisible && selectedItem && selectedItem.id === person.id
+                            ? 'active' : ''}`}
+                            onClick={() => { togglePopup(person) }}>
                             <div className="peopleImg">
-                                <img src={name.imgSrc} alt="" />
+                                <img src={person.imgSrc} alt="" />
                             </div>
                             <div className="peopleText">
-                                <p className="name">{name.name}</p>
-                                <p className="role">{name.text}</p>
+                                <p className="name">{person.name}</p>
+                                <p className="role">{person.text}</p>
                             </div>
                         </div>
                     </div>
                 ))}
+                {popupVisible && selectedItem && (
+                    <div className={`popup ${popupVisible ? 'popup-opening' : 'popup-closing'}`}>
+                        <div className="popup-content">
+
+                            <div className="topPart">
+                                <button className="icon" onClick={closePopup}>
+                                    <span class="tooltip" >{languageText.close}</span>
+                                    <span><FontAwesomeIcon icon={faXmark} /></span>
+                                </button>
+
+                            </div>
+
+                            <div className="middlePart">
+                                <>
+                                    <img src={selectedItem.imgSrc} alt="" />
+                                </>
+
+
+                            </div>
+                            <div className="bottomPart">
+                                <div className="text">
+                                    <h3>{selectedItem.name}</h3>
+                                    <p>{selectedItem.text}</p>
+                                </div>
+                                {/* <hr /> */}
+                                <div className="links">
+                                    <button className="icon" onClick={() => window.open(selectedItem.no, "_blank")}>
+                                        <span class="tooltip" >{languageText.Group}</span>
+                                        <span><FontAwesomeIcon icon={faWhatsapp} /></span>
+                                    </button>
+                                    <button className="icon" onClick={() => window.open(selectedItem.no, "_blank")}>
+                                        <span class="tooltip" >{languageText.linkedin}</span>
+                                        <span><FontAwesomeIcon icon={faLinkedin} /></span>
+                                    </button>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                )}
             </div>
         </div>
     );

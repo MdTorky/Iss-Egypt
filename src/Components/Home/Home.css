@@ -201,6 +201,13 @@
     border-bottom: 3px solid black;
 }
 
+.arabic .row .rowCircle img {
+    border-top: 3px solid red;
+    border-right: 5px solid white;
+    border-left: none;
+    border-bottom: 3px solid black;
+}
+
 .row .rowCircle p {
     text-align: center;
     font-size: 0.9em;
@@ -361,6 +368,16 @@
     width: 150px;
     border-radius: 100px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-top: 5px solid red;
+    border-left: 5px solid white;
+    border-bottom: 5px solid black;
+}
+
+.arabic .home-container .popup .middlePart img {
+    border-top: 5px solid red;
+    border-right: 5px solid white;
+    border-left: none;
+    border-bottom: 5px solid black;
 }
 
 .home-container .bottomPart {
@@ -945,6 +962,467 @@
     color: var(--bg)
 } */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* IPad View */
+
+@media screen and (max-width: 1800px) {
+
+    /* Animation Text */
+
+    .homeWrapper p {
+        font-size: 30px;
+    }
+
+    .homeWrapper .words {
+        font-size: 35px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .homeWrapper span {
+        font-size: 35px;
+    }
+
+    .arabic .homeWrapper span {
+        font-size: 30px;
+
+    }
+
+    @keyframes animation {
+        0%, 100% {
+            top: 0;
+        }
+
+        20% {
+            top: 0;
+        }
+
+        25% {
+            top: -50px;
+        }
+
+        45% {
+            top: -50px;
+
+        }
+
+        50% {
+            top: -100px;
+
+        }
+
+        70% {
+            top: -100px;
+        }
+
+        75% {
+            top: -150px;
+        }
+
+        95% {
+            top: -150px;
+        }
+    }
+
+
+
+    /* Phone Presidents */
+
+    /* Blogs */
+    .homeBoxes .homeTitle {
+        font-size: 1.5em;
+        margin: 20px;
+
+    }
+
+    .arabic .homeBoxes .homeTitle {
+        margin: 20px;
+    }
+
+    .blog {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .blog .blogContainer {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.365);
+        /* margin-bottom: 30px; */
+    }
+
+    .blog .blogImg img {
+        width: 96%;
+    }
+
+    .blog .blogText .subtitle {
+        font-size: 0.5em;
+    }
+
+
+    .blog .blogText .title {
+        font-size: 0.8em;
+    }
+
+    .arabic .blog .blogText .title {
+        font-size: 1.1em;
+    }
+
+    .blog .blogText .title .color {
+        font-size: 1em;
+    }
+
+
+    .blog .blogText .description {
+        font-size: 0.9em;
+        line-height: 18px;
+        width: 96%;
+    }
+
+    .arabic .blog .blogText .description {
+        width: 96%;
+        font-size: 0.8em;
+    }
+
+    .blogContainer2 {
+        gap: 20px;
+        border-bottom: 1px solid black;
+
+    }
+
+    .blogContainer2 .blogItem {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blogContainer2 .blogItem .line {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    .blogContainer2 .blogItem img {
+        width: 100%;
+    }
+
+
+    .blogContainer2 .blogItem .subtitle {
+        font-size: 0.5em;
+        font-weight: 700;
+        /* text-align: center; */
+    }
+
+    .blogContainer2 .blogItem .description {
+        font-size: 0.9em;
+        text-align: center;
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+    .blogContainer2 .blogItem .line button {
+        padding: 0px 5px;
+        font-size: 0.6em;
+        opacity: 0.8;
+        white-space: nowrap;
+
+    }
+
+    .arabic .blogContainer2 .blogItem .line button {
+        font-size: 0.6em;
+        font-weight: 600;
+    }
+
+
+
+    /* Event */
+    .events {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: -20px 0 -20px 20px;
+
+    }
+
+    .eventBox {
+        width: 100%;
+        height: 400px;
+        position: relative;
+
+    }
+
+    .eventBox h1 {
+        font-size: 0.9em;
+    }
+
+    .eventBox .creator {
+        font-size: 0.7em;
+    }
+
+    .eventBox .slide, .eventBox .slide2, .eventBox .slide3 {
+        display: flex !important;
+        justify-content: center;
+        width: 100%
+    }
+
+    .eventBox .slide img, .eventBox .slide2 img, .eventBox .slide3 img {
+        width: 95%;
+        height: 300px;
+    }
+
+    .eventBox .info {
+        z-index: 3;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+    }
+
+    .eventBox .info h2 {
+        margin-left: 50px;
+        font-size: 0.7em;
+        width: 75%;
+    }
+
+    .eventBox .info p {
+        width: 80%;
+        font-size: 0.6em;
+    }
+
+    .eventBox .info.special {
+        top: 45%;
+    }
+
+    .eventBox .info.special h2 {
+        font-size: 0.6em;
+
+    }
+
+    .eventBox .info.special p {
+        font-size: 0.6em;
+        line-height: 14px;
+    }
+
+
+    .eventBox .navigation {
+        top: 68%;
+        display: flex;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .arabic .events {
+        margin: -100px auto -10px auto;
+    } */
+
+    .arabic .eventBox .info h2 {
+        font-size: 1em;
+        margin-right: 50px;
+    }
+
+    .arabic .eventBox .info.special {
+        top: 42%;
+    }
+
+    .arabic .eventBox .info.special h2 {
+        font-size: 1em;
+    }
+
+    .arabic .eventBox .info p {
+        line-height: 17px;
+    }
+
+    .arabic .eventBox .navigation {
+        left: 0;
+    }
+
+
+
+    /* Connect with us */
+
+    .connect {
+        margin: 0px 20px 20px 20px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .connectTitle {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.323);
+        margin: 0px 80px 20px 20px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+    }
+
+    .connect .socialBar {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .connect .socialCircle {
+        width: 80px;
+        height: 80px;
+        font-size: 1.9em;
+        color: var(--hover);
+
+        background: linear-gradient(to right, var(--bg), var(--bg2));
+
+    }
+
+    .connect .socialCircle:hover.facebook {
+        color: #4867AA;
+    }
+
+    .connect .socialCircle:hover.instagram {
+        /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); */
+        color: #d6249f;
+    }
+
+    .connect .socialCircle:hover.youtube {
+        color: #FE0000;
+    }
+
+    .connect .socialCircle:hover.linkedIn {
+        color: #0077B5;
+    }
+
+    .connect .socialCircle:hover.linktree {
+        color: #41DF5D;
+    }
+
+    .connect .socialCircle:hover {
+        background: linear-gradient(to right, var(--hover), var(--hover2));
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    }
+
+    .connect .emailUs {
+        padding: 20px;
+
+    }
+
+    .connect .button {
+        position: relative;
+        width: 250px;
+        height: 80px;
+        border-radius: 20px;
+        margin: 0;
+        background: var(--bg);
+
+        /* border: 2px solid var(--theme) */
+    }
+
+    .connect .button .button__text {
+        font-size: 1.1em;
+    }
+
+    .connect .button .button__text {
+        transform: translateX(22%);
+        color: var(--hover);
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    .connect .button .button__icon {
+        position: absolute;
+        transform: translateX(170%);
+        height: 100%;
+        width: 90px;
+        /* background: var(--hover); */
+        background: linear-gradient(to right, var(--hover), var(--hover2));
+
+        color: var(--bg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .connect .button:hover .button__text {
+        color: transparent;
+    }
+
+    .connect .button:hover .button__icon {
+        width: 100%;
+        transform: translateX(-2.5%);
+        color: var(--hover);
+        background: var(--bg);
+        background: linear-gradient(to right, var(--bg), var(--bg2));
+
+    }
+
+    .connect .button:active .button__icon {
+        background: var(--bg);
+        color: var(--hover)
+    }
+
+
+    .arabic .connectTitle {
+        margin: 0px 20px 20px 20px;
+        font-weight: 600;
+    }
+
+    .arabic .connect .button .button__text {
+        transform: translateX(-22%);
+    }
+
+    .arabic .connect .button .button__icon {
+        transform: translateX(-230%);
+    }
+
+    .arabic .connect .button:hover .button__icon {
+        transform: translateX(2.5%);
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Phone View */
 
 @media screen and (max-width: 768px) {
@@ -1117,13 +1595,16 @@
     .blogContainer2 .blogItem .line {
         display: flex;
         justify-content: space-between;
+        /* background-color: red; */
+        /* width: max-content; */
     }
 
     .blogContainer2 .blogItem .line button {
         padding: 0px 5px;
         /* background: var(--hover); */
-        font-size: 0.7em;
+        font-size: 0.5em;
         opacity: 0.8;
+        white-space: nowrap;
 
     }
 
@@ -1140,10 +1621,11 @@
     }
 
     .blogContainer2 .blogItem .description {
-        font-size: 1.1em;
+        font-size: 0.8em;
         text-align: center;
         font-weight: 300;
         font-family: 'Poppins', sans-serif;
+        white-space: nowrap;
     }
 
 
@@ -1155,6 +1637,7 @@
 
     /* Event */
     .events {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin: -100px auto -20px auto;
         overflow: hidden;
@@ -1227,7 +1710,6 @@
 
     .eventBox .navigation {
         top: 68%;
-        left: 36.5%;
     }
 
     .arabic .events {
@@ -1252,7 +1734,7 @@
     }
 
     .arabic .eventBox .navigation {
-        left: 38%;
+        left: 0;
     }
 
 
@@ -1352,7 +1834,8 @@
     .connect .button:hover .button__icon {
         width: 100%;
         transform: translateX(0%);
-        background: var(--theme);
+        background: linear-gradient(to right, var(--bg), var(--bg2));
+
     }
 
     .connect .button:active .button__icon {

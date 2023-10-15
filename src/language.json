@@ -211,10 +211,11 @@
     "globalDesc": "A group for students who are interested in international relations and want to interact with international students.",
     "volunteerDesc": "A club where you may volunteer alongside other student",
     "tedDesc": "A passionate community that hosts a series of presentations in order to bring people from many disciplines and cultures together to discuss their views under one roof.",
-    "toastDesc": "The club offers an excellent opportunity for all members to practice and enhance their communication and leadership abilities.",
+    "toastDesc": "The club offers an excellent opportunity for all members to practice and enhance their public speaking and leadership skills.",
     "photoDesc": "The club offers photographic services such as seminars, weddings and events, conferences, group photos, annual dinners, and more.",
     "esportsDesc": "A club with the objective of forming, organizing, and preparing teams to compete in video games against other clubs and at other events",
     "roboconDesc": "It is a robotics club where students may learn how to code and write commands for robots via play, as well as build robots to compete in international competitions.",
+    "airostDesc": "They are a group of people who provide a platform for students to discover their interests and talents in engineering, technology, and entrepreneurship.",
 
     "announcements": "Announcements",
 
@@ -444,6 +445,7 @@
     "photoDesc": "يقدم النادي خدمات التصوير الفوتوغرافي مثل الندوات وحفلات الزفاف والمناسبات والمؤتمرات والصور الجماعية وحفلات العشاء السنوية والمزيد",
     "esportsDesc": "نادي يهدف إلى تشكيل وتنظيم وإعداد الفرق للمنافسة في ألعاب الفيديو ضد الأندية الأخرى وفي الأحداث الأخرى",
     "roboconDesc": "هو نادي للروبوتات حيث يمكن للطلاب تعلم كيفية البرمجة وكتابة الأوامر للروبوتات من خلال اللعب، بالإضافة إلى بناء الروبوتات للمنافسة في المسابقات الدولية",
+    "airostDesc": "إنهم مجموعة من الأشخاص الذين يوفرون منصة للطلاب لاكتشاف اهتماماتهم ومواهبهم في الهندسة والتكنولوجيا وريادة الأعمال",
 
     "announcements": "الإعلانات",
 

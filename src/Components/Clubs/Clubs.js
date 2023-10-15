@@ -73,6 +73,11 @@ const Clubs = ({ language, languageData }) => {
                 description: languageText.roboconDesc
 
             },
+            {
+                id: 2,
+                description: languageText.airostDesc
+
+            },
         ],
 
 

@@ -140,7 +140,7 @@
     "extraServices": "Extra Services",
 
     "residence": "Residence",
-    "attractions": "Places",
+    "attractions": "Locations",
     "attraction": "ِAttractions",
     "transportation": "Transportation",
     "handbook": "Handbook",
@@ -160,7 +160,7 @@
 
     "on": "On Campus",
     "off": "Off Campus",
-    "groceries": "Grocery stores",
+    "groceries": "Grocery Stores",
     "mosques": "Mosques",
     "other": "Other Places",
     "busSchedule": "Bus Schedule",

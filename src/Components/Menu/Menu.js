@@ -203,7 +203,7 @@ const Menu = ({ language, languageData }) => {
                                         <span class="tooltip" >{languageText.Group}</span>
                                         <span><FontAwesomeIcon icon={faWhatsapp} /></span>
                                     </button>
-                                    <button className="icon" onClick={() => window.open(selectedItem.no, "_blank")}>
+                                    <button className="icon" onClick={() => window.open(selectedItem.linkedIn, "_blank")}>
                                         <span class="tooltip" >{languageText.linkedin}</span>
                                         <span><FontAwesomeIcon icon={faLinkedin} /></span>
                                     </button>

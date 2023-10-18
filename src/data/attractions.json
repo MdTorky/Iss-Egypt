@@ -151,6 +151,13 @@
       "location": "https://maps.app.goo.gl/bx3sTLgJtDM4abgM6",
       "busImg": "https://drive.google.com/uc?export=view&id=1gON3ailZLeYE8D2LPL_T67FoQi0DyG4r",
       "img": "https://drive.google.com/uc?export=view&id=1DVzSIt3dCGZ5J0DG5OJDosITtEWTafSQ"
+    },
+    {
+      "id": 3,
+      "name": "CIMB Bank",
+      "location": "https://maps.app.goo.gl/veVsE1kQTsyTA9dB7",
+      "busImg": "https://drive.google.com/uc?export=view&id=1gON3ailZLeYE8D2LPL_T67FoQi0DyG4r",
+      "img": "https://drive.google.com/uc?export=view&id=1iiQvZgzRqcpmJ4RbUou-0XA1djg3itDx"
     }
   ]
 }

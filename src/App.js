@@ -76,7 +76,7 @@ function App() {
           />
           <div className={`routes ${language === 'ar' ? 'arabic' : ''}`}>
             <Routes>
-              <Route path="/" element={<Home language={language} languageData={languageData} />} />
+              <Route exact path="/" element={<Home language={language} languageData={languageData} />} />
               <Route path="/services" element={<Services language={language} languageData={languageData} />} />
               <Route path="/residences" element={<Residences language={language} languageData={languageData} />} />
               <Route path="/attractions" element={<Attractions language={language} languageData={languageData} />} />

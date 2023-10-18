@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import './Services.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -399,21 +399,27 @@ const Services = ({ language, languageData }) => {
                     <div className="newStudents">
                         <h2>{languageText.newStudents}</h2>
                         <div className="newStudentsRow">
-                            <div className="newStudentCard" onClick={() => { window.open("/residences", "_self") }}>
-                                <p className="time-text"><span>{languageText.residence}</span><span className="time-sub-text"></span></p>
-                                <p className="day-text">{languageText.residence2}</p>
-                                <FontAwesomeIcon icon={faBuilding} className='moon' />
-                            </div>
-                            <div className="newStudentCard" onClick={() => { window.open("/attractions", "_self") }}>
-                                <p className="time-text"><span>{languageText.attractions}</span><span className="time-sub-text"></span></p>
-                                <p className="day-text">{languageText.attractions2}</p>
-                                <FontAwesomeIcon icon={faMapLocationDot} className='moon' />
-                            </div>
-                            <div className="newStudentCard" onClick={() => { window.open("/transportation", "_self") }}>
-                                <p className="time-text"><span>{languageText.transportation}</span><span className="time-sub-text"></span></p>
-                                <p className="day-text">{languageText.transportation2}</p>
-                                <FontAwesomeIcon icon={faCarSide} className='moon' />
-                            </div>
+                            <Link to="/residences">
+                                <div className="newStudentCard">
+                                    <p className="time-text"><span>{languageText.residence}</span><span className="time-sub-text"></span></p>
+                                    <p className="day-text">{languageText.residence2}</p>
+                                    <FontAwesomeIcon icon={faBuilding} className='moon' />
+                                </div>
+                            </Link>
+                            <Link to="/attractions">
+                                <div className="newStudentCard">
+                                    <p className="time-text"><span>{languageText.attractions}</span><span className="time-sub-text"></span></p>
+                                    <p className="day-text">{languageText.attractions2}</p>
+                                    <FontAwesomeIcon icon={faMapLocationDot} className='moon' />
+                                </div>
+                            </Link>
+                            <Link to="/transportation">
+                                <div className="newStudentCard">
+                                    <p className="time-text"><span>{languageText.transportation}</span><span className="time-sub-text"></span></p>
+                                    <p className="day-text">{languageText.transportation2}</p>
+                                    <FontAwesomeIcon icon={faCarSide} className='moon' />
+                                </div>
+                            </Link>
                             <div className="newStudentCard">
                                 <p className="time-text"><span>{languageText.handbook}</span><span className="time-sub-text"></span></p>
                                 <p className="day-text">{languageText.handbook2}</p>
@@ -424,30 +430,32 @@ const Services = ({ language, languageData }) => {
                     <div className="newStudents">
                         <h2>{languageText.extraServices}</h2>
                         <div className="newStudentsRow2">
-                            <div className="newStudentCard" onClick={() => { window.open("/openAccount", "_self") }}>
-                                <p className="time-text"><span>{languageText.bankAccount}</span><span className="time-sub-text"></span></p>
-                                {/* <p className="day-text">Unlock Financial Freedom</p> */}
-                                <p className="day-text">{languageText.bankAccount2}</p>
-                                <FontAwesomeIcon icon={faCreditCard} className='moon' />
-                            </div>
-
-                            <div className="newStudentCard" onClick={() => { window.open("/clubs", "_self") }}>
-                                <p className="time-text"><span>{languageText.clubs}</span><span className="time-sub-text"></span></p>
-                                <p className="day-text">{languageText.clubs2}</p>
-                                <FontAwesomeIcon icon={faFutbol} className='moon' />
-                            </div>
+                            <Link to="/openAccount">
+                                <div className="newStudentCard">
+                                    <p className="time-text"><span>{languageText.bankAccount}</span><span className="time-sub-text"></span></p>
+                                    {/* <p className="day-text">Unlock Financial Freedom</p> */}
+                                    <p className="day-text">{languageText.bankAccount2}</p>
+                                    <FontAwesomeIcon icon={faCreditCard} className='moon' />
+                                </div>
+                            </Link>
+                            <Link to="/clubs">
+                                <div className="newStudentCard">
+                                    <p className="time-text"><span>{languageText.clubs}</span><span className="time-sub-text"></span></p>
+                                    <p className="day-text">{languageText.clubs2}</p>
+                                    <FontAwesomeIcon icon={faFutbol} className='moon' />
+                                </div>
+                            </Link>
+                            <Link to="">
+                                <div className="newStudentCard">
+                                    <p className="time-text"><span>{languageText.extraCourses}</span><span className="time-sub-text"></span></p>
+                                    <p className="day-text">{languageText.extraCourses2}</p>
+                                    <FontAwesomeIcon icon={faGraduationCap} className='moon' />
+                                </div>
+                            </Link>
                             <div className="newStudentCard">
-                                <p className="time-text"><span>{languageText.extraCourses}</span><span className="time-sub-text"></span></p>
-                                <p className="day-text">{languageText.extraCourses2}</p>
-                                <FontAwesomeIcon icon={faGraduationCap} className='moon' />
-                            </div>
-                            <div className="newStudentCard"
-                            // onClick={() => { window.open("/groups", "_self") }}
-                            >
                                 <p className="time-text"><span>{languageText.groups}</span><span className="time-sub-text"></span></p>
                                 {/* <p className="day-text">{languageText.groups2}</p> */}
                                 <p className="day-text">{languageText.handbook2}</p>
-
                                 <FontAwesomeIcon icon={faTelegram} className='moon' />
                             </div>
                         </div>

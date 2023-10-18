@@ -2,7 +2,7 @@ import "./Footer.css";
 import React, { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useLanguage } from '../../language';
-
+import { Link } from "react-router-dom";
 import { faTree } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
@@ -64,8 +64,8 @@ const Footer = ({ language, languageData }) => {
                 </li>
             </div>
             <div className="menu">
-                <li className="menu__item"><a class="menu__link" href="/">{languageText.home}</a></li>
-                <li className="menu__item"><a class="menu__link" href="/services">{languageText.services}</a></li>
+                <li className="menu__item"><Link class="menu__link" to="/">{languageText.home}</Link></li>
+                <li className="menu__item"><Link class="menu__link" to="/services">{languageText.services}</Link></li>
                 {/* <li className="menu__item"><a class="menu__link" href="#">{languageText.gallery}</a></li> */}
             </div>
             <p>{languageText.rights}</p>

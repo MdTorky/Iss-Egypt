@@ -414,7 +414,6 @@ function Home({ language, languageData }) {
                                 <div className="info">
                                     <h2>{languageText.CultureEventTitle3}</h2>
                                     <p>{languageText.CultureEventDescription3}</p>
-
                                 </div>
                             </div>
                             <div className="navigation ">
@@ -475,7 +474,7 @@ function Home({ language, languageData }) {
                                         <span class="tooltip" >{languageText.Group}</span>
                                         <span><FontAwesomeIcon icon={faWhatsapp} /></span>
                                     </button>
-                                    <button className="icon" onClick={() => window.open(selectedItem.no, "_blank")}>
+                                    <button className="icon" onClick={() => window.open(selectedItem.linkedIn, "_blank")}>
                                         <span class="tooltip" >{languageText.linkedin}</span>
                                         <span><FontAwesomeIcon icon={faLinkedin} /></span>
                                     </button>

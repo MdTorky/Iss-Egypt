@@ -2,9 +2,9 @@
 
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faCircleInfo, faImage, faBook } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faBook } from '@fortawesome/free-solid-svg-icons';
 import './NavBar.css';
-import { useLanguage } from '../../language';
+import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import "/node_modules/flag-icons/css/flag-icons.min.css";
 import { useLocation } from 'react-router-dom';
@@ -24,8 +24,16 @@ const NavBar = ({ language, toggleLanguage, languageData }) => {
     return (
         <div className={`navbar ${language === "ar" ? "arabic" : ""}`}>
             <ul>
-                <li className={location.pathname === '/' ? 'active' : ''} onClick={() => window.open("/", "_self")}><icon data-content={languageText.home}><FontAwesomeIcon icon={faHouse} /></icon></li>
-                <li className={location.pathname === '/services' ? 'active' : ''} onClick={() => window.open("/services", "_self")} ><icon data-content={languageText.services}><FontAwesomeIcon icon={faBook} /></icon></li>
+                <li className={location.pathname === '/' ? 'active' : ''}>
+                    <Link to="/">
+                        <icon data-content={languageText.home}><FontAwesomeIcon icon={faHouse} /></icon>
+                    </Link>
+                </li>
+                <li className={location.pathname === '/services' ? 'active' : ''}>
+                    <Link to="/services">
+                        <icon data-content={languageText.services}><FontAwesomeIcon icon={faBook} /></icon>
+                    </Link>
+                </li>
                 {/* <li className={location.pathname === '/gallery' ? 'active' : ''}><a href="/gallery"><icon data-content={languageText.gallery}><FontAwesomeIcon icon={faImage} /></icon></a></li> */}
                 <li onClick={toggleLanguage}>
 

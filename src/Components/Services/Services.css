@@ -154,11 +154,13 @@ h2 {
     flex-direction: column;
     background: linear-gradient(to right, var(--bg2), var(--bg));
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border: 0px solid var(--hover);
     animation: fadeInUp 1s ease 0s 1 normal forwards;
     opacity: 0;
+    text-decoration: none;
+    color: var(--hover)
 }
 
 .newStudents .newStudentsRow .newStudentCard:nth-child(4),
@@ -1169,6 +1171,7 @@ a:visited {
     .newStudents .newStudentsRow2 .newStudentCard {
         width: 45%;
         height: 100px;
+
     }
 
 

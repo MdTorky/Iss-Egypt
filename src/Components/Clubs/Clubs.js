@@ -36,45 +36,35 @@ const Clubs = ({ language, languageData }) => {
             },
             {
                 id: 2,
-                description: languageText.globalDesc
-
-            },
-            {
-                id: 3,
-                description: languageText.volunteerDesc
-
-            },
-            {
-                id: 4,
                 description: languageText.tedDesc
 
             },
             {
-                id: 5,
+                id: 3,
                 description: languageText.toastDesc
 
             },
         ],
         hobby: [
             {
-                id: 1,
+                id: 4,
                 description: languageText.photoDesc
 
             },
             {
-                id: 2,
+                id: 5,
                 description: languageText.esportsDesc
 
             },
         ],
         academic: [
             {
-                id: 1,
+                id: 6,
                 description: languageText.roboconDesc
 
             },
             {
-                id: 2,
+                id: 7,
                 description: languageText.airostDesc
 
             },
@@ -139,7 +129,13 @@ const Clubs = ({ language, languageData }) => {
         }
     }, [language]);
 
+    useEffect(() => {
 
+    }, [language]);
+
+    useEffect(() => {
+
+    }, [language]);
 
     const Button = ({ item, languageText }) => {
 
@@ -238,11 +234,20 @@ const Clubs = ({ language, languageData }) => {
 
                         <div className="bottom">
                             <>
+                                <div className="header">
+                                    <div className="headerImg">
+                                        <img src={selectedItem.img} alt="" />
+                                        <div className="headerTitle">{selectedItem.name}</div>
+                                    </div>
+
+                                    <button className="icon" onClick={closePopup}>
+                                        <span class="tooltip" >{languageText.close}</span>
+                                        <span><FontAwesomeIcon icon={faXmark} /></span>
+                                    </button>
+
+                                </div>
                                 <div className="bus new">{selectedItem.description}</div>
-                                <button className="icon" onClick={closePopup}>
-                                    <span class="tooltip" >{languageText.close}</span>
-                                    <span><FontAwesomeIcon icon={faXmark} /></span>
-                                </button>
+
                             </>
 
                         </div>

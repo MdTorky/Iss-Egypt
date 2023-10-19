@@ -97,10 +97,18 @@ body {
   direction: rtl !important;
 }
 
+.english {
+  direction: ltr !important;
+}
+
+
 body.arabic {
   direction: rtl;
 }
 
+body.english {
+  direction: ltr;
+}
 
 
 

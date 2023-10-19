@@ -57,7 +57,7 @@ function App() {
 
   // Set the document body class based on the selected language and dark mode
   useEffect(() => {
-    document.body.className = `${language === 'ar' ? 'arabic' : ''} ${darkMode ? 'dark-mode' : ''}`;
+    document.body.className = `${language === 'ar' ? 'arabic' : 'english'} ${darkMode ? 'dark-mode' : ''}`;
   }, [language, darkMode]);
 
   return (

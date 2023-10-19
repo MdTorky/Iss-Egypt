@@ -12,11 +12,12 @@ const BankAccount = ({ language, languageData }) => {
 
     const Popup = ({ onClose, text, condition, link, language, languageData }) => {
         const [popupLanguage, setPopupLanguage] = useState(language);
+        const languageText = languageData[language];
 
         useEffect(() => {
             setPopupLanguage(language);
         }, [language]);
-        const languageText = languageData[popupLanguage];
+
         return (
             <div className="pop">
                 <div className="popup-content">
@@ -54,7 +55,7 @@ const BankAccount = ({ language, languageData }) => {
 
 
     const [isPopupOpen, setIsPopupOpen] = useState(false);
-    const [popupText, setPopupText] = useState('');
+    const [popupText, setPopupText] = useState(null);
     const [popupCondition, setPopupCondition] = useState(false);
     const [popupLink, setPopupLink] = useState("")
 
@@ -160,12 +161,15 @@ const BankAccount = ({ language, languageData }) => {
                     </div>
                 </div>
                 {isPopupOpen && <Popup
+                    key={language}
                     onClose={closePopup}
                     text={popupText}
                     condition={popupCondition}
                     link={popupLink}
-                    language={language}
-                    languageData={languageData} />}
+                    language={language} // Pass the language prop to the Popup component
+                    languageData={languageData}
+                />
+                }
             </div>
         </div >
     );

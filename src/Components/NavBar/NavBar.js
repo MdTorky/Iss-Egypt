@@ -24,12 +24,11 @@ const NavBar = ({ language, toggleLanguage, languageData }) => {
     return (
         <div className={`navbar ${language === "ar" ? "arabic" : ""}`}>
             <ul>
-                <Link to="/"><li className={location.pathname === '/' ? 'active' : ''}>
-
-                    <icon data-content={languageText.home}><FontAwesomeIcon icon={faHouse} /></icon>
-
+                <li className={location.pathname === '/' ? 'active' : ''}>
+                    <Link to="/">
+                        <icon data-content={languageText.home}><FontAwesomeIcon icon={faHouse} /></icon>
+                    </Link>
                 </li>
-                </Link>
                 <li className={location.pathname === '/services' ? 'active' : ''}>
                     <Link to="/services">
                         <icon data-content={languageText.services}><FontAwesomeIcon icon={faBook} /></icon>

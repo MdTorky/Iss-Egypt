@@ -125,18 +125,12 @@ const Clubs = ({ language, languageData }) => {
                 setSelectedItem(updatedItem);
             }
         }
-    }, [language]);
-
-    useEffect(() => {
         if (selectedItem && selectedItem.id) {
             const updatedItem = combinedDescriptionHobby.find(combinedDescriptionHobby => combinedDescriptionHobby.id === selectedItem.id);
             if (updatedItem) {
                 setSelectedItem(updatedItem);
             }
         }
-    }, [language]);
-
-    useEffect(() => {
         if (selectedItem && selectedItem.id) {
             const updatedItem = combinedDescriptionAcademic.find(combinedDescriptionAcademic => combinedDescriptionAcademic.id === selectedItem.id);
             if (updatedItem) {
@@ -144,6 +138,8 @@ const Clubs = ({ language, languageData }) => {
             }
         }
     }, [language]);
+
+
 
     const Button = ({ item, languageText }) => {
 

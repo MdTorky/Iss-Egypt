@@ -636,7 +636,30 @@ body.dark-mode {
         color: var(--bg);
     }
 
+    .dark-mode .navbar ul li {
+        background: none;
+    }
+
+    .dark-mode .navbar ul li:hover icon {
+        background: none;
+    }
+
+    .dark-mode .navbar ul li:hover {
+        box-shadow: none;
+        background: none;
+    }
+
+
     .dark-mode .navbar ul li.active {
+        background: none;
+    }
+
+    .dark-mode .navbar ul li:hover icon::after {
+
+        background: none;
+    }
+
+    .dark-mode .navbar ul li:hover.active icon::after {
         background: none;
     }
 }

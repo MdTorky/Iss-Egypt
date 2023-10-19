@@ -399,26 +399,22 @@ const Services = ({ language, languageData }) => {
                     <div className="newStudents">
                         <h2>{languageText.newStudents}</h2>
                         <div className="newStudentsRow">
-                            <Link to="/residences">
-                                <div className="newStudentCard">
-                                    <p className="time-text"><span>{languageText.residence}</span><span className="time-sub-text"></span></p>
-                                    <p className="day-text">{languageText.residence2}</p>
-                                    <FontAwesomeIcon icon={faBuilding} className='moon' />
-                                </div>
+                            <Link to="/residences" className="newStudentCard">
+                                {/* <div > */}
+                                <p className="time-text"><span>{languageText.residence}</span><span className="time-sub-text"></span></p>
+                                <p className="day-text">{languageText.residence2}</p>
+                                <FontAwesomeIcon icon={faBuilding} className='moon' />
+                                {/* </div> */}
                             </Link>
-                            <Link to="/attractions">
-                                <div className="newStudentCard">
-                                    <p className="time-text"><span>{languageText.attractions}</span><span className="time-sub-text"></span></p>
-                                    <p className="day-text">{languageText.attractions2}</p>
-                                    <FontAwesomeIcon icon={faMapLocationDot} className='moon' />
-                                </div>
+                            <Link to="/attractions" className="newStudentCard">
+                                <p className="time-text"><span>{languageText.attractions}</span><span className="time-sub-text"></span></p>
+                                <p className="day-text">{languageText.attractions2}</p>
+                                <FontAwesomeIcon icon={faMapLocationDot} className='moon' />
                             </Link>
-                            <Link to="/transportation">
-                                <div className="newStudentCard">
-                                    <p className="time-text"><span>{languageText.transportation}</span><span className="time-sub-text"></span></p>
-                                    <p className="day-text">{languageText.transportation2}</p>
-                                    <FontAwesomeIcon icon={faCarSide} className='moon' />
-                                </div>
+                            <Link to="/transportation" className="newStudentCard">
+                                <p className="time-text"><span>{languageText.transportation}</span><span className="time-sub-text"></span></p>
+                                <p className="day-text">{languageText.transportation2}</p>
+                                <FontAwesomeIcon icon={faCarSide} className='moon' />
                             </Link>
                             <div className="newStudentCard">
                                 <p className="time-text"><span>{languageText.handbook}</span><span className="time-sub-text"></span></p>
@@ -430,27 +426,21 @@ const Services = ({ language, languageData }) => {
                     <div className="newStudents">
                         <h2>{languageText.extraServices}</h2>
                         <div className="newStudentsRow2">
-                            <Link to="/openAccount">
-                                <div className="newStudentCard">
-                                    <p className="time-text"><span>{languageText.bankAccount}</span><span className="time-sub-text"></span></p>
-                                    {/* <p className="day-text">Unlock Financial Freedom</p> */}
-                                    <p className="day-text">{languageText.bankAccount2}</p>
-                                    <FontAwesomeIcon icon={faCreditCard} className='moon' />
-                                </div>
+                            <Link to="/openAccount" className="newStudentCard">
+                                <p className="time-text"><span>{languageText.bankAccount}</span><span className="time-sub-text"></span></p>
+                                {/* <p className="day-text">Unlock Financial Freedom</p> */}
+                                <p className="day-text">{languageText.bankAccount2}</p>
+                                <FontAwesomeIcon icon={faCreditCard} className='moon' />
                             </Link>
-                            <Link to="/clubs">
-                                <div className="newStudentCard">
-                                    <p className="time-text"><span>{languageText.clubs}</span><span className="time-sub-text"></span></p>
-                                    <p className="day-text">{languageText.clubs2}</p>
-                                    <FontAwesomeIcon icon={faFutbol} className='moon' />
-                                </div>
+                            <Link to="/clubs" className="newStudentCard">
+                                <p className="time-text"><span>{languageText.clubs}</span><span className="time-sub-text"></span></p>
+                                <p className="day-text">{languageText.clubs2}</p>
+                                <FontAwesomeIcon icon={faFutbol} className='moon' />
                             </Link>
-                            <Link to="">
-                                <div className="newStudentCard">
-                                    <p className="time-text"><span>{languageText.extraCourses}</span><span className="time-sub-text"></span></p>
-                                    <p className="day-text">{languageText.extraCourses2}</p>
-                                    <FontAwesomeIcon icon={faGraduationCap} className='moon' />
-                                </div>
+                            <Link to="" className="newStudentCard">
+                                <p className="time-text"><span>{languageText.extraCourses}</span><span className="time-sub-text"></span></p>
+                                <p className="day-text">{languageText.extraCourses2}</p>
+                                <FontAwesomeIcon icon={faGraduationCap} className='moon' />
                             </Link>
                             <div className="newStudentCard">
                                 <p className="time-text"><span>{languageText.groups}</span><span className="time-sub-text"></span></p>

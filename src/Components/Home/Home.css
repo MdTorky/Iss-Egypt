@@ -1685,12 +1685,14 @@
         font-size: 0.8em;
         text-align: justify;
         font-weight: 500;
-        width: 105%;
+        width: 100%;
         font-family: 'Poppins', sans-serif;
     }
 
     .arabic .blogContainer2 .blogItem .description {
-        min-width: 105%;
+        min-width: 100%;
+        font-weight: 500;
+
     }
 
 

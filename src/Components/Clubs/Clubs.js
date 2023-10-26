@@ -146,7 +146,7 @@ const Clubs = ({ language, languageData }) => {
 
                 {item && item.link && (
                     <button className="icon" onClick={() => { window.open(item.link, "_blank") }}>
-                        <span class="tooltip" >{languageText.Website}</span>
+                        <span className="tooltip" >{languageText.Website}</span>
                         <span><FontAwesomeIcon icon={faInfoCircle} /></span>
                     </button>
                 )}
@@ -155,7 +155,7 @@ const Clubs = ({ language, languageData }) => {
                     <button className={`icon ${popupVisible && selectedItem && selectedItem.id === item.id
                         ? 'active' : ''}`}
                         onClick={() => { togglePopup(item) }}>
-                        <span class="tooltip" >{languageText.Description}</span>
+                        <span className="tooltip" >{languageText.Description}</span>
                         <span><FontAwesomeIcon icon={faFileLines} /></span>
                     </button>
                 )}
@@ -241,7 +241,7 @@ const Clubs = ({ language, languageData }) => {
                                     </div>
 
                                     <button className="icon" onClick={closePopup}>
-                                        <span class="tooltip" >{languageText.close}</span>
+                                        <span className="tooltip" >{languageText.close}</span>
                                         <span><FontAwesomeIcon icon={faXmark} /></span>
                                     </button>
 

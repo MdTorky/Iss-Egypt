@@ -125,13 +125,13 @@ const Groups = ({ language, languageData }) => {
 
                 {item && item.whatsLink && (
                     <button className="icon" onClick={() => { window.open(item.whatsLink, "_blank") }}>
-                        <span class="tooltip" >{languageText.WhatsApp}</span>
+                        <span className="tooltip" >{languageText.WhatsApp}</span>
                         <span><FontAwesomeIcon icon={faWhatsapp} /></span>
                     </button>
                 )}
                 {item && item.teleLink && (
                     <button className="icon" onClick={() => { window.open(item.teleLink, "_blank") }}>
-                        <span class="tooltip" >{languageText.Telegram}</span>
+                        <span className="tooltip" >{languageText.Telegram}</span>
                         <span><FontAwesomeIcon icon={faTelegram} /></span>
                     </button>
                 )}
@@ -140,7 +140,7 @@ const Groups = ({ language, languageData }) => {
                     <button className={`icon ${popupVisible && selectedItem && selectedItem.id === item.id
                         ? 'active' : ''}`}
                         onClick={() => { togglePopup(item) }}>
-                        <span class="tooltip" >{languageText.Description}</span>
+                        <span className="tooltip" >{languageText.Description}</span>
                         <span><FontAwesomeIcon icon={faFileLines} /></span>
                     </button>
                 )}
@@ -205,7 +205,7 @@ const Groups = ({ language, languageData }) => {
                             <>
                                 <div className="bus new">{selectedItem.description}</div>
                                 <button className="icon" onClick={closePopup}>
-                                    <span class="tooltip" >{languageText.close}</span>
+                                    <span className="tooltip" >{languageText.close}</span>
                                     <span><FontAwesomeIcon icon={faXmark} /></span>
                                 </button>
                             </>

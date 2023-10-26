@@ -18,21 +18,21 @@ const Button = ({ kollege, languageText }) => {
     return (
         <div className="icons">
             <button className="icon" onClick={() => { if (kollege && kollege.link) { window.open(kollege.link, "_blank") } else { alert(languageText.error) } }}>
-                <span class="tooltip">{languageText.Website}</span>
+                <span className="tooltip">{languageText.Website}</span>
                 <span><FontAwesomeIcon icon={faInfoCircle} /></span>
             </button>
             <button className="icon" onClick={() => { window.open(kollege.location, "_blank") }}>
 
-                <span class="tooltip" >{languageText.Location}</span>
+                <span className="tooltip" >{languageText.Location}</span>
                 <span><FontAwesomeIcon icon={faLocationDot} /></span>
             </button>
             <button className="icon" onClick={() => { window.open(kollege.phone, "_blank") }}>
-                <span class="tooltip" >{languageText.Phone}</span>
+                <span className="tooltip" >{languageText.Phone}</span>
                 <span><FontAwesomeIcon icon={faPhone} /></span>
             </button>
             <button className="icon" onClick={() => { if (kollege && kollege.email) { window.open(kollege.email, "_blank") } else { alert(languageText.error2) } }}>
 
-                <span class="tooltip" >{languageText.Email}</span>
+                <span className="tooltip" >{languageText.Email}</span>
                 <span><FontAwesomeIcon icon={faEnvelope} /></span>
             </button>
 

@@ -43,8 +43,6 @@ const Services = ({ language, languageData }) => {
 
 
 
-
-
     var AcademicImg = images.academicAnnouncement;
     var SocialImg = images.socialAnnouncement;
     var CultureImg = images.cultureAnnouncement;
@@ -257,55 +255,20 @@ const Services = ({ language, languageData }) => {
         setPopupVisibleFaculty(false);
     };
 
-    const handleMoreInfoClick = () => {
-        if (selectedAnnouncement && selectedAnnouncement.link) {
-            window.open(selectedAnnouncement.link, '_blank');
-        } else {
-            alert("No link available for this announcement.");
-        }
 
 
-    };
-
-    const handleCalenderLinkClick = () => {
-        if (selectedAnnouncement && selectedAnnouncement.calendarLink) {
-            window.open(selectedAnnouncement.calendarLink, '_blank');
-        } else {
-            alert("No Calender link available for this announcement.");
-        }
-    }
 
 
-    const GroupClick = () => {
-        // if (selectedFaculty && selectedFaculty.group) {
-        // } 
-        window.open(selectedFaculty.group, '_blank');
-    }
 
-    const LocationClick = () => {
-        // if (selectedFaculty && selectedFaculty.group) {
-        // } 
-        window.open(selectedFaculty.location, '_blank');
-    }
 
-    const WebsiteClick = () => {
-        // if (selectedFaculty && selectedFaculty.group) {
-        // } 
-        window.open(selectedFaculty.website, '_blank');
-    }
 
-    const EmailClick = () => {
-        // if (selectedFaculty && selectedFaculty.group) {
-        // } 
-        window.open(selectedFaculty.email2, '_blank');
-    }
+
+
 
 
 
     useEffect(() => {
-        // Calculate and set animation delay for each card
         const peopleCards = document.querySelectorAll('.college');
-
 
         peopleCards.forEach((card, index) => {
             card.style.animationDelay = `${0.2 * index}s`; // Adjust the delay as needed
@@ -314,7 +277,6 @@ const Services = ({ language, languageData }) => {
 
 
     useEffect(() => {
-        // Calculate and set animation delay for each card
         const peopleCards = document.querySelectorAll('.newStudentCard');
 
 
@@ -322,6 +284,8 @@ const Services = ({ language, languageData }) => {
             card.style.animationDelay = `${0.2 * index}s`; // Adjust the delay as needed
         });
     }, []);
+
+
 
 
     return (
@@ -361,7 +325,7 @@ const Services = ({ language, languageData }) => {
                     </div>
 
                     {popupVisible && selectedAnnouncement && (
-                        <div className={`popup ${popupVisible ? 'popup-opening' : 'popup-closing'}`} style={{
+                        <div className={`services popup ${popupVisible ? 'popup-opening' : 'popup-closing'}`} style={{
                             backgroundImage: `linear-gradient(rgba(0, 0, 0,
                 0.5), rgba(0, 0, 0, 0.5)), url(${selectedAnnouncement.backgroundImg})`
                         }}>
@@ -378,20 +342,22 @@ const Services = ({ language, languageData }) => {
                                 </div>
                                 <div className="bottomContent">
 
-                                    <button onClick={handleMoreInfoClick}>
-                                        <div className="sign">
-                                            <FontAwesomeIcon icon={faCircleInfo} />
-                                        </div>
-                                        <div className="text">{languageText.info}</div>
-                                    </button>
-
-                                    <button onClick={handleCalenderLinkClick}>
-                                        <div className="sign">
-                                            <FontAwesomeIcon icon={faCalendarDays} />
-                                        </div>
-                                        <div className="text">{languageText.calender}</div>
-                                    </button>
-
+                                    {selectedAnnouncement.link &&
+                                        <button onClick={() => window.open(selectedAnnouncement.link, '_blank')}>
+                                            <div className="sign">
+                                                <FontAwesomeIcon icon={faCircleInfo} />
+                                            </div>
+                                            <div className="text">{languageText.info}</div>
+                                        </button>
+                                    }
+                                    {selectedAnnouncement.calendarLink &&
+                                        <button onClick={() => window.open(selectedAnnouncement.calendarLink, '_blank')} className="calender">
+                                            <div className="sign">
+                                                <FontAwesomeIcon icon={faCalendarDays} />
+                                            </div>
+                                            <div className="text">{languageText.calender}</div>
+                                        </button>
+                                    }
                                 </div>
                             </div>
                         </div>
@@ -497,26 +463,26 @@ const Services = ({ language, languageData }) => {
                                     <div className="bottomSection">
                                         <img src={selectedFaculty.image} alt="" />
                                         <div className="bottomLinks">
-                                            <button onClick={GroupClick}>
+                                            <button onClick={() => window.open(selectedFaculty.group, '_blank')}>
                                                 <div className="sign">
                                                     <FontAwesomeIcon icon={faWhatsapp} />
                                                 </div>
                                                 <div className="text">{languageText.Group}</div>
                                             </button>
-                                            <button onClick={LocationClick}>
+                                            <button onClick={() => window.open(selectedFaculty.location, '_blank')}>
                                                 <div className="sign">
                                                     <FontAwesomeIcon icon={faLocationDot} />
                                                 </div>
                                                 <div className="text">{languageText.Location}</div>
                                             </button>
-                                            <button onClick={WebsiteClick}>
+                                            <button onClick={() => window.open(selectedFaculty.website, '_blank')}>
                                                 <div className="sign">
                                                     <FontAwesomeIcon icon={faInfoCircle} />
                                                 </div>
                                                 <div className="text">{languageText.Website}</div>
 
                                             </button>
-                                            <button onClick={EmailClick}>
+                                            <button onClick={() => window.open(selectedFaculty.email2, '_blank')}>
                                                 <div className="sign">
                                                     <FontAwesomeIcon icon={faEnvelope} />
                                                 </div>
@@ -531,7 +497,7 @@ const Services = ({ language, languageData }) => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

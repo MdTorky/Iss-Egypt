@@ -24,12 +24,12 @@ const BankAccount = ({ language, languageData }) => {
                     <div className="buttons">
                         {condition && (
                             <button className="icon" onClick={() => window.open(link, "_blank")}>
-                                <span class="tooltip">{languageText.Location}</span>
+                                <span className="tooltip">{languageText.Location}</span>
                                 <span><FontAwesomeIcon icon={faLocationDot} /></span>
                             </button>
                         )}
                         <button className="icon" onClick={onClose}>
-                            <span class="tooltip">{languageText.close}</span>
+                            <span className="tooltip">{languageText.close}</span>
                             <span><FontAwesomeIcon icon={faXmark} /></span>
                         </button>
                     </div>
@@ -121,7 +121,7 @@ const BankAccount = ({ language, languageData }) => {
                                         <span><FontAwesomeIcon icon={faFileLines} /></span>
                                     </button>
                                     <button className="icon" onClick={() => window.open("https://drive.google.com/file/d/1XqBMGLcpxaNh8S5BGC3gyxJypHejL7Bp/view?usp=drive_link", "_blank")}>
-                                        <span class="tooltip">{languageText.Image}</span>
+                                        <span className="tooltip">{languageText.Image}</span>
                                         <span><FontAwesomeIcon icon={faImage} /></span>
                                     </button>
                                 </div>
@@ -134,7 +134,7 @@ const BankAccount = ({ language, languageData }) => {
                                         <span><FontAwesomeIcon icon={faFileLines} /></span>
                                     </button>
                                     <button className="icon" onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSec5ZHcR2f0LmStwRsOspp8dx1nz0Uv8MPoRPlTR1pEaOkd7A/viewform", "_blank")}>
-                                        <span class="tooltip">{languageText.Form}</span>
+                                        <span className="tooltip">{languageText.Form}</span>
                                         <span><FontAwesomeIcon icon={faWpforms} /></span>
                                     </button>
 
@@ -149,7 +149,7 @@ const BankAccount = ({ language, languageData }) => {
                                         <span><FontAwesomeIcon icon={faFileLines} /></span>
                                     </button>
                                     <button className="icon" onClick={() => window.open("https://academic.utm.my/UGStudent/Surat.aspx", "_blank")}>
-                                        <span class="tooltip">{languageText.Website}</span>
+                                        <span className="tooltip">{languageText.Website}</span>
                                         <span><FontAwesomeIcon icon={faInfoCircle} /></span>
                                     </button>
                                 </div>

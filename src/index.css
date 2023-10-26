@@ -46,8 +46,8 @@
 body {
   margin: 0;
   padding: 0;
-  /* background: var(--bg); */
   background: var(--bg);
+  /* background-size: 50%; */
   /* font-family: 'Poppins', sans-serif; */
   font-family: 'Rubik', sans-serif;
 }
@@ -86,6 +86,9 @@ body {
   top: 0px;
   z-index: 999;
   background: var(--bg);
+  /* background-size: auto;
+  background-repeat: no-repeat;
+  background-size: 50%; */
 }
 
 .logo img {

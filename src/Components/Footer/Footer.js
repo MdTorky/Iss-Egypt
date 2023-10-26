@@ -23,10 +23,10 @@ const Footer = ({ language, languageData }) => {
     return (
         <footer className={footerClass}>
             <div className="waves">
-                <div class="wave" id="wave1"></div>
-                <div class="wave" id="wave2"></div>
-                <div class="wave" id="wave3"></div>
-                <div class="wave" id="wave4"></div>
+                <div className="wave" id="wave1"></div>
+                <div className="wave" id="wave2"></div>
+                <div className="wave" id="wave3"></div>
+                <div className="wave" id="wave4"></div>
             </div>
             <div className="social-icon">
                 <li className="social-icon__item">
@@ -64,9 +64,8 @@ const Footer = ({ language, languageData }) => {
                 </li>
             </div>
             <div className="menu">
-                <li className="menu__item"><Link class="menu__link" to="/">{languageText.home}</Link></li>
-                <li className="menu__item"><Link class="menu__link" to="/services">{languageText.services}</Link></li>
-                {/* <li className="menu__item"><a class="menu__link" href="#">{languageText.gallery}</a></li> */}
+                <li className="menu__item"><Link className="menu__link" to="/">{languageText.home}</Link></li>
+                <li className="menu__item"><Link className="menu__link" to="/services">{languageText.services}</Link></li>
             </div>
             <p>{languageText.rights}</p>
         </footer>

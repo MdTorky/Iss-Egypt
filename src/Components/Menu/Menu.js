@@ -36,47 +36,57 @@ const Menu = ({ language, languageData }) => {
         },
         {
             id: 3,
+            text: languageText.Secretary,
+            name: languageText.SecretaryName
+        },
+        {
+            id: 4,
+            text: languageText.Treasurer,
+            name: languageText.TreasurerName
+        },
+        {
+            id: 5,
             text: languageText.Academic,
             name: languageText.AcademicName
 
         },
         {
-            id: 4,
+            id: 6,
             text: languageText.Social,
             name: languageText.SocialName
         },
         {
-            id: 5,
+            id: 7,
             text: languageText.Culture,
             name: languageText.CultureName
         },
         {
-            id: 6,
+            id: 8,
             text: languageText.Media,
             name: languageText.MediaName
         },
         {
-            id: 7,
+            id: 9,
             text: languageText.Sport,
             name: languageText.SportName
         },
         {
-            id: 8,
+            id: 10,
             text: languageText.HR,
             name: languageText.HRName
         },
         {
-            id: 9,
+            id: 11,
             text: languageText.Logistics,
             name: languageText.LogisticsName
         },
         {
-            id: 10,
+            id: 12,
             text: languageText.Women,
             name: languageText.WomenName
         },
         {
-            id: 11,
+            id: 13,
             text: languageText.PublicRelation,
             name: languageText.PublicRelationName
         },
@@ -179,7 +189,7 @@ const Menu = ({ language, languageData }) => {
 
                             <div className="topPart">
                                 <button className="icon" onClick={closePopup}>
-                                    <span class="tooltip" >{languageText.close}</span>
+                                    <span className="tooltip" >{languageText.close}</span>
                                     <span><FontAwesomeIcon icon={faXmark} /></span>
                                 </button>
 
@@ -187,7 +197,7 @@ const Menu = ({ language, languageData }) => {
 
                             <div className="middlePart">
                                 <>
-                                    <img src={selectedItem.imgSrc} alt="" />
+                                    <img src={selectedItem.imgSrc} />
                                 </>
 
 
@@ -199,14 +209,17 @@ const Menu = ({ language, languageData }) => {
                                 </div>
                                 {/* <hr /> */}
                                 <div className="links">
-                                    <button className="icon" onClick={() => window.open(selectedItem.no, "_blank")}>
-                                        <span class="tooltip" >{languageText.Group}</span>
-                                        <span><FontAwesomeIcon icon={faWhatsapp} /></span>
-                                    </button>
-                                    <button className="icon" onClick={() => window.open(selectedItem.linkedIn, "_blank")}>
-                                        <span class="tooltip" >{languageText.linkedin}</span>
+                                    {selectedItem.no &&
+                                        <button className="icon" onClick={() => window.open(selectedItem.no, "_blank")}>
+                                            <span className="tooltip" >{languageText.Group}</span>
+                                            <span><FontAwesomeIcon icon={faWhatsapp} /></span>
+                                        </button>
+                                    }
+                                    {selectedItem.linkedIn && <button className="icon" onClick={() => window.open(selectedItem.linkedIn, "_blank")}>
+                                        <span className="tooltip" >{languageText.linkedin}</span>
                                         <span><FontAwesomeIcon icon={faLinkedin} /></span>
                                     </button>
+                                    }
                                 </div>
                             </div>
 

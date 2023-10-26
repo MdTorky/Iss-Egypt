@@ -2,6 +2,8 @@
   "en": {
     "language": "English",
 
+    "Palestine": "Free Palestine",
+
     "IssPres": "ISS Committee Presidents",
     "IssPres2": "Committee Presidents",
     "Egypt": "ISS Egypt",
@@ -10,7 +12,13 @@
     "PresidentName": "Ahmed Khalaf",
 
     "VicePresident": "Vice President",
-    "VicePresidentName": "Abdallah",
+    "VicePresidentName": "Abdullah Tarek",
+
+    "Secretary": "Secretary",
+    "SecretaryName": "Anas Fahmy",
+
+    "Treasurer": "Treasurer",
+    "TreasurerName": "Mohammed Ahmed",
 
     "Academic": "Academic President",
     "AcademicName": "Mazen Mohamed",
@@ -25,7 +33,7 @@
     "MediaName": "Mohamed Moawad",
 
     "Sport": "Sports President",
-    "SportName": "Yousef Mohamed",
+    "SportName": "Moustafa Moshen",
 
     "HR": "Human Resources",
     "HRName": "Adham Ahmed",
@@ -231,6 +239,8 @@
   "ar": {
     "language": "عربي",
 
+    "Palestine": "فلسطين حرة",
+
     "IssPres": "رؤساء لجان الاتحاد",
     "IssPres2": "رؤساء اللجان",
     "Egypt": "الاتحاد المصري",
@@ -239,7 +249,13 @@
     "PresidentName": "أحمد خلف",
 
     "VicePresident": "نائب الرئيس",
-    "VicePresidentName": "عبدالله",
+    "VicePresidentName": "عبدالله طارق",
+
+    "Secretary": "السكرتير",
+    "SecretaryName": "أنس فهمي",
+
+    "Treasurer": "أمين صندوق",
+    "TreasurerName": "محمد احمد",
 
     "Academic": "رئيس اللجنة الأكاديمية",
     "AcademicName": "مازن محمد",
@@ -254,7 +270,7 @@
     "MediaName": "محمد معوض",
 
     "Sport": "رئيس اللجنة الرياضية",
-    "SportName": "يوسف محمد",
+    "SportName": "مصطفى محسن",
 
     "HR": "HR",
     "HRName": "أدهم أحمد",

@@ -119,19 +119,19 @@ const Transportation = ({ language, languageData }) => {
 
                 {item && item.linkAndroid && (
                     <button className="icon" onClick={() => { window.open(item.linkAndroid, "_blank") }}>
-                        <span class="tooltip" >{languageText.Android}</span>
+                        <span className="tooltip" >{languageText.Android}</span>
                         <span><FontAwesomeIcon icon={faAndroid} /></span>
                     </button>
                 )}
                 {item && item.linkIOS && (
                     <button className="icon" onClick={() => { window.open(item.linkIOS, "_blank") }}>
-                        <span class="tooltip" >{languageText.Apple}</span>
+                        <span className="tooltip" >{languageText.Apple}</span>
                         <span><FontAwesomeIcon icon={faApple} /></span>
                     </button>
                 )}
                 {item && item.link && (
                     <button className="icon" onClick={() => { window.open(item.link, "_blank") }}>
-                        <span class="tooltip" >{languageText.Download}</span>
+                        <span className="tooltip" >{languageText.Download}</span>
                         <span><FontAwesomeIcon icon={faDownload} /></span>
                     </button>
                 )}
@@ -140,7 +140,7 @@ const Transportation = ({ language, languageData }) => {
                     <button className={`icon ${popupVisible && selectedItem && selectedItem.id === item.id
                         ? 'active' : ''}`}
                         onClick={() => { togglePopup(item) }}>
-                        <span class="tooltip" >{languageText.Description}</span>
+                        <span className="tooltip" >{languageText.Description}</span>
                         <span><FontAwesomeIcon icon={faFileLines} /></span>
                     </button>
                 )}
@@ -205,7 +205,7 @@ const Transportation = ({ language, languageData }) => {
                                 <>
                                     <div className="bus new">{selectedItem.description}</div>
                                     <button className="icon" onClick={closePopup}>
-                                        <span class="tooltip" >{languageText.close}</span>
+                                        <span className="tooltip" >{languageText.close}</span>
                                         <span><FontAwesomeIcon icon={faXmark} /></span>
                                     </button>
                                 </>

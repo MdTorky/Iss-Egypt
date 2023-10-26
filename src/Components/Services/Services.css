@@ -42,7 +42,6 @@ h2 {
     padding: 20px;
     border-radius: 20px;
     width: 65%;
-    /* transition: all 0.3s ease-in-out; */
 }
 
 .services .annContainer .annContainer2 {
@@ -53,15 +52,12 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* transition: all 0.3s ease-in-out; */
 
 
 }
 
 .services .annContainer h2 {
     font-size: 1.2em;
-    /* transition: all 0s ease; */
-
 }
 
 
@@ -582,7 +578,7 @@ a:visited {
 
 
 
-.popup {
+.services.popup {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -594,19 +590,19 @@ a:visited {
     z-index: 9999;
     display: none;
     border-radius: 30px;
-    /* height: 300px; */
+    height: 300px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 
-.popup-opening {
+.services .popup-opening {
     display: block;
     animation: popup-open 0.5s ease-in-out forwards;
 }
 
-.popup-closing {
+.services .popup-closing {
     opacity: 0;
     transform: scale(0.8) translate(-50%, -50%);
     transition: opacity 0.3s ease, transform 0.3s ease;
@@ -637,7 +633,7 @@ a:visited {
     }
 }
 
-.popup.show {
+.services.popup.show {
     display: block;
 }
 
@@ -737,7 +733,7 @@ a:visited {
     background-color: var(--theme);
 }
 
-.bottomContent:nth-child(2) button:nth-child(2) {
+.bottomContent button.calender {
     background-color: mediumseagreen;
 }
 
@@ -1101,6 +1097,111 @@ a:visited {
 
 
 
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1800px) {
+    .services .annContainer {
+        width: 55%;
+    }
+
+    .services .annContainer h2 {
+        font-size: 1.1em;
+    }
+
+
+    .services .annContainer .annStories .story img {
+        width: 55px;
+    }
+
+    .newStudents .newStudentsRow,
+    .newStudents .newStudentsRow2 {
+        gap: 10px;
+    }
+
+
+    .time-text {
+        font-size: 1em;
+    }
+
+    .day-text {
+        font-size: 0.6em;
+    }
+
+
+    .newStudents .newStudentsRow .newStudentCard:hover>.time-text,
+    .newStudents .newStudentsRow2 .newStudentCard:hover>.time-text {
+        font-size: 0.6em;
+    }
+
+    .newStudents .newStudentsRow .newStudentCard:hover>.day-text,
+    .newStudents .newStudentsRow2 .newStudentCard:hover>.day-text {
+        font-size: 0.1em;
+    }
+
+    .newStudents .newStudentsRow .newStudentCard:nth-child(3):hover>.day-text {
+        font-size: 0.3em;
+    }
+
+    .newStudents .newStudentsRow2 .newStudentCard:first-child:hover>.day-text {
+        font-size: 0.3em;
+
+    }
+
+    .arabic .time-text {
+        font-size: 1.1em;
+    }
+
+    .arabic .day-text {
+        font-size: 0.7em;
+    }
+
+    .arabic .newStudents .newStudentsRow .newStudentCard:hover>.time-text,
+    .arabic .newStudents .newStudentsRow2 .newStudentCard:hover>.time-text {
+        font-size: 0.8em;
+    }
+
+    .newStudents .newStudentsRow .newStudentCard:hover>.day-text,
+    .newStudents .newStudentsRow2 .newStudentCard:hover>.day-text {
+        font-size: 0.5em;
+    }
+
+    .arabic .newStudents .newStudentsRow .newStudentCard:nth-child(3):hover>.day-text {
+        font-size: 0.5em;
+    }
+
+    .arabic .newStudents .newStudentsRow2 .newStudentCard:first-child:hover>.day-text {
+        font-size: 0.5em;
+
+    }
+
+
+    .services.popup {
+        width: 16%;
+    }
+
+    .topContent .topText h3 {
+        font-size: 0.85em;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 700px) {
 
 
@@ -1446,7 +1547,7 @@ a:visited {
 
 
 
-    .popup {
+    .services.popup {
         width: 70%;
     }
 
@@ -1459,7 +1560,7 @@ a:visited {
     }
 
     .topContent .topText h3 {
-        font-size: 0.9em;
+        font-size: 0.8em;
     }
 
     .topContent .topText p {
@@ -1467,16 +1568,16 @@ a:visited {
         font-size: 0.6em;
     }
 
-    .popup .closeButton {
+    .services.popup .closeButton {
         font-size: 1.2em;
     }
 
-    .bottomContent button {
-        width: 125px;
+    .bottomContent {
+        gap: 10px;
     }
 
-    .bottomContent:nth-child(2) button:nth-child(2) {
-        background-color: mediumseagreen;
+    .bottomContent button {
+        width: 100%;
     }
 
     /* plus sign */
@@ -1489,11 +1590,7 @@ a:visited {
         position: absolute;
         width: 80%;
         opacity: 1;
-        font-size: 0.8em;
-    }
-
-    .bottomContent button:hover {
-        width: 125px;
+        font-size: 0.7em;
     }
 
     .bottomContent button:hover .sign {

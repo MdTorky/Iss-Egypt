@@ -6,6 +6,7 @@ import {
     faLocationDot, faBus, faXmark, faVanShuttle
 } from '@fortawesome/free-solid-svg-icons';
 import attractionsData from "../../data/attractions.json"
+import useFetch from '../../hooks/useFetch'
 
 var groceries = attractionsData.groceries
 var attractions = attractionsData.attractions
@@ -71,10 +72,6 @@ const Attractions = ({ language, languageData }) => {
         )
     }
 
-    // function busRoute(item) {
-    //     var busElement = document.getElementById("bus");
-    //     busElement.innerHTML = "Bus: " + item;
-    // }
 
     useEffect(() => {
         // Calculate and set animation delay for each card
@@ -86,6 +83,12 @@ const Attractions = ({ language, languageData }) => {
         });
     }, []);
 
+
+    const { data: grocery, error, pending } = useFetch("http://localhost:8000/attractions");
+    const { data: mosque } = useFetch("http://localhost:8000/mosques");
+    const { data: utm } = useFetch("http://localhost:8000/utm");
+    // const { data: attractions, error4, pending4 } = useFetch("http://localhost:8000/attractions");
+
     return (
         <div className="attraction">
             <h1 className="title">{languageText.attractions}</h1>
@@ -96,14 +99,18 @@ const Attractions = ({ language, languageData }) => {
                     <div className="innerBox">
                         <h2>{languageText.groceries}</h2>
                         <div className="cards">
-                            {groceries.map((grocery, index) => (
-                                <div className="card" key={index}>
+                            {error && <div>{error}</div>}
+                            {pending && <div>Loading...</div>}
+                            {grocery && groceries.map((grocery) => (
+                                // {
+                                <div className="card" >
                                     <div className="img"><img src={grocery.img} alt="" /></div>
                                     <div className="cardsBottomContent">
                                         <p>{grocery.name} </p>
-                                        <Button item={grocery} languageText={languageText} popupVisible={popupVisible} setPopupVisible={setPopupVisible} index={index} />
+                                        <Button item={grocery} languageText={languageText} popupVisible={popupVisible} setPopupVisible={setPopupVisible} />
                                     </div>
                                 </div>
+                                // ))
                             ))}
                         </div>
                     </div>
@@ -112,8 +119,10 @@ const Attractions = ({ language, languageData }) => {
                     <div className="innerBox">
                         <h2>{languageText.mosques}</h2>
                         <div className="cards">
-                            {mosques.map((mosque, index) => (
-                                <div className="card" key={index}>
+                            {error && <div>{error}</div>}
+                            {pending && <div>Loading...</div>}
+                            {mosque && mosques.map((mosque) => (
+                                <div className="card">
                                     <div className="img"><img src={mosque.img} alt="" /></div>
                                     <div className="cardsBottomContent">
                                         <p>{mosque.name} </p>
@@ -144,7 +153,9 @@ const Attractions = ({ language, languageData }) => {
                     <div className="innerBox">
                         <h2>UTM</h2>
                         <div className="cards">
-                            {utm.map((utm, index) => (
+                            {error && <div>{error}</div>}
+                            {pending && <div>Loading...</div>}
+                            {utm && utm.map((utm, index) => (
                                 <div className="card" key={index}>
                                     <div className="img"><img src={utm.img} alt="" /></div>
                                     <div className="cardsBottomContent">
@@ -168,7 +179,7 @@ const Attractions = ({ language, languageData }) => {
                                 <>
                                     <div className="bus">{selectedBus.bus}</div>
                                     <button className="icon" onClick={closePopup}>
-                                        <span class="tooltip" >{languageText.close}</span>
+                                        <span className="tooltip" >{languageText.close}</span>
                                         <span><FontAwesomeIcon icon={faXmark} /></span>
                                     </button>
                                 </>

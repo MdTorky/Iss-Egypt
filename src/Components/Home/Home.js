@@ -9,6 +9,7 @@ import { faFacebook, faInstagram, faLinkedin, faYoutube, faWhatsapp } from '@for
 import images from '../../data/images.json';
 import link from '../../data/upcomingEvents.json'
 import people from "../../data/people.json";
+import { PS } from 'country-flag-icons/react/3x2'
 
 
 function Home({ language, languageData }) {
@@ -40,47 +41,57 @@ function Home({ language, languageData }) {
         },
         {
             id: 3,
+            text: languageText.Secretary,
+            name: languageText.SecretaryName
+        },
+        {
+            id: 4,
+            text: languageText.Treasurer,
+            name: languageText.TreasurerName
+        },
+        {
+            id: 5,
             text: languageText.Academic,
             name: languageText.AcademicName
 
         },
         {
-            id: 4,
+            id: 6,
             text: languageText.Social,
             name: languageText.SocialName
         },
         {
-            id: 5,
+            id: 7,
             text: languageText.Culture,
             name: languageText.CultureName
         },
         {
-            id: 6,
+            id: 8,
             text: languageText.Media,
             name: languageText.MediaName
         },
         {
-            id: 7,
+            id: 9,
             text: languageText.Sport,
             name: languageText.SportName
         },
         {
-            id: 8,
+            id: 10,
             text: languageText.HR,
             name: languageText.HRName
         },
         {
-            id: 9,
+            id: 11,
             text: languageText.Logistics,
             name: languageText.LogisticsName
         },
         {
-            id: 10,
+            id: 12,
             text: languageText.Women,
             name: languageText.WomenName
         },
         {
-            id: 11,
+            id: 13,
             text: languageText.PublicRelation,
             name: languageText.PublicRelationName
         },
@@ -243,8 +254,8 @@ function Home({ language, languageData }) {
 
     return (
         <div className="home-container ">
-
             <div className="homeWrapper ">
+
                 <p>{languageText.together}</p>
                 <div className="words ">
                     <span>
@@ -254,6 +265,7 @@ function Home({ language, languageData }) {
                         {languageText.rejoice} <br />
                     </span>
                 </div>
+                <div className=""></div>
             </div>
 
             <h1 className="nameTitle ">{languageText.IssPres}
@@ -437,9 +449,9 @@ function Home({ language, languageData }) {
                     </div>
                     <div className="emailUs">
                         <a href='mailto:issegypt0@gmail.com'>
-                            <button class="button" type="button">
-                                <span class="button__text">{languageText.email}</span>
-                                <span class="button__icon"><FontAwesomeIcon icon={faEnvelope} /></span>
+                            <button className="button" type="button">
+                                <span className="button__text">{languageText.email}</span>
+                                <span className="button__icon"><FontAwesomeIcon icon={faEnvelope} /></span>
                             </button>
                         </a>
                     </div>
@@ -450,7 +462,7 @@ function Home({ language, languageData }) {
 
                             <div className="topPart">
                                 <button className="icon" onClick={closePopup}>
-                                    <span class="tooltip" >{languageText.close}</span>
+                                    <span className="tooltip" >{languageText.close}</span>
                                     <span><FontAwesomeIcon icon={faXmark} /></span>
                                 </button>
 
@@ -471,11 +483,11 @@ function Home({ language, languageData }) {
                                 {/* <hr /> */}
                                 <div className="links">
                                     <button className="icon" onClick={() => window.open(selectedItem.no, "_blank")}>
-                                        <span class="tooltip" >{languageText.Group}</span>
+                                        <span className="tooltip" >{languageText.Group}</span>
                                         <span><FontAwesomeIcon icon={faWhatsapp} /></span>
                                     </button>
                                     <button className="icon" onClick={() => window.open(selectedItem.linkedIn, "_blank")}>
-                                        <span class="tooltip" >{languageText.linkedin}</span>
+                                        <span className="tooltip" >{languageText.linkedin}</span>
                                         <span><FontAwesomeIcon icon={faLinkedin} /></span>
                                     </button>
                                 </div>

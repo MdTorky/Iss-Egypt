@@ -84,10 +84,10 @@ const Attractions = ({ language, languageData }) => {
     }, []);
 
 
-    const { data: grocery, error, pending } = useFetch("http://localhost:8000/attractions");
-    const { data: mosque } = useFetch("http://localhost:8000/mosques");
-    const { data: utm } = useFetch("http://localhost:8000/utm");
-    // const { data: attractions, error4, pending4 } = useFetch("http://localhost:8000/attractions");
+    // const { data: grocery, error, pending } = useFetch("http://localhost:8000/attractions");
+    // const { data: mosque } = useFetch("http://localhost:8000/mosques");
+    // const { data: utm } = useFetch("http://localhost:8000/utm");
+    // const { data: attraction } = useFetch("http://localhost:8000/attractions");
 
     return (
         <div className="attraction">
@@ -99,9 +99,9 @@ const Attractions = ({ language, languageData }) => {
                     <div className="innerBox">
                         <h2>{languageText.groceries}</h2>
                         <div className="cards">
-                            {error && <div>{error}</div>}
-                            {pending && <div>Loading...</div>}
-                            {grocery && groceries.map((grocery) => (
+                            {/* {error && <div>{error}</div>}
+                            {pending && <div>Loading...</div>} */}
+                            {groceries.map((grocery) => (
                                 // {
                                 <div className="card" >
                                     <div className="img"><img src={grocery.img} alt="" /></div>
@@ -119,9 +119,9 @@ const Attractions = ({ language, languageData }) => {
                     <div className="innerBox">
                         <h2>{languageText.mosques}</h2>
                         <div className="cards">
-                            {error && <div>{error}</div>}
-                            {pending && <div>Loading...</div>}
-                            {mosque && mosques.map((mosque) => (
+                            {/* {error && <div>{error}</div>}
+                            {pending && <div>Loading...</div>} */}
+                            {mosques.map((mosque) => (
                                 <div className="card">
                                     <div className="img"><img src={mosque.img} alt="" /></div>
                                     <div className="cardsBottomContent">
@@ -153,9 +153,7 @@ const Attractions = ({ language, languageData }) => {
                     <div className="innerBox">
                         <h2>UTM</h2>
                         <div className="cards">
-                            {error && <div>{error}</div>}
-                            {pending && <div>Loading...</div>}
-                            {utm && utm.map((utm, index) => (
+                            {utm.map((utm, index) => (
                                 <div className="card" key={index}>
                                     <div className="img"><img src={utm.img} alt="" /></div>
                                     <div className="cardsBottomContent">

@@ -13,6 +13,7 @@ import images from "../../data/images.json";
 import links from "../../data/upcomingEvents.json";
 import faculties from "../../data/faculties.json";
 import { useLanguage } from '../../language';
+// import announcements from "../../data/announcements.json";
 
 const Services = ({ language, languageData }) => {
     const { toggleLanguage } = useLanguage();
@@ -106,70 +107,6 @@ const Services = ({ language, languageData }) => {
             link: "",
             calendarLink: "Calendar Link3",
         },
-        // {
-        //     id: 3,
-        //     img: img1,
-        //     backgroundImg: images.academicAnnouncement,
-        //     title: "Title3",
-        //     organizer: Culture,
-        //     link: "",
-        //     calendarLink: "Calendar Link3",
-        // },
-        // {
-        //     id: 3,
-        //     img: img1,
-        //     backgroundImg: images.academicAnnouncement,
-        //     title: "Title3",
-        //     organizer: Culture,
-        //     link: "",
-        //     calendarLink: "Calendar Link3",
-        // },
-        // {
-        //     id: 3,
-        //     img: img1,
-        //     backgroundImg: images.academicAnnouncement,
-        //     title: "Title3",
-        //     organizer: Culture,
-        //     link: "",
-        //     calendarLink: "Calendar Link3",
-        // },
-        // {
-        //     id: 3,
-        //     img: img1,
-        //     backgroundImg: images.academicAnnouncement,
-        //     title: "Title3",
-        //     organizer: Culture,
-        //     link: "",
-        //     calendarLink: "Calendar Link3",
-        // },
-        // {
-        //     id: 3,
-        //     img: img1,
-        //     backgroundImg: images.academicAnnouncement,
-        //     title: "Title3",
-        //     organizer: Culture,
-        //     link: "",
-        //     calendarLink: "Calendar Link3",
-        // },
-        // {
-        //     id: 3,
-        //     img: img1,
-        //     backgroundImg: images.academicAnnouncement,
-        //     title: "Title3",
-        //     organizer: Culture,
-        //     link: "",
-        //     calendarLink: "Calendar Link3",
-        // },
-        // {
-        //     id: 3,
-        //     img: img1,
-        //     backgroundImg: images.academicAnnouncement,
-        //     title: "Title3",
-        //     organizer: Culture,
-        //     link: "",
-        //     calendarLink: "Calendar Link3",
-        // },
-
     ];
 
 
@@ -333,8 +270,8 @@ const Services = ({ language, languageData }) => {
                                 <div className="topContent">
                                     <img src={selectedAnnouncement.img} alt={selectedAnnouncement.title} />
                                     <div className="topText">
-                                        <h3>{selectedAnnouncement.title}</h3>
-                                        <p>{selectedAnnouncement.organizer}</p>
+                                        {language === "ar" ? <h3>{selectedAnnouncement.titleArabic}</h3> : <h3>{selectedAnnouncement.title}</h3>}
+                                        {language === "ar" ? <p>{selectedAnnouncement.organizerArabic}</p> : <p>{selectedAnnouncement.organizer}</p>}
                                     </div>
                                     <button onClick={closePopup} className="closeButton">
                                         <FontAwesomeIcon icon={faXmark} />
@@ -422,7 +359,7 @@ const Services = ({ language, languageData }) => {
                 <div className="collegesBoxTitle">
                     <h2>{languageText.Faculties}</h2>
                     <div className="collegesBox">
-                        {combinedFaculties.map((faculty, index) => (
+                        {combinedFaculties && combinedFaculties.map((faculty, index) => (
                             <div
                                 className={`college ${popupVisibleFaculty && selectedFaculty && selectedFaculty.id === faculty.id ? 'active' : ''}`}
                                 key={index}

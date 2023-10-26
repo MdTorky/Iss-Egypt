@@ -14,6 +14,7 @@ import Transportation from './Components/Transportation/Transportation';
 import BankAccount from './Components/BankAccount/BankAccount';
 import Groups from './Components/Groups/Groups';
 import Clubs from './Components/Clubs/Clubs';
+import NotFound from './Components/NotFound/NotFound';
 
 function App() {
   // Initialize the language state with the default language (e.g., "en")
@@ -83,6 +84,7 @@ function App() {
               <Route path="/transportation" element={<Transportation language={language} languageData={languageData} />} />
               <Route path="/openAccount" element={<BankAccount language={language} languageData={languageData} />} />
               <Route path="/clubs" element={<Clubs language={language} languageData={languageData} />} />
+              <Route path="*" element={<NotFound darkMode={darkMode} language={language} languageData={languageData} />} />
               {/* <Route path="/groups" element={<Groups language={language} languageData={languageData} />} /> */}
 
             </Routes>

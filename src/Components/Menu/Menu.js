@@ -112,14 +112,19 @@ const Menu = ({ language, languageData }) => {
         });
     }, []);
 
-    const isNotServicesPage = location.pathname !== '/services';
-    const isNotGalleryPage = location.pathname !== '/gallery';
-    const isNotResidencesPage = location.pathname !== '/residences';
-    const isNotAttractionsPage = location.pathname !== '/attractions';
-    const isNotTransportationPage = location.pathname !== '/transportation';
-    const isNotAccountPage = location.pathname !== '/openAccount';
-    const isNotGroupsPage = location.pathname !== '/groups';
-    const isNotClubsPage = location.pathname !== '/clubs';
+    // const hiddenPages = ["/services", "/gallery", "/residences", "/attractions", "/transportation", "/openAccount", "/groups", "/clubs"];
+
+    const isMenuVisible = location.pathname === "/" && location.pathname !== "*";
+
+    // const isNotServicesPage = location.pathname !== '/services';
+    // const isNotGalleryPage = location.pathname !== '/gallery';
+    // const isNotResidencesPage = location.pathname !== '/residences';
+    // const isNotAttractionsPage = location.pathname !== '/attractions';
+    // const isNotTransportationPage = location.pathname !== '/transportation';
+    // const isNotAccountPage = location.pathname !== '/openAccount';
+    // const isNotGroupsPage = location.pathname !== '/groups';
+    // const isNotClubsPage = location.pathname !== '/clubs';
+    // const isNotFoundPage = location.pathname !== '*';
 
 
     const [popupVisible, setPopupVisible] = useState(false);
@@ -151,17 +156,11 @@ const Menu = ({ language, languageData }) => {
     }, [language]);
 
     return (
-        <div className={`sideMenu
-        ${language === 'ar' ? 'arabic' : ''} 
-        ${isNotServicesPage ? '' : 'hidden'}
-        ${isNotGalleryPage ? '' : 'hidden'}
-        ${isNotResidencesPage ? '' : 'hidden'}
-        ${isNotAttractionsPage ? '' : 'hidden'}
-        ${isNotTransportationPage ? '' : 'hidden'}
-        ${isNotAccountPage ? '' : 'hidden'}
-        ${isNotGroupsPage ? '' : 'hidden'}
-        ${isNotClubsPage ? '' : 'hidden'}
-        `}>
+        <div className={`sideMenu 
+        ${language === "ar" ? "arabic" : ""} 
+        ${isMenuVisible ? "" : "hidden"
+            }`}
+        >
 
             <div className="liveBox">
                 <div className="title">
@@ -171,7 +170,8 @@ const Menu = ({ language, languageData }) => {
                 {combinedPeople.map((person, index) => (
                     <div className="people" key={index}>
                         <div className={`peopleCard ${popupVisible && selectedItem && selectedItem.id === person.id
-                            ? 'active' : ''}`}
+                            ? 'active' : ''
+                            } `}
                             onClick={() => { togglePopup(person) }}>
                             <div className="peopleImg">
                                 <img src={person.imgSrc} alt="" />
@@ -184,7 +184,7 @@ const Menu = ({ language, languageData }) => {
                     </div>
                 ))}
                 {popupVisible && selectedItem && (
-                    <div className={`popup ${popupVisible ? 'popup-opening' : 'popup-closing'}`}>
+                    <div className={`popup ${popupVisible ? 'popup-opening' : 'popup-closing'} `}>
                         <div className="popup-content">
 
                             <div className="topPart">

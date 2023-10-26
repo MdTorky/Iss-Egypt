@@ -650,6 +650,17 @@ body.dark-mode {
 
 
 
+/* NotFound */
+
+.dark-mode .BottomFound .link {
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+}
+
+
+.dark-mode .arabic .BottomFound .link {
+    background: linear-gradient(to left, var(--hover), var(--hover2));
+}
+
 @media screen and (max-width: 700px) {
     .dark-mode .navbar ul li.active icon::after {
         color: var(--bg);

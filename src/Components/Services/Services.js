@@ -13,7 +13,8 @@ import images from "../../data/images.json";
 import links from "../../data/upcomingEvents.json";
 import faculties from "../../data/faculties.json";
 import { useLanguage } from '../../language';
-// import announcements from "../../data/announcements.json";
+import useFetch from '../../hooks/useFetch';
+import announcements from "../../data/announcements.json";
 
 const Services = ({ language, languageData }) => {
     const { toggleLanguage } = useLanguage();
@@ -108,6 +109,8 @@ const Services = ({ language, languageData }) => {
             calendarLink: "Calendar Link3",
         },
     ];
+
+
 
 
 
@@ -223,6 +226,7 @@ const Services = ({ language, languageData }) => {
     }, []);
 
 
+    // const { data: announcements, error, pending } = useFetch("http://localhost:8000/announcements");
 
 
     return (
@@ -439,6 +443,3 @@ const Services = ({ language, languageData }) => {
 };
 
 export default Services;
-
-{/* <button><FontAwesomeIcon icon={faCircleInfo} /></button>
-                                                <button><FontAwesomeIcon icon={faMap} /></button> */}

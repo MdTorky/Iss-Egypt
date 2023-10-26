@@ -210,7 +210,8 @@ function Home({ language, languageData }) {
             <img src={upcomingEventImg} alt="" />
             <div className="line">
                 <p className="subtitle">{upcomingEventSubtitle}</p>
-                <a target="_blank" href={eventLink}><button>{languageText.calender} <FontAwesomeIcon icon={faCalendarDays} /></button></a>
+                {eventLink && <a target="_blank" href={eventLink}><button>{languageText.calender} <FontAwesomeIcon icon={faCalendarDays} /></button></a>
+                }
             </div>
             <h2 className="description">{upcomingEventDescription}</h2>
         </div>

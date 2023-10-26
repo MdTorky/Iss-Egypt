@@ -562,6 +562,9 @@
     gap: 20px;
     margin: 0 auto 20px auto;
     border-bottom: 1px solid black;
+    /* background: red; */
+    /* padding: 10px; */
+    /* width: min-content; */
 }
 
 .blogContainer2 .blogItem img {
@@ -607,9 +610,12 @@
 }
 
 .blogContainer2 .blogItem .description {
-    font-weight: 400;
+    font-weight: 700;
     font-family: 'Poppins', sans-serif;
     line-height: 15px;
+    font-size: 0.8em;
+    width: 76%;
+    text-align: justify;
     animation: fadeInUp 2s ease 0s 1 normal forwards;
 
 }
@@ -621,13 +627,17 @@
 
 
 .arabic .blogContainer2 .blogItem .subtitle {
-    font-size: 0.9em;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 0.7em;
     opacity: 0.5;
 
 }
 
 .arabic .blogContainer2 .blogItem .description {
     font-weight: 600;
+    font-size: 0.8em;
+    text-align: justify;
+    width: 76%;
     font-family: 'Noto Kufi Arabic', sans-serif;
 }
 
@@ -1136,7 +1146,7 @@
     }
 
     .blogContainer2 {
-        gap: 20px;
+        gap: 0px;
         border-bottom: 1px solid black;
 
     }
@@ -1168,12 +1178,16 @@
     }
 
     .blogContainer2 .blogItem .description {
-        font-size: 0.9em;
-        text-align: center;
-        font-weight: 300;
+        font-size: 0.7em;
+        text-align: justify;
+        font-weight: 500;
+        width: 100%;
         font-family: 'Poppins', sans-serif;
     }
 
+    .arabic .blogContainer2 .blogItem .description {
+        width: 100%
+    }
 
     .blogContainer2 .blogItem .line button {
         padding: 0px 5px;
@@ -1632,8 +1646,8 @@
     .blogContainer2 .blogItem {
         display: flex;
         flex-direction: column;
-        margin: 0;
-        width: 100%;
+        margin: 0 auto;
+        width: 80%;
     }
 
     .blogContainer2 .blogItem .line {
@@ -1653,7 +1667,7 @@
     }
 
     .blogContainer2 .blogItem img {
-        width: 250px;
+        width: 300px;
         margin: 0 auto;
     }
 
@@ -1664,12 +1678,19 @@
         /* text-align: center; */
     }
 
+
+
+
     .blogContainer2 .blogItem .description {
         font-size: 0.8em;
-        text-align: center;
-        font-weight: 300;
+        text-align: justify;
+        font-weight: 500;
+        width: 105%;
         font-family: 'Poppins', sans-serif;
-        white-space: nowrap;
+    }
+
+    .arabic .blogContainer2 .blogItem .description {
+        min-width: 105%;
     }
 
 

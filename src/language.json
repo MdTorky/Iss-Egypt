@@ -218,6 +218,7 @@
     "esportsDesc": "A club with the objective of forming, organizing, and preparing teams to compete in video games against other clubs and at other events",
     "roboconDesc": "It is a robotics club where students may learn how to code and write commands for robots via play, as well as build robots to compete in international competitions.",
     "airostDesc": "They are a group of people who provide a platform for students to discover their interests and talents in engineering, technology, and entrepreneurship.",
+    "googleDesc": "They are a university-based community groups powered by Google Developers for students interested in Technology. The aim is to help students bridge the gap between theory and practice.",
 
     "nothing": "There's NOTHING here....",
     "exists": "...maybe the page you're looking for is not found or never existed.",
@@ -460,6 +461,7 @@
     "esportsDesc": "نادي يهدف إلى تشكيل وتنظيم وإعداد الفرق للمنافسة في ألعاب الفيديو ضد الأندية الأخرى وفي الأحداث الأخرى",
     "roboconDesc": "هو نادي للروبوتات حيث يمكن للطلاب تعلم كيفية البرمجة وكتابة الأوامر للروبوتات من خلال اللعب، بالإضافة إلى بناء الروبوتات للمنافسة في المسابقات الدولية",
     "airostDesc": "إنهم مجموعة من الأشخاص الذين يوفرون منصة للطلاب لاكتشاف اهتماماتهم ومواهبهم في الهندسة والتكنولوجيا وريادة الأعمال",
+    "googleDesc": "إنها مجموعات مجتمعية جامعية مدعومة من Google Developers للطلاب المهتمين بالتكنولوجيا. الهدف هو مساعدة الطلاب على سد الفجوة بين النظرية والتطبيق.",
 
     "nothing": "لا يوجد شيء هنا....",
     "exists": "...ربما لم يتم العثور على الصفحة التي تبحث عنها أو أنها لم تكن موجودة على الإطلاق.",

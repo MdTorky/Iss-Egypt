@@ -68,6 +68,11 @@ const Clubs = ({ language, languageData }) => {
                 description: languageText.airostDesc
 
             },
+            {
+                id: 8,
+                description: languageText.googleDesc
+
+            },
         ],
 
 

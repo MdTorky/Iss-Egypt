@@ -274,8 +274,8 @@ const Services = ({ language, languageData }) => {
                                 <div className="topContent">
                                     <img src={selectedAnnouncement.img} alt={selectedAnnouncement.title} />
                                     <div className="topText">
-                                        <h3>{selectedAnnouncement.titleArabic}</h3>
-                                        <p>{selectedAnnouncement.organizerArabic}</p>
+                                        <h3>{selectedAnnouncement.title}</h3>
+                                        <p>{selectedAnnouncement.organizer}</p>
                                     </div>
                                     <button onClick={closePopup} className="closeButton">
                                         <FontAwesomeIcon icon={faXmark} />

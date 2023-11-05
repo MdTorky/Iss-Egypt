@@ -83,31 +83,31 @@ const Services = ({ language, languageData }) => {
     const announcements = [
         {
             id: 1,
-            img: AcademicImg,
-            backgroundImg: "https://drive.google.com/uc?export=view&id=1IdwpNokC5ILvmZne9L5rmb7PeCwZUk3i",
+            img: OtherImg,
+            backgroundImg: "https://drive.google.com/uc?export=view&id=1wl2ZoAPCUKsqaJb4HpBqjLkA1H9M462O",
             title: languageText.announcementTitle1,
-            organizer: Academic,
-            link: "https://www.google.com",
-            calendarLink: links.upcomingEventLink1,
+            organizer: Other,
+            link: "https://www.instagram.com/p/CzQcSEWvGpZ/",
+            calendarLink: "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmNhNXZtZTN2dGEwcDRkZGNtOW10MGNiM3EgNjgxMTk1NGE5ZGQwMzRkMjE0MTdjYjQ1MmQ5YzM0NGRkNDNlYzM0ZGU3MDBjNWI4MDY1ZTU2MzAzODA1NDZjNUBn&tmsrc=6811954a9dd034d21417cb452d9c344dd43ec34de700c5b8065e5630380546c5%40group.calendar.google.com",
         },
-        {
-            id: 2,
-            img: SocialImg,
-            backgroundImg: images.academicAnnouncement,
-            title: "Title 2",
-            organizer: Social,
-            link: "Link 2",
-            calendarLink: "",
-        },
-        {
-            id: 3,
-            img: CultureImg,
-            backgroundImg: images.academicAnnouncement,
-            title: "Title3",
-            organizer: Culture,
-            link: "",
-            calendarLink: "Calendar Link3",
-        },
+        // {
+        //     id: 2,
+        //     img: SocialImg,
+        //     backgroundImg: images.academicAnnouncement,
+        //     title: "Title 2",
+        //     organizer: Social,
+        //     link: "Link 2",
+        //     calendarLink: "",
+        // },
+        // {
+        //     id: 3,
+        //     img: CultureImg,
+        //     backgroundImg: images.academicAnnouncement,
+        //     title: "Title3",
+        //     organizer: Culture,
+        //     link: "",
+        //     calendarLink: "Calendar Link3",
+        // },
     ];
 
 
@@ -344,7 +344,7 @@ const Services = ({ language, languageData }) => {
                                 <p className="day-text">{languageText.clubs2}</p>
                                 <FontAwesomeIcon icon={faFutbol} className='moon' />
                             </Link>
-                            <Link to="" className="newStudentCard">
+                            <Link to="/courses" className="newStudentCard">
                                 <p className="time-text"><span>{languageText.extraCourses}</span><span className="time-sub-text"></span></p>
                                 <p className="day-text">{languageText.extraCourses2}</p>
                                 <FontAwesomeIcon icon={faGraduationCap} className='moon' />

@@ -650,6 +650,57 @@ body.dark-mode {
 
 
 
+
+.dark-mode .courses .outerBox {
+    background: var(--hover2);
+}
+
+.dark-mode .courses .outerBox .innerBox {
+    background: var(--hover);
+}
+
+.dark-mode .courses .cards .card {
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+}
+
+.dark-mode .arabic .courses .cards .card {
+    background: linear-gradient(to left, var(--hover), var(--hover2));
+}
+
+.dark-mode .courses .popup {
+    /* background: linear-gradient(to right, var(--hover), var(--hover2)); */
+    background: var(--hover)
+}
+
+.dark-mode .courses .popup .bottom {
+    /* background: linear-gradient(to right, var(--hover), var(--hover2)); */
+    background: var(--hover2)
+}
+
+.dark-mode .courses .popup .bottom .header {
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+
+}
+
+.dark-mode .arabic .courses .popup .bottom .header {
+    background: linear-gradient(to left, var(--hover), var(--hover2));
+
+}
+
+.dark-mode .courses .icon {
+    color: var(--bg);
+    background: linear-gradient(to right, var(--hover), var(--hover2));
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+
+.dark-mode .courses .icon:hover {
+    background: linear-gradient(to right, var(--bg), var(--bg2));
+    color: var(--hover);
+}
+
+
+
 /* NotFound */
 
 .dark-mode .BottomFound .link {

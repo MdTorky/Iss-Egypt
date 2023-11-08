@@ -461,6 +461,11 @@ a:visited {
 
 }
 
+.arabic .services .leftContainer {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+
+}
+
 .services .leftContainer .collegesBoxTitle>h2 {
     font-size: 1.2em;
     transition: all 0.3s ease;

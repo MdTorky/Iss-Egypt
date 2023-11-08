@@ -536,6 +536,10 @@ a:visited {
     width: 100%
 }
 
+.arabic .leftContainer .college .textBox {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
 .leftContainer .college .textContent {
     display: flex;
     align-items: center;

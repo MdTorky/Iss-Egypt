@@ -178,7 +178,7 @@
 
     "grab": "Grab",
     "busUtm": "The buses schedule inside UTM",
-    "grabDesc": "It provides everyday services like Deliveries, Mobility, Financial Services, and More.",
+    "inDriveDesc": "It's an international ride-hailing service with more than 150 million downloads operating in 48 countries.",
     "lugoDesc": "It locates nearby bus stations and routes; also, you may plan a trip to choose which buses to take and where to drop off. Finally, it offers Kumpool, which is a minibus service that you can order for 1 RM to carry you small distances.",
     "kumpoolDesc": "It's a minibus service that you can order for 1 RM to carry you small distances.",
     "redBusDesc": "It allows you to book a bus from a city to city as well as from Johor to the Kuala Lumpur airport directly.",
@@ -426,7 +426,7 @@
 
     "grab": "جراب",
     "busUtm": "جدول الحافلات داخل UTM",
-    "grabDesc": "يوفر خدمات يومية مثل التوصيل والتنقل والخدمات المالية والمزيد.",
+    "inDriveDesc": "هي خدمة دولية لنقل الركاب مع أكثر من 150 مليون عملية تنزيل تعمل في 48 دولة.",
     "lugoDesc": "يعرض محطات الحافلات والطرق القريبة و يمكنك أيضًا التخطيط لرحلة باختيار الحافلات التي ستستقلها ومكان النزول. أخيرًا، يقدم Kumpool، وهي خدمة حافلة صغيرة يمكنك طلبها مقابل 1 RM لتنقلك لمسافات صغيرة",
     "kumpoolDesc": "هي خدمة حافلة صغيرة يمكنك طلبها مقابل 1 RM لتنقلك لمسافات صغيرة",
     "redBusDesc": "يتيح لك حجز حافلة من مدينة إلى أخرى وكذلك من جوهور إلى مطار كوالالمبور مباشرة.",

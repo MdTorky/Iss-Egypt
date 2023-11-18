@@ -39,8 +39,8 @@ const Transportation = ({ language, languageData }) => {
         Apps: [
             {
                 id: 1,
-                name: languageText.grab,
-                description: languageText.grabDesc
+                name: "InDrive",
+                description: languageText.inDriveDesc
             },
             {
                 id: 2,

@@ -2,10 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
+/* font-family: 'Poppins', sans-serif; */
+
+
 /* Arabic Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap');
+
+/* font-family: 'Noto Kufi Arabic', sans-serif; */
+
 
 :root {
   /* --theme: #F05454; */

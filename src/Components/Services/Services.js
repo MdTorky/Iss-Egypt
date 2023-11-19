@@ -3,7 +3,7 @@ import { useLocation, Link } from 'react-router-dom';
 import './Services.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-    faCalendarDays, faXmark, faCircleInfo, faCarBattery,
+    faCalendarDays, faXmark, faCircleInfo, faCarBattery, faFileLines,
     faLaptopCode, faHelmetSafety, faGears, faFlaskVial, faBookBookmark, faEnvelope, faLocationDot, faInfoCircle,
     faBuilding, faMapLocationDot, faCarSide, faFilePdf, faCreditCard, faGraduationCap, faFutbol
 } from '@fortawesome/free-solid-svg-icons';
@@ -14,7 +14,7 @@ import links from "../../data/upcomingEvents.json";
 import faculties from "../../data/faculties.json";
 import { useLanguage } from '../../language';
 import useFetch from '../../hooks/useFetch';
-import announcements from "../../data/announcements.json";
+// import announcements from "../../data/announcements.json";
 
 const Services = ({ language, languageData }) => {
     const { toggleLanguage } = useLanguage();
@@ -48,12 +48,14 @@ const Services = ({ language, languageData }) => {
     var AcademicImg = images.academicAnnouncement;
     var SocialImg = images.socialAnnouncement;
     var CultureImg = images.cultureAnnouncement;
+    var ElectronImg = images.electionsAnnouncement;
     var OtherImg = images.otherAnnouncement;
 
 
     var Academic = languageText.academicAnnouncementOrganizer
     var Social = languageText.socialAnnouncementOrganizer
     var Culture = languageText.cultureAnnouncementOrganizer
+    var Election = languageText.electionAnnouncementOrganizer
     var Other = languageText.otherAnnouncementOrganizer
     // 1. Add a new Id
 
@@ -61,53 +63,41 @@ const Services = ({ language, languageData }) => {
     //              a. AcademicImg (if academic announcement)
     //              b. SocialImg (if social announcement)
     //              c. CultureImg (if culture announcement)
+    //              d. ElectionImg (if election announcement)
     //              d. OtherImg (if any other announcement)
 
     // 3. Add Event Image in the Background Image
 
-    // 4. Add A TITLE in English and Arabic in language.Json
-    // Then add announcementTitle1 or announcementTitle2 until announcementTitle7 based on what you written
+    // 4. Add A TITLE in English and Arabic
 
     // 5. Add Organizer either
     //               a. Academic (if the academic committee is the organizer)
     //               b. Social (if the social committee is the organizer)
     //               c. Culture (if the culture committee is the organizer)
-    //               d. Other (if the other committee is the organizer)
+    //               d. Election (if the election committee is the organizer)
+    //               e. Other (if the other committee is the organizer)
 
-    // FOR 6 AND 7 IF THERE IS NO LINKS LEAVE IT BLANK
+    // FOR 6, 7, and 8 IF THERE IS NO LINKS LEAVE IT BLANK
 
-    // 6. Add the Form Link or social media link for the event
+    // 6. Add the Form Link 
 
-    // 7. Add the Calender Link
+    // 7. Add Social media link
+
+    // 8. Add the Calender Link
 
     const announcements = [
         {
             id: 1,
-            img: images.electionsAnnouncement,
+            img: ElectronImg,
             backgroundImg: "https://drive.google.com/uc?export=view&id=1wl2ZoAPCUKsqaJb4HpBqjLkA1H9M462O",
-            title: languageText.announcementTitle1,
-            organizer: Other,
-            link: "https://forms.gle/Fz1mwk8Q4PbnJXoX7",
-            calendarLink: "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmNhNXZtZTN2dGEwcDRkZGNtOW10MGNiM3EgNjgxMTk1NGE5ZGQwMzRkMjE0MTdjYjQ1MmQ5YzM0NGRkNDNlYzM0ZGU3MDBjNWI4MDY1ZTU2MzAzODA1NDZjNUBn&tmsrc=6811954a9dd034d21417cb452d9c344dd43ec34de700c5b8065e5630380546c5%40group.calendar.google.com",
+            title: "ISS Egypt Elections",
+            titleArabic: "انتخابات الاتحاد المصري",
+            organizer: Election,
+            form: 'https://forms.gle/Fz1mwk8Q4PbnJXoX7',
+            link: "",
+            calendarLink: "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmNhNXZtZTN2dGEwcDRkZGNtOW10MGNiM3EgNjgxMTk1NGE5ZGQwMzRkMjE0MTdjYjQ1MmQ5YzM0NGRkNDNlYzM0ZGU3MDBjNWI4MDY1ZTU2MzAzODA1NDZjNUBn&tmsrc=6811954a9dd034d21417cb452d9c344dd43ec34de700c5b8065e5630380546c5%40group.calendar.google.com"
         },
-        // {
-        //     id: 2,
-        //     img: SocialImg,
-        //     backgroundImg: images.academicAnnouncement,
-        //     title: "Title 2",
-        //     organizer: Social,
-        //     link: "Link 2",
-        //     calendarLink: "",
-        // },
-        // {
-        //     id: 3,
-        //     img: CultureImg,
-        //     backgroundImg: images.academicAnnouncement,
-        //     title: "Title3",
-        //     organizer: Culture,
-        //     link: "",
-        //     calendarLink: "Calendar Link3",
-        // },
+
     ];
 
 
@@ -257,9 +247,24 @@ const Services = ({ language, languageData }) => {
                         <h2>{languageText.announcements}</h2>
                         <div className='annStories2'>
                             {announcements.map((announcement, index) => (
-                                <div className={`story ${popupVisible && selectedAnnouncement && selectedAnnouncement.id === announcement.id
-                                    ? 'active' : ''}`} key={index} onClick={() => togglePopup(announcement)}>
-                                    <img src={announcement.img} alt={announcement.title} />
+                                // <div className={`story ${popupVisible && selectedAnnouncement && selectedAnnouncement.id === announcement.id
+                                //     ? 'active' : ''}`}
+                                //     key={index}
+                                //     onClick={() => togglePopup(announcement)}
+                                // >
+                                <div className={`box ${popupVisible && selectedAnnouncement && selectedAnnouncement.id === announcement.id
+                                    ? 'active' : ''}`}
+                                    key={index}
+                                    onClick={() => togglePopup(announcement)}
+                                >
+                                    <div
+                                        className="announcement"
+                                    // style={{
+                                    //     backgroundImage: `url(${announcement.img})`
+                                    // }}
+                                    >
+                                        <img src={announcement.img} alt={announcement.title} />
+                                    </div>
                                 </div>
                             ))}
                         </div>
@@ -274,7 +279,8 @@ const Services = ({ language, languageData }) => {
                                 <div className="topContent">
                                     <img src={selectedAnnouncement.img} alt={selectedAnnouncement.title} />
                                     <div className="topText">
-                                        <h3>{selectedAnnouncement.title}</h3>
+                                        {language == 'ar' ? <h3>{selectedAnnouncement.titleArabic}</h3> : <h3>{selectedAnnouncement.title}</h3>}
+                                        {/* {language == 'ar' ? <p>{selectedAnnouncement.organizerArabic}</p> : <p>{selectedAnnouncement.organizer}</p>} */}
                                         <p>{selectedAnnouncement.organizer}</p>
                                     </div>
                                     <button onClick={closePopup} className="closeButton">
@@ -282,7 +288,14 @@ const Services = ({ language, languageData }) => {
                                     </button>
                                 </div>
                                 <div className="bottomContent">
-
+                                    {selectedAnnouncement.form &&
+                                        <button onClick={() => window.open(selectedAnnouncement.form, '_blank')} className="form">
+                                            <div className="sign">
+                                                <FontAwesomeIcon icon={faFileLines} />
+                                            </div>
+                                            <div className="text">{languageText.Form}</div>
+                                        </button>
+                                    }
                                     {selectedAnnouncement.link &&
                                         <button onClick={() => window.open(selectedAnnouncement.link, '_blank')}>
                                             <div className="sign">

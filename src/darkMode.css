@@ -242,7 +242,7 @@ body.dark-mode {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
-.dark-mode .services .annContainer .annStories .story {
+/* .dark-mode .services .annContainer .annStories .story {
     background: var(--hover);
 }
 
@@ -252,9 +252,19 @@ body.dark-mode {
 
 .dark-mode .services .annContainer .annStories .story img {
     background: var(--bg);
+} */
+
+.dark-mode .services .annContainer .annStories .box {
+    background: linear-gradient(to right, var(--bg), var(--bg2));
 }
 
+.dark-mode .services .annContainer .annStories .box::before {
+    background: var(--theme);
+}
 
+.dark-mode .services .annContainer .annStories .box::after {
+    background: var(--hover);
+}
 
 .dark-mode .services .rightContainer {
     background: var(--hover2);

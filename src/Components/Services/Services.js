@@ -3,7 +3,7 @@ import { useLocation, Link } from 'react-router-dom';
 import './Services.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-    faCalendarDays, faXmark, faCircleInfo, faCarBattery, faFileLines,
+    faCalendarDays, faXmark, faCircleInfo, faCarBattery, faFileLines, faBellSlash,
     faLaptopCode, faHelmetSafety, faGears, faFlaskVial, faBookBookmark, faEnvelope, faLocationDot, faInfoCircle,
     faBuilding, faMapLocationDot, faCarSide, faFilePdf, faCreditCard, faGraduationCap, faFutbol
 } from '@fortawesome/free-solid-svg-icons';
@@ -218,7 +218,9 @@ const Services = ({ language, languageData }) => {
 
     // const { data: announcements, error, pending } = useFetch("http://localhost:8000/announcements");
 
-
+    const isEmpty = (obj) => {
+        return Object.keys(obj).length === 0;
+    };
     return (
         <div className="services">
             <div className="rightContainer">
@@ -246,7 +248,7 @@ const Services = ({ language, languageData }) => {
                     <div className="annStories">
                         <h2>{languageText.announcements}</h2>
                         <div className='annStories2'>
-                            {announcements.map((announcement, index) => (
+                            {!isEmpty(announcements) ? (announcements.map((announcement, index) => (
                                 // <div className={`story ${popupVisible && selectedAnnouncement && selectedAnnouncement.id === announcement.id
                                 //     ? 'active' : ''}`}
                                 //     key={index}
@@ -266,7 +268,14 @@ const Services = ({ language, languageData }) => {
                                         <img src={announcement.img} alt={announcement.title} />
                                     </div>
                                 </div>
-                            ))}
+                            ))) :
+                                (
+                                    <div className='noAnn'>
+                                        <FontAwesomeIcon icon={faBellSlash} beatFade />
+                                        <h2 className="noAnnouncements">{languageText.noAnnouncement}</h2>
+
+                                    </div>
+                                )}
                         </div>
                     </div>
 

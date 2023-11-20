@@ -66,6 +66,7 @@
     "close": "Close",
     "link": "Link",
     "courseLink": "Course Link",
+    "noAnnouncement": "Sorry.. No Announcements Yet",
 
     "achievements": "The Committees' Achievements",
     "blogSubtitle": "ISS Egypt Welcome Party",
@@ -314,6 +315,7 @@
     "close": "إغلاق",
     "link": "رابط الموقع",
     "courseLink": "رابط الدورة",
+    "noAnnouncement": "عذرا.. لا توجد إعلانات حتى الآن",
 
     "achievements": "إنجازات الاتحاد",
 

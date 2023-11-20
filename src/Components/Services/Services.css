@@ -1434,19 +1434,21 @@ a:visited {
 
 
     .services .annContainer .annStories .box.active::before {
-        width: 60%;
+        width: 80%;
         height: 100%;
 
         overflow: hidden;
+        border-radius: 50%;
 
 
     }
 
 
     .services .annContainer .annStories .box:hover::before {
-        width: 60%;
+        width: 80%;
         height: 100%;
         overflow: hidden;
+        border-radius: 50%;
     }
 
 
@@ -1766,7 +1768,6 @@ a:visited {
 
     .services.popup .closeButton {
         font-size: 1.2em;
-        width: 30px;
     }
 
     .bottomContent {

@@ -1626,7 +1626,6 @@ a:visited {
     .services .leftContainer .collegesBoxTitle .collegesBox {
         flex-direction: row;
         line-height: 15px;
-        ;
 
     }
 
@@ -1644,6 +1643,7 @@ a:visited {
         display: flex;
         flex-direction: column;
         text-align: center;
+
     }
 
 
@@ -1662,6 +1662,8 @@ a:visited {
         margin-left: 5px;
         justify-content: space-between;
         width: 100%;
+        text-decoration: none;
+
     }
 
     .leftContainer .college .textContent {
@@ -1686,6 +1688,8 @@ a:visited {
         font-size: 0.65em;
         font-weight: lighter;
         margin: 0;
+        text-decoration: none;
+
 
     }
 

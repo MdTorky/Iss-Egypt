@@ -881,7 +881,6 @@ a:visited {
 .bottomContent button {
     display: flex;
     align-items: center;
-    gap: 10px;
     /* justify-content: space-around; */
     width: 45px;
     height: 45px;
@@ -927,7 +926,6 @@ a:visited {
     font-weight: 600;
     transition-duration: .3s;
     white-space: nowrap;
-
 }
 
 .bottomContent button:hover {
@@ -1430,18 +1428,25 @@ a:visited {
 
         width: 70px;
         height: 70px;
+        overflow: hidden;
+
     }
 
+
     .services .annContainer .annStories .box.active::before {
-        width: 50%;
+        width: 60%;
         height: 100%;
+
+        overflow: hidden;
+
 
     }
 
 
     .services .annContainer .annStories .box:hover::before {
-        width: 50%;
+        width: 60%;
         height: 100%;
+        overflow: hidden;
     }
 
 
@@ -1761,7 +1766,7 @@ a:visited {
 
     .services.popup .closeButton {
         font-size: 1.2em;
-        width: fit-content;
+        width: 30px;
     }
 
     .bottomContent {
@@ -1770,6 +1775,9 @@ a:visited {
 
     .bottomContent button {
         width: 100%;
+        display: flex;
+
+
     }
 
     /* plus sign */
@@ -1784,8 +1792,8 @@ a:visited {
         width: 80%;
         opacity: 1;
         font-size: 0.8em;
-        display: flex;
-        align-items: center;
+        /* display: flex;
+        align-items: center; */
     }
 
     .bottomContent button:hover .sign {

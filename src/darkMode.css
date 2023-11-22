@@ -255,12 +255,10 @@ body.dark-mode {
 } */
 
 .dark-mode .services .annContainer .annStories .box {
-    background: linear-gradient(to right, var(--bg), var(--bg2));
+    background: rgb(95, 95, 95);
 }
 
-.dark-mode .services .annContainer .annStories .box::before {
-    background: var(--theme);
-}
+
 
 .dark-mode .services .annContainer .annStories .box::after {
     background: var(--hover);

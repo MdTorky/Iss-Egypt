@@ -56,6 +56,7 @@ const Services = ({ language, languageData }) => {
     var Social = languageText.socialAnnouncementOrganizer
     var Culture = languageText.cultureAnnouncementOrganizer
     var Election = languageText.electionAnnouncementOrganizer
+    var Sports = languageText.sportsAnnouncementOrganizer
     var Other = languageText.otherAnnouncementOrganizer
     // 1. Add a new Id
 
@@ -86,17 +87,17 @@ const Services = ({ language, languageData }) => {
     // 8. Add the Calender Link
 
     const announcements = [
-        // {
-        //     id: 1,
-        //     img: ElectronImg,
-        //     backgroundImg: "https://drive.google.com/uc?export=view&id=1wl2ZoAPCUKsqaJb4HpBqjLkA1H9M462O",
-        //     title: "ISS Egypt Elections",
-        //     titleArabic: "انتخابات الاتحاد المصري",
-        //     organizer: Election,
-        //     form: 'https://forms.gle/Fz1mwk8Q4PbnJXoX7',
-        //     link: "",
-        //     calendarLink: "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NmNhNXZtZTN2dGEwcDRkZGNtOW10MGNiM3EgNjgxMTk1NGE5ZGQwMzRkMjE0MTdjYjQ1MmQ5YzM0NGRkNDNlYzM0ZGU3MDBjNWI4MDY1ZTU2MzAzODA1NDZjNUBn&tmsrc=6811954a9dd034d21417cb452d9c344dd43ec34de700c5b8065e5630380546c5%40group.calendar.google.com"
-        // },
+        {
+            id: 1,
+            img: OtherImg,
+            backgroundImg: "https://drive.google.com/uc?export=view&id=1j8Be4cFnxlKOL9TalATNh2WMeA9FFOLa",
+            title: "The Sphinx Champions League",
+            titleArabic: "دوري أبطال سفنكس",
+            organizer: Sports,
+            form: 'https://forms.gle/shnqDJKCz9MzZkLo6',
+            link: "",
+            calendarLink: "https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NDU0bmNqZjQ4N2s4cDhsa3ZmZ2gwNWsxNmMgMzc4NjI4N2Q3NTFiZjViMDFlN2VhZjJhMDY4YTU5YTgyZDczNjFlMTM5NDY5M2RiZjRjNDVkMzQ5ZGM2YTQxMkBn&tmsrc=3786287d751bf5b01e7eaf2a068a59a82d7361e1394693dbf4c45d349dc6a412%40group.calendar.google.com"
+        },
 
     ];
 

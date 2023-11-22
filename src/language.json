@@ -117,6 +117,7 @@
     "socialAnnouncementOrganizer": "Social Committee Event",
     "cultureAnnouncementOrganizer": "Cultural Committee Event",
     "electionAnnouncementOrganizer": "Election Committee",
+    "sportsAnnouncementOrganizer": "Sports Committee",
     "otherAnnouncementOrganizer": "ISS Egypt Event",
 
     "Faculties": "Faculties",
@@ -367,6 +368,7 @@
     "socialAnnouncementOrganizer": "فعالية للجنة الاجتماعية",
     "cultureAnnouncementOrganizer": "فعالية للجنة الثقافية",
     "electionAnnouncementOrganizer": "لجنة الانتخابات",
+    "sportsAnnouncementOrganizer": "فعالية للجنة الرياضية",
     "otherAnnouncementOrganizer": "فعالية للاتحاد المصري",
 
     "Faculties": "الكليات",
